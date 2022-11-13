@@ -38,11 +38,9 @@
         <h2>Apple iPhone 14 Pro Max 128GB - Space Black Κινητό Smartphone</h2>
         <h3> <a href="/Exercise2/products-phones.html">Κινητό Τηλέφωνο</a></h3>
         <h4>267271</h4>
-        <img src="/assets/iphone14pro.png" width="350" height="350" alt="Apple iPhone 14 Pro Max">
+        <img src="/assets/iphone14pro.png" width="350" height="350" class="display-photo" alt="Apple iPhone 14 Pro Max">
 
-        <div class="value">
-            <span>€1549.00</span>
-        </div>
+    
 
         <section class="product-descr">
             <!-- ΝΑ ΒΑΛΟΥΜΕ ΞΕΧΩΡΙΣΤΑ CLASS ΣΤΟ ΚΑΘΕ DIV!!!!-->
@@ -76,7 +74,11 @@
             </div>
         </section>
 
-        <img src="/assets/analytiko.jpg" alt="Διαφορές καινούριων μοντέλων και σύγκριση χαρακτηριστικών">
+        <div class="price">
+            <p>€1549.00</p>
+        </div>
+
+        <img src="/assets/analytiko.jpg"  class="comparison" alt="Διαφορές καινούριων μοντέλων και σύγκριση χαρακτηριστικών">
 
         <section class="analytika-xarakthristika">
             <div class="row-title">
@@ -176,20 +178,20 @@
         <h3>Δώστε μας μια βαθμολογία!</h3>
         <form action="/Exercise2/product-iphone14-pro-max.html" class="vathmologia-asteria">
 
-            <p>Βαυμολογήστε μας και αφήστε τα σχόλια σας απο κάτω!</p>
-            <input type="radio" id="1ast" name="vathmologia" value="1 αστέρι">
+            <p>Βαθμολογήστε μας και αφήστε τα σχόλια σας απο κάτω!</p>
+            <input type="radio" id="1ast" name="vathmologia" class="epilogh" value="1 αστέρι">
             <label for="1ast">1 αστέρι</label>
-            <input type="radio" id="2ast" name="vathmologia" value="2 αστέρια">
-            <label for="2ast">1 αστέρι</label>
-            <input type="radio" id="3ast" name="vathmologia" value="3 αστέρια">
-            <label for="3ast">1 αστέρι</label>
-            <input type="radio" id="4ast" name="vathmologia" value="4 αστέρια">
-            <label for="4ast">1 αστέρι</label>
-            <input type="radio" id="5ast" name="vathmologia" value="5 αστέρια">
+            <input type="radio" id="2ast" name="vathmologia" class="epilogh" value="2 αστέρια">
+            <label for="2ast">2 αστέρια</label>
+            <input type="radio" id="3ast" name="vathmologia" class="epilogh" value="3 αστέρια">
+            <label for="3ast">3 αστέρια</label>
+            <input type="radio" id="4ast" name="vathmologia" class="epilogh" value="4 αστέρια">
+            <label for="4ast">4 αστέρια</label>
+            <input type="radio" id="5ast" name="vathmologia" class="epilogh" value="5 αστέρια">
             <label for="5ast">5 αστέρια</label>
-            <br>
+            
 
-            <label for="sxolia">Τα σχόλια σας:</label>
+            <label for="sxolia" id="sxolia-title">Τα σχόλια σας:</label>
             <textarea id="sxolia" name="sxolia" placeholder="Γράψτε εδώ..."></textarea>
 
             <br>
