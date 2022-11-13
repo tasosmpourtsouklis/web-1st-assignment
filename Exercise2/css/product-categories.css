@@ -70,7 +70,7 @@ body {
 }
 
 .subcategory {
-    display: inline;
+
     text-align: center;
     border: 2px solid #6ab1d4;
     box-shadow: 0px 2px 16px #6ab1d4;
@@ -78,19 +78,14 @@ body {
     margin-bottom: 30px;
     margin-left: 150px;
     margin-right: 150px;
+   
 }
 
-.popular-products {
-    display: inline;
-    text-align: center;
-    border: 2px solid #6ab1d4;
-    box-shadow: 0px 2px 16px #6ab1d4;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin-left: 150px;
-    margin-right: 150px;
+.category-card {
 
+    display: inline-block;
 }
+
 
 
 .image {
@@ -100,9 +95,7 @@ body {
     border-radius: 25px;
 }
 
-.category-card {
-    display: inline;
-}
+
 
 
 .footer-content {
