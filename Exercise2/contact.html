@@ -10,95 +10,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="co-authored by Anastasios Mpourtsouklis, Dimitrios Paraskeuiotis">
-    <link rel="stylesheet" href="/Exercise2/css/contact.css">
+    <link rel="stylesheet" href="contact.css">
 
 </head>
 
 <body>
     <header class="header-light-color">
-
-        <a href="/Exercise2/index.html"><img src="/assets/Technodata-logos_black.png" width="700" height="160"
-                alt="Technodata λογότυτπο"></a>
+        
+        <a href="index.html"><img src="assets/Technodata-logos_black.png" width="700" height="160" alt="Technodata λογότυτπο"></a>
 
         <nav class="navigation">
-            <a href="/Exercise2/index.html">ΑΡΧΙΚΗ</a>
-            <a href="/Exercise2/product-categories.html#technology">ΠΡΟΙΟΝΤΑ ΚΑΙ ΤΕΧΝΟΛΟΓΙΑ</a>
-            <a href="/Exercise2/product-categories.html#spiti">ΓΙΑ ΤΟ ΣΠΙΤΙ</a>
-            <a href="/Exercise2/stores.html">ΚΑΤΑΣΤΗΜΑΤΑ</a>
-            <a href="/Exercise2/contact.html" class="active">ΕΠΙΚΟΙΝΩΝΙΑ</a>
-            <a href="/Exercise2/about_us.html">ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ</a>
+            <a href="index.html">ΑΡΧΙΚΗ</a>
+            <a href="product-categories.html#technology">ΠΡΟΙΟΝΤΑ ΚΑΙ ΤΕΧΝΟΛΟΓΙΑ</a>
+            <a href="product-categories.html#spiti">ΓΙΑ ΤΟ ΣΠΙΤΙ</a>
+            <a href="stores.html">ΚΑΤΑΣΤΗΜΑΤΑ</a>
+            <a href="contact.html" class="active">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+            <a href="about_us.html">ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ</a>
         </nav>
 
     </header>
 
     <main class="main-content">
-        <h2>Τεχνική Υποστήριξη</h2>
-
+        <h2>Τεχνική Υποστήριξη</h2> 
+       
         <h3>Φόρμα Επικοινωνίας</h3>
         <!--ΙΣΩΣ ΘΕΛΕΙ POST ΑΝΤΙ ΓΙΑ GET ΑΛΛΑ ΔΕΝ ΞΕΡΩ ΑΚΟΜΑ ΠΡΕΠΕΙ ΝΑ ΤΟ ΞΑΝΑΔΟΥΜΕ !!!!!!!-->
-        <form action="index.html" method="GET" enctype="multipart/form-data" class="forma-yposthrikshs">
-            <div class="forma-input">
-                <label for="onoma">Όνομα:</label>
-                <input type="text" id="onoma" name="onoma">
-            </div>
+        <div class="forma">
+            <form action="index.html" method="GET" enctype="multipart/form-data" class="forma-yposthrikshs">
+                <div class="forma-input">
+                    <label for="onoma">Όνομα:</label>
+                    <input type="text" id="onoma" name="onoma">
+                </div>
 
-            <div class="forma-input">
-                <label for="epwnymo">Επώνυμο:</label>
-                <input type="text" id="epwnymo" name="epwnymo">
-            </div>
+                <div class="forma-input">
+                    <label for="epwnymo">Επώνυμο:</label>
+                    <input type="text" id="epwnymo" name="epwnymo">
+                </div>
 
 
-            <div class="forma-input">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="someone@gmail.com">
-            </div>
+                <div class="forma-input">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="someone@gmail.com">
+                </div>
 
-            <div class="forma-input">
-                <label for="telephone">Τηλέφωνο:</label>
-                <input type="tel" id="telephone" name="telephone" placeholder="πχ 6953468217">
-            </div>
+                <div class="forma-input">
+                    <label for="telephone">Τηλέφωνο:</label>
+                    <input type="tel" id="telephone" name="telephone" placeholder="πχ 6953468217">
+                </div>
 
-            <div class="forma-input">
-                <label for="productcode">Κωδικός Προϊόντος:</label>
-                <input type="number" id="productcode" name="productcode">
-            </div>
+                <div class="forma-input">
+                    <label for="productcode">Κωδικός Προϊόντος:</label>
+                    <input type="number" id="productcode" name="productcode">
+                </div>
 
-            <div class="forma-input">
-                <label for="orderdate">Ημερομηνία Αγοράς:</label>
-                <input type="date" id="orderdate" name="orderdate">
-            </div>
+                <div class="forma-input">
+                    <label for="orderdate">Ημερομηνία Αγοράς:</label>
+                    <input type="date" id="orderdate" name="orderdate">
+                </div>
 
-            <div class="forma-input">
-                <label for="file">Απόδειξη Αγοράς:</label>
-                <input type="file" id="file" name="file">
-            </div>
+                <div class="forma-input">
+                    <label for="file">Απόδειξη Αγοράς:</label>
+                    <input type="file" id="file" name="file">
+                </div>
 
-            <div class="forma-input">
-                <label for="perigrafh">Περιγραφή του Προβλήματος:</label>
-                <textarea id="perigrafh" name="perigrafh" placeholder="Γράψτε εδώ..."></textarea>
-            </div>
+                <div class="forma-input">
+                    <label for="perigrafh">Περιγραφή του Προβλήματος:</label>
+                    <textarea id="perigrafh" name="perigrafh" placeholder="Γράψτε εδώ..."></textarea>
+                </div>
 
-            <div class="forma-input">
-                <input type="submit">
-            </div>
-        </form>
+                <div class="forma-input">
+                    <input type="submit">
+                </div>
+            </form>
+        </div>
 
     </main>
 
 
     <footer class="footer-content">
         <h4>Βρείτε μας στα ακόλουθα social media</h4> <!-- ΙΣΩΣ ΒΑΛΟΥΜΕ ΚΛΑΣΣ ΣΤΟ Η4 ΜΟΝΟ ΤΟΥ Η ΣΤΑ ΥΠΟΛΟΙΠΑ-->
-        <a href="/Exercise2/index.html"><img src="/assets/facebook_logo.png" width="50" height="50"
-                alt="Facebook λογότυπο"></a>
-        <a href="/Exercise2/index.html"><img src="/assets/twitter_logo.png" width="50" height="50"
-                alt="Twitter λογότυπο"></a>
-        <a href="/Exercise2/index.html"><img src="/assets/instagram_new.png" width="50" height="50"
-                alt="Instagram λογότυπο"></a>
-        <a href="/Exercise2/index.html"><img src="/assets/youtube_logo.png" width="50" height="50"
-                alt="Youtube λογότυπο"></a>
+        <a href="index.html"><img src="assets/facebook_logo.png" width="50" height="50" alt="Facebook λογότυπο"></a>
+        <a href="index.html"><img src="assets/twitter_logo.png" width="50" height="50" alt="Twitter λογότυπο"></a>
+        <a href="index.html"><img src="assets/instagram_new.png" width="50" height="50" alt="Instagram λογότυπο"></a>
+        <a href="index.html"><img src="assets/youtube_logo.png" width="50" height="50" alt="Youtube λογότυπο"></a>
         <h4>©2022 Techodata Computers</h4>
-        <a href="/Exercise2/index.html"><img src="/assets/Technodata-logos_cropped_footer.png" width="170" height="50"
-                alt="Tecnhodata λογότυπο"></a>
+        <a href="index.html"><img src="assets/Technodata-logos_cropped_footer.png" width="170" height="50" alt="Tecnhodata λογότυπο"></a>
     </footer>
 </body>
 
