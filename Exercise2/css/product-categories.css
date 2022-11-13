@@ -5,6 +5,7 @@
     margin-top: -50px;
     margin-left: -10px;
     margin-right: -10px;
+
 }
 
 .navigation {
@@ -16,9 +17,7 @@
     background-color: #84ceeb;
     float: none;
     line-height: 33px;
-    position: sticky;
-    top: 0;
-    width: 100%;
+
 
 }
 
@@ -26,10 +25,11 @@
 
     color: black;
     /* χρωμα για κομπια nav font size αλλα και padding ωστε να ειναι ομοιομορφα και μοιρασμενα ωραια μεσα στην σελιδα με κενα μεταξυ τους */
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
-    padding: 14px 16px;
+    padding: 14px 12px;
     font-weight: bold;
+
 
 
 }
@@ -58,3 +58,83 @@
     background-color: #2ea8d9;
     /* το χρωμα του τωρινου nav button */
 }
+
+body {
+
+    background-color: #badff1;
+    /* χρωμα φοντου και σχημα και font */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.subcategory {
+    display: inline;
+    text-align: center;
+    border: 2px solid #6ab1d4;
+    box-shadow: 0px 2px 16px #6ab1d4;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.popular-products {
+    display: inline;
+    text-align: center;
+    border: 2px solid #6ab1d4;
+    box-shadow: 0px 2px 16px #6ab1d4;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 150px;
+    margin-right: 150px;
+
+}
+
+
+.image {
+
+    border: 2px solid #2ea8d9;
+    background-color: #6ab1d4;
+    border-radius: 25px;
+}
+
+.category-card {
+    display: inline;
+}
+
+
+.footer-content {
+
+    background-color: #5680e9;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    box-shadow: 0px -5px 16px #6ab1d4;
+    border-bottom: 15px solid black;
+}
+
+.footer-content>h4:first-child {
+
+    font-size: 20px;
+    padding-top: 5px;
+
+}
+
+.footer-content>a>img {
+
+    filter: grayscale(100%);
+    border-radius: 25px;
+}
+
+.footer-content>a>img:hover {
+
+    filter: grayscale(0%);
+}
+
+
+
+/* !!!!!!!!!!!! ΤΕΛΟΣ INDEX !!!!!!!!! */
