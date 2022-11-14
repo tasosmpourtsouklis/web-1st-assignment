@@ -94,12 +94,6 @@ a:active {
     display: inline-block;
 }
 
-.image {
-    border: 2px solid #2ea8d9;
-    background-color: #6ab1d4;
-    border-radius: 25px;
-}
-
 .footer-content {
     background-color: #5680e9;
     margin-top: 50px;
