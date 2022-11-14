@@ -1,68 +1,47 @@
 .header-light-color {
     background-color: #5680e9;
-    /* background χρωμα header και περιεχομενων του, margins ωστε αριστερα δεξια να ειναι μπλε και πανω ωστε να ειναι μπλε και πιο ψηλα το λογοτυπο επισης */
     text-align: center;
     margin-top: -50px;
     margin-left: -10px;
     margin-right: -10px;
-
 }
 
 .navigation {
-
     font-family: Arial, Helvetica, sans-serif;
-    /* font για nav οπως και display block αντι για inline padding ωστε να , background color για να εχει αντιθεση με το Png λογοτυπο και line height για να ειναι λιγο πιο κατω απο το λογοτυπο. το sticky ειναι για να μενει το μενου στην σελιδα μεσα οταν κανεις scroll down  */
     display: block;
     padding: 8px;
     background-color: #84ceeb;
     float: none;
     line-height: 33px;
-
-
 }
 
 .navigation a {
-
     color: black;
-    /* χρωμα για κομπια nav font size αλλα και padding ωστε να ειναι ομοιομορφα και μοιρασμενα ωραια μεσα στην σελιδα με κενα μεταξυ τους */
     font-size: 18px;
     text-decoration: none;
     padding: 14px 12px;
     font-weight: bold;
-
-
-
 }
 
 .navigation a:visited {
-
     text-decoration: none;
-    /* οταν το εχεις επισκεφθει το λινκ δεν γινεται τιποτα */
 }
 
 .navigation a:hover {
-
     background-color: #2ea8d9;
-    /* οταν κανεις hover γινεται πιο σκουρο το τετραγωνο κουμπι nav */
-
 }
 
 .navigation a:active {
-
     color: grey;
-    /* οταν πατας το λινκ θα γινεται στιγμιαια γκρι */
 }
 
 
 .navigation .active {
     background-color: #2ea8d9;
-    /* το χρωμα του τωρινου nav button */
 }
 
 body {
-
     background-color: #badff1;
-    /* χρωμα φοντου και σχημα και font */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     overflow-y: scroll;
@@ -72,51 +51,37 @@ body {
 
 
 .subcategory {
-
-   
     border: 2px solid #6ab1d4;
     box-shadow: 0px 2px 16px #6ab1d4;
     margin-top: 20px;
     margin-bottom: 30px;
     margin-left: 270px;
     margin-right: 270px;
-   
 }
 
 .category-card {
-
     display: inline-block;
-
 }
 
 .category-name {
-
     word-break: break-all;
 }
 
 a {
-
     text-decoration: none;
     color: black;
-
 }
 
 a:visited {
-
     text-decoration: none;
-
 }
 
 a:active {
-
     color: grey;
-
 }
 
 
 .popular-products {
-
-    
     border: 2px solid #6ab1d4;
     box-shadow: 0px 2px 16px #6ab1d4;
     margin-top: 20px;
@@ -126,26 +91,17 @@ a:active {
 }
 
 .product-card {
-
     display: inline-block;
 }
 
 .image {
-
     border: 2px solid #2ea8d9;
     background-color: #6ab1d4;
     border-radius: 25px;
 }
 
-
-
-
-
-
 .footer-content {
-
     background-color: #5680e9;
-    
     margin-top: 50px;
     margin-bottom: -10px;
     margin-left: -10px;
@@ -155,23 +111,15 @@ a:active {
 }
 
 .footer-content>h4:first-child {
-
     font-size: 20px;
     padding-top: 5px;
-
 }
 
 .footer-content>a>img {
-
     filter: grayscale(100%);
     border-radius: 25px;
 }
 
 .footer-content>a>img:hover {
-
     filter: grayscale(0%);
 }
-
-
-
-/* !!!!!!!!!!!! ΤΕΛΟΣ INDEX !!!!!!!!! */
