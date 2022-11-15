@@ -4,6 +4,7 @@
     font-family: 'roboto';
     src: url(/fonts/Roboto-Bold.ttf);
    
+   
 }
 
 @font-face{
@@ -24,6 +25,44 @@
 
 /* !!!!!!!!!!!!! ΤΕΛΟΣ FONTS !!!!!!!!!!!!! */
 
+
+
+/* !!!!!!!!!!!! GRID LAYOUT !!!!!!!!!!!!!!! */
+
+.grid-container {
+
+    display: grid;
+    
+    grid-auto-rows: 5;
+    grid-auto-columns: 4;
+
+}
+
+.header-item {
+
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+.main-item {
+
+    grid-column: 1/4;
+    grid-row: 2/4;
+}
+
+
+
+.footer-item {
+
+    grid-column: 1/4;
+    grid-row: 4/5;
+
+}
+
+
+/* !!!!!!!!!!!!!! ΤΕΛΟΣ GRID LAYOUT !!!!!!!!!!!!!!!!! */
+
+
 /* !!!!!!!!!!!! HEADER !!!!!!!!!!!!! */
 
 
@@ -37,7 +76,7 @@
 
 .navigation {
     font-family: roboto;
-    display: block;
+    /*display: block;*/
     padding: 8px;
     background-color: #84ceeb;          /* display block και padding ωστε να ειναι το καθε κουμπι ενα τετραγωνακι , line height για να ειναι λιγο πιο ψηλα και βαλαμε και Helvetica ως font */
     float: none;
