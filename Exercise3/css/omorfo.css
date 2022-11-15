@@ -1,5 +1,31 @@
+/* !!!!!!!!!!! FONTS !!!!!!!!!!!!! */
+
+@font-face {
+    font-family: 'roboto';
+    src: url(/fonts/Roboto-Bold.ttf);
+   
+}
+
+@font-face{
+
+    font-family: 'roboto-regular';
+    src: url(/fonts/Roboto-Regular.ttf);
+    
+}
+
+
+@font-face{
+
+    font-family: 'roboto-light';
+    src: url(/fonts/Roboto-Light.ttf);
+    
+}
+
+
+/* !!!!!!!!!!!!! ΤΕΛΟΣ FONTS !!!!!!!!!!!!! */
 
 /* !!!!!!!!!!!! HEADER !!!!!!!!!!!!! */
+
 
 .header-light-color {
     background-color: #5680e9;
@@ -10,7 +36,7 @@
 }
 
 .navigation {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: roboto;
     display: block;
     padding: 8px;
     background-color: #84ceeb;          /* display block και padding ωστε να ειναι το καθε κουμπι ενα τετραγωνακι , line height για να ειναι λιγο πιο ψηλα και βαλαμε και Helvetica ως font */
@@ -51,7 +77,7 @@
 
 body {
     background-color: #badff1;                /* χρωμα για background του main περιεχομενου , font για το περιεχομενο επισης και overflow ωστε να μην υπαρχει η οριζοντια μπαρα scroll */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: roboto;
     font-size: 18px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -60,16 +86,19 @@ body {
 
 
 .welcome {
-    text-align: center;         /* κειμενο κεντραρισμενο */
+    text-align: center;      /* κειμενο κεντραρισμενο */
 }
 
 .main-content> p {
-    font-weight: bold;          /* bold font και αλλαξαμε το font size να ειναι λιγο μικροτερο */
+    font-family: roboto-regular;          /* bold font και αλλαξαμε το font size να ειναι λιγο μικροτερο */
     text-align: center;
-    font-size: 16px;
+    font-weight: 500;
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 .section-promote {
+    font-family: roboto-regular;
     text-align: center;
     border: 2px solid #6ab1d4;              /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
     box-shadow: 0px 2px 16px #6ab1d4;
@@ -134,6 +163,7 @@ a:active {
 
 
 .popular-products {
+    font-family: roboto-regular;
     border: 2px solid #6ab1d4;                  /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
     box-shadow: 0px 2px 16px #6ab1d4;
     margin-top: 20px;
@@ -157,7 +187,7 @@ a:active {
 
 .products {
 
-    font-family: Arial, Helvetica, sans-serif;    /* ενιαιο font */
+    font-family: roboto;    /* ενιαιο font */
 }
 
 .products .product-card {
@@ -194,7 +224,7 @@ a:active {
 
 
 .product-details > p {
-    font-family: 'EB Garamond', serif;  /* αλλαγη γραμματοσειρας, μεγεθους και χρωματος για ελληνικα */
+    font-family: roboto-regular;  /* αλλαγη γραμματοσειρας, μεγεθους και χρωματος για ελληνικα */
     text-align: center;
     font-size: 18px;
     color: #7d7d7d;
@@ -231,7 +261,7 @@ a:active {
 }
 
 .button span {
-    font-family: 'Farsan', cursive;
+    font-family: roboto-regular;
     transition: transform 0.3s;
     display: inline-block;
     padding: 10px 20px;
@@ -291,7 +321,7 @@ a:active {
 
 .info {
     background: rgba(27, 26, 26, 0.9);
-    font-family: 'Bree Serif', serif;
+    font-family: roboto-light;
     transition: all 0.3s ease-out;
     transform: translateX(-100%);
     position: absolute;
@@ -389,6 +419,7 @@ a:active {
 }
 
 .product-descr {
+    font-family: roboto-regular;
     text-align: left;
     border: 3px solid #6ab1d4;
     box-shadow: 0px 2px 16px #6ab1d4;
@@ -452,6 +483,7 @@ a:active {
 }
 
 .value {
+    font-family: roboto-regular;
     text-align: right;
     padding-right: 110px;
     margin-top: -20px;
@@ -547,6 +579,11 @@ label {
     resize: none;
     margin-top: 10px;
     margin-left: 450px;
+}
+
+.vathmologia-asteria {
+
+    font-family: roboto-regular;
 }
 
 input[type=submit] {
@@ -693,6 +730,7 @@ select {
 }
 
 .forma-yposthrikshs {
+    font-family: roboto-regular;
     padding: 40px;
     width: 50%;
     text-align: left;
@@ -738,11 +776,13 @@ select {
 }
 
 .perilhpsh > p {
+    font-family: roboto-regular;
     padding-left: 20px;
     padding-right: 20px;
 }
 
 #synexeia-perilhpshs {
+    font-family: roboto;
     text-align: left;
     border: 4px solid #6ab1d4;
     box-shadow: 0px 2px 16px #6ab1d4;
@@ -779,6 +819,7 @@ select {
 
 
 .footer-content {
+    font-family: roboto-light;
     background-color: #5680e9;      
     text-align: center;
     margin-top: 50px;
@@ -792,6 +833,7 @@ select {
 .footer-content>h4:first-child {
     font-size: 20px;
     padding-top: 5px;
+    font-family: roboto;
 }
 
 .footer-content > a {
