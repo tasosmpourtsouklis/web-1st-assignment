@@ -60,6 +60,7 @@
 }
 
 
+
 /* !!!!!!!!!!!!!! ΤΕΛΟΣ GRID LAYOUT !!!!!!!!!!!!!!!!! */
 
 
@@ -72,6 +73,7 @@
     margin-top: -50px;
     margin-left: -10px;
     margin-right: -10px;
+    
 }
 
 .navigation {
@@ -79,10 +81,10 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     background-color: #84ceeb;          /* display flex ωστε να ειναι το καθε κουμπι ενα τετραγωνακι, justify και align center ωστε να ειναι κεντρο ολα τα κουμπια του μενου , line height για να ειναι λιγο πιο ψηλα και βαλαμε και @font-face roboto ως font */
-    float: none;
-    line-height: 28px;
+    /*float: none;*/
+    
+    
 }
 
 
@@ -93,6 +95,8 @@
     text-decoration: none;
     padding: 14px 12px;
     font-weight: bold;
+    
+    
 }
 
 .navigation a:visited {
@@ -110,6 +114,7 @@
 
 .navigation .active {                   /* χρωμα που παινρει το καθε κουμπι οταν ειναι ενεργο , δηλαδη εισαι στην συγκεκριμενη σελιδα */
     background-color: #2ea8d9;
+    
 }
 
 /* !!!!!!!!!!! ΤΕΛΟΣ HEADER !!!!!!!!!!!! */
@@ -146,16 +151,19 @@ body {
     text-align: center;
     border: 2px solid #6ab1d4;              /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
     box-shadow: 0px 2px 16px #6ab1d4;
+    max-width: 80rem;
     margin-top: 20px;
     margin-bottom: 30px;
     margin-left: 150px;
     margin-right: 150px;
+    
 }
 
 .product > a > img {
     border: 2px solid #2ea8d9;              /* border και background για τις εικονες , radius για να γινουν πιο rounded τα edges */
     background-color: #6ab1d4;
     border-radius: 25px;
+    
 }
 
 
@@ -171,15 +179,16 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-}
-
-#slim {
-
-    padding-left: 40px;
-    padding-right: 40px;
+    
 }
 
 
+ .image {
+
+    /* isws thelei kai max height ??? */
+    max-height: 100%;
+    max-width: 95%;
+ }
 
 /* !!!!!!!!!!!!!!!!!!!!! ΤΕΛΟΣ INDEX !!!!!!!!!!!!!!!!!!! */
 
@@ -187,13 +196,22 @@ body {
 
 /* !!!!!!!!!!!!!!!!!!!! PRODUCT-CATEGORIES !!!!!!!!!!!!!!!!!! */
 
+/*.main-content > h1 {
+
+    font-size: 2.6vw;
+
+}*/
+
+
 .subcategory {
     border: 2px solid #6ab1d4;           
-    box-shadow: 0px 2px 16px #6ab1d4;    /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+    box-shadow: 0px 2px 16px #6ab1d4; /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+    max-width: 100rem;
     margin-top: 20px;
     margin-bottom: 30px;
     margin-left: 270px;
     margin-right: 270px;
+    /*font-size: 1.2vw;*/
 }
 
 .subcategory > ul {
@@ -203,11 +221,21 @@ body {
     justify-content: space-evenly;
     padding-top: 15px;
     padding-right: 50px;
+   
 }
 
 .subcategory > ul > li {
                                         /* αυτο ειναι ωστε να χωριζεται σε 3 αντικειμενα το καθε row και μετα λογω του wrap να πηγαινουν κατω αριστερα */
     flex: 0 0 33.333333%;
+   
+}
+
+
+
+.subcategory > ul > li > a > img {
+
+   max-width: 100%;
+
 }
 
 .category-card {
@@ -409,8 +437,8 @@ a:active {
 }
 
 .product-image .image {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 
@@ -479,7 +507,7 @@ a:active {
 #iphone-code {
     font-size: 15px;
     margin-bottom: -47px;
-    margin-right: 1170px;
+    margin-right: 1153px;
     padding-bottom: 40px;
     padding-left: 10px;
     padding-top: 5px;
@@ -506,7 +534,7 @@ a:active {
     border-radius: 25px;
     border-bottom-style: solid;
     padding-top: 20px;
-    margin-right: 1170px;
+    margin-right: 1153px;
     margin-top: -230px;
     margin-bottom: 200px;
     font-size: 25px;
@@ -712,12 +740,15 @@ input[type=submit]:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    max-width: 150rem;
     
 }
 
 .katasthma {
     border: 3px solid #6ab1d4;
     box-shadow: 0px 2px 16px #6ab1d4;
+    
+    max-width: 150rem;
     margin-top: 20px;
     margin-bottom: 30px;
     margin-left: 350px;
@@ -725,21 +756,26 @@ input[type=submit]:hover {
     overflow: auto;
 }
 
-.katasthma>h3 {
+.katasthmata>h3 {
     text-decoration: underline;
-    padding-left: 15px;
-    margin-top: 5px;
-    text-align: left;
+   
+   
 }
 
 .katasthma>p {
     font-weight: bold;
+    font-size: 1.1rem;
     padding-top: 70px;
+    
+    
 }
 
 .katasthma>p>img {
     float: right;
     margin-top: -150px;
+    max-width: 100%;
+   
+    
 
 }
 
@@ -970,7 +1006,8 @@ select {
     .grid-container {
 
         display: grid;
-        grid-template-columns: 100%;
+        grid-template-columns: 1fr;
+        
         
     }
 
@@ -990,18 +1027,23 @@ select {
     
     .footer-item {
     
-       
+     
         grid-row: 4/5;
        
     
     }
 
+    .prod-photos {
+        /* ωστε οι φωτογραφιες των προιοντων να γινοναι με flex και direction row ωστε να ειναι απο αριστερα προς τα δεξια */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+}
 
 }
 
   /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
-    
     
     
 
