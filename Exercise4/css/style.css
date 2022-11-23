@@ -36,7 +36,8 @@
     grid-auto-columns: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 2fr 0.2fr;
-    
+    width: 100vw;
+    height: 100vh;
     
 }
 
@@ -71,12 +72,16 @@
 
 .header-light-color {
     background-color: #5680e9;
-    text-align: center;                 /* εχουμε βαλει χρωμα για background και μερικα margin ωστε να πηγαινει η φωτο στο κεντρο */
-    margin-top: -50px;
+    text-align: center;
+    margin-top: -30px;                 /* εχουμε βαλει χρωμα για background και μερικα margin ωστε να πηγαινει η φωτο στο κεντρο */
     margin-left: -10px;
     margin-right: -10px;
     
+    
 }
+
+
+
 
 .navigation {
     font-family: roboto;
@@ -153,7 +158,7 @@ body {
     text-align: center;
     border: 2px solid #6ab1d4;              /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
     box-shadow: 0px 2px 16px #6ab1d4;
-    max-width: 80rem;
+    max-width: 100%;
     margin-top: 20px;
     margin-bottom: 30px;
     margin-left: 150px;
@@ -179,7 +184,7 @@ body {
 .prod-photos {
                                                 /* ωστε οι φωτογραφιες των προιοντων να γινοναι με flex και direction row ωστε να ειναι απο αριστερα προς τα δεξια */
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     
 }
@@ -208,7 +213,7 @@ body {
 .subcategory {
     border: 2px solid #6ab1d4;           
     box-shadow: 0px 2px 16px #6ab1d4; /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
-    max-width: 100rem;
+    max-width: 100%;
     margin-top: 20px;
     margin-bottom: 30px;
     margin-left: 270px;
@@ -242,6 +247,8 @@ body {
 
 .category-card {
    list-style-type: none;             /* βγαλαμε τα bullet απο τα li της ul */
+   width: fit-content;
+   height: fit-content;
 }
 
 
@@ -971,7 +978,7 @@ select {
 
     /* ΒΓΑΖΩ ΤΟ MARGIN TOP ΩΣΤΕ ΝΑ ΓΙΝΕΙ ΩΡΑΙΟ ΓΙΑ 4ο ΠΑΡΑΔΟΤΕΟ ΜΕ FR */
     /*margin-top: 50px;*/
-    margin-bottom: -10px;
+    
     margin-left: -10px;
     margin-right: -10px;
     box-shadow: 0px -5px 16px #6ab1d4;
@@ -1017,6 +1024,15 @@ select {
        
     }
 
+    .navigation a {
+        color: black;
+        font-size: 16px;                       /* αλλαγη στο χρωμα του font και βγαλαμε το underline απο τα link ωστε να φαινεται πιο ωραιο ,  τα καναμε bold */
+        text-decoration: none;
+        padding: 12px 10px;
+        font-weight: bold;
+        
+        
+    }
 
     
 
@@ -1034,7 +1050,15 @@ select {
        
     }
 
-    
+    .navigation a {
+        color: black;
+        font-size: 14px;                       /* αλλαγη στο χρωμα του font και βγαλαμε το underline απο τα link ωστε να φαινεται πιο ωραιο ,  τα καναμε bold */
+        text-decoration: none;
+        padding: 10px 8px;
+        font-weight: bold;
+        
+        
+    }
 
     .prod-photos {
         /* ωστε οι φωτογραφιες των προιοντων να γινοναι με flex και direction row ωστε να ειναι απο αριστερα προς τα δεξια */
@@ -1044,6 +1068,50 @@ select {
 }
 
 }
+
+@media only screen and (max-width: 575px) {
+
+    
+
+    .section-promote{
+
+       
+        min-width: 30%;
+    }
+
+    .product > a > img{
+
+        height: fit-content;
+        width: fit-content;
+    }
+    .image {
+
+        /* isws thelei kai max height ??? */
+        max-height: 100%;
+        max-width: 95%;
+     }
+
+}
+
+@media only screen and (max-width: 444px) {
+
+    .navigation {
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+        
+        
+    }
+
+
+
+}
+
+/* !!!!!!!! RESPONSIVE IMAGES !!!!!!!!!!! */
+
+
 
  
 
