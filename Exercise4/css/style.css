@@ -34,6 +34,8 @@
     display: grid;
     grid-auto-rows: auto;
     grid-auto-columns: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 2fr 0.2fr;
     
     
 }
@@ -47,7 +49,7 @@
 .main-item {                                /* εδω εχουμε φτιαξει με grid layout τα 3 σημεια καθε σελιδας ...header , main και footer */
                                             /* δηλαδη το που ξεκιναει και τελειωνει το καθε απο τα 3 μερη */
     grid-column: 1/4;   
-    grid-row: 2/4;
+    grid-row: 2/3;
 }
 
 
@@ -55,7 +57,7 @@
 .footer-item {
 
     grid-column: 1/4;
-    grid-row: 4/5;
+    grid-row: 3/4;
 
 }
 
@@ -966,7 +968,9 @@ select {
     font-family: roboto-light;
     background-color: #5680e9;      
     text-align: center;
-    margin-top: 50px;
+
+    /* ΒΓΑΖΩ ΤΟ MARGIN TOP ΩΣΤΕ ΝΑ ΓΙΝΕΙ ΩΡΑΙΟ ΓΙΑ 4ο ΠΑΡΑΔΟΤΕΟ ΜΕ FR */
+    /*margin-top: 50px;*/
     margin-bottom: -10px;
     margin-left: -10px;
     margin-right: -10px;
@@ -1000,38 +1004,37 @@ select {
 
 /* !!!!!!!!!!!! RESPONSIVE  DESIGN / MEDIA QUERIES !!!!!!!!!!!!!! */
 
-  /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) {
+ /* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (max-width: 768px) {
     
     .grid-container {
 
-        display: grid;
-        grid-template-columns: 1fr;
-        
-        
-    }
-
-    .header-item {
-
-        
-        grid-row: 1/2;
-    }
+        grid-auto-rows: auto;
+        grid-auto-columns: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 2fr 0.2fr;
     
-    .main-item {                                /* εδω εχουμε φτιαξει με grid layout τα 3 σημεια καθε σελιδας ...header , main και footer */
-                                                /* δηλαδη το που ξεκιναει και τελειωνει το καθε απο τα 3 μερη */
-        
-        grid-row: 2/4;
-    }
-    
-    
-    
-    .footer-item {
-    
-     
-        grid-row: 4/5;
        
-    
     }
+
+
+    
+
+  } 
+  /* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+
+    .grid-container {
+
+        grid-auto-rows: auto;
+        grid-auto-columns: auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 2fr 0.2fr;
+    
+       
+    }
+
+    
 
     .prod-photos {
         /* ωστε οι φωτογραφιες των προιοντων να γινοναι με flex και direction row ωστε να ειναι απο αριστερα προς τα δεξια */
@@ -1042,35 +1045,7 @@ select {
 
 }
 
-  /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (max-width: 768px) {
-    
-    
-
-
-    .header-item {
-
-        grid-column: 1/3;
-        grid-row: 1/2;
-    }
-    
-    .main-item {                                /* εδω εχουμε φτιαξει με grid layout τα 3 σημεια καθε σελιδας ...header , main και footer */
-                                                /* δηλαδη το που ξεκιναει και τελειωνει το καθε απο τα 3 μερη */
-        grid-column: 1/3;   
-        grid-row: 2/4;
-    }
-    
-    
-    
-    .footer-item {
-    
-        grid-column: 1/3;
-        grid-row: 4/5;
-    
-    }
-
-
-  } 
+ 
 
 
 
