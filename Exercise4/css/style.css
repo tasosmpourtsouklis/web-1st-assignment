@@ -134,6 +134,7 @@ body {
     background-color: #badff1;                /* χρωμα για background του main περιεχομενου , font για το περιεχομενο επισης και overflow ωστε να μην υπαρχει η οριζοντια μπαρα scroll */
     font-family: roboto;
     font-size: 18px;
+    /*font-size: 1.17vw;*/
     overflow-y: scroll;
     overflow-x: hidden;
     text-align: center;
@@ -171,6 +172,7 @@ body {
     background-color: #6ab1d4;
     border-radius: 25px;
     
+   
 }
 
 
@@ -185,17 +187,19 @@ body {
                                                 /* ωστε οι φωτογραφιες των προιοντων να γινοναι με flex και direction row ωστε να ειναι απο αριστερα προς τα δεξια */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 
- .image {
+.image {
 
     /* isws thelei kai max height ??? */
-    max-height: 100%;
+    
     max-width: 95%;
- }
+}
+
+
 
 /* !!!!!!!!!!!!!!!!!!!!! ΤΕΛΟΣ INDEX !!!!!!!!!!!!!!!!!!! */
 
@@ -221,6 +225,11 @@ body {
     /*font-size: 1.2vw;*/
 }
 
+.subcategory > h2 {
+
+    font-size: 1.7vw;
+}
+
 .subcategory > ul {
 
     display: flex;                          /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */ 
@@ -228,6 +237,7 @@ body {
     justify-content: space-evenly;
     padding-top: 15px;
     padding-right: 50px;
+    
    
 }
 
@@ -242,7 +252,14 @@ body {
 .subcategory > ul > li > a > img {
 
    max-width: 100%;
+   width: fit-content;
+   height: fit-content;
 
+}
+
+.subcategory > ul > li > a > h3 {
+
+    font-size: 1.6vw;
 }
 
 .category-card {
@@ -252,9 +269,7 @@ body {
 }
 
 
-.category-name {
-    word-break: break-all;              /* για να σπανε οι λεξεις και να πηγαινουν απο κατω αμα δεν χωρανε */
-}
+
 
 
 a {
@@ -276,9 +291,15 @@ a:active {
     border: 2px solid #6ab1d4;                  /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
     box-shadow: 0px 2px 16px #6ab1d4;
     margin-top: 20px;
+    max-width: 100%;
     margin-bottom: 30px;
     margin-left: 270px;
     margin-right: 270px;
+}
+
+.popular-products > h2 {
+
+    font-size: 1.7vw;
 }
 
 .popular-products > ul {
@@ -296,10 +317,32 @@ a:active {
     flex: 0 0 33.333333%;
 }
 
+
+.popular-products> ul > li > a > img {
+
+    max-width: 100%;
+    width: fit-content;
+    height: fit-content;
+ 
+ }
+
+
 .product-card {
     list-style-type: none;          /* βγαλαμε τα bullet απο τα li της ul */
+    width: fit-content;
+    height: fit-content;
 }
 
+
+.product-card > a > h3 {
+
+    font-size: 1.7vw;
+}
+
+.product-card > a > p {
+
+    font-size: 1.4vw;
+}
 
 
 /* !!!!!!!!!!!!!!! ΤΕΛΟΣ PRODUCT-CATEGORIES !!!!!!!!!!!!!!!!!!! */
@@ -1034,7 +1077,15 @@ select {
         
     }
 
+    body{
     
+        /*font-size: 1.17vw;*/
+        font-size: 16px;
+    }
+
+    .main-content > p{
+
+    }
 
   } 
   /* Extra small devices (phones, 600px and down) */
@@ -1090,6 +1141,12 @@ select {
         max-height: 100%;
         max-width: 95%;
      }
+
+}
+
+@media only screen and (max-width: 554px) {
+
+    
 
 }
 
