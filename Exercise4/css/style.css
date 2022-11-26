@@ -220,8 +220,8 @@ body {
     max-width: 100%;
     margin-top: 20px;
     margin-bottom: 30px;
-    margin-left: 270px;
-    margin-right: 270px;
+    margin-left: 170px;
+    margin-right: 170px;
    
 }
 
@@ -246,17 +246,22 @@ body {
 }
 
 
+.subcategory> ul > li > a > img {
 
+    max-width: 100%;
+    width: fit-content;
+    height: fit-content;
+ 
+ }
 
 
 
 .category-card {
    list-style-type: none;             /* βγαλαμε τα bullet απο τα li της ul */
-
+   width: fit-content;
+   height: fit-content;
 
 }
-
-
 
 
 
@@ -285,10 +290,7 @@ a:active {
     margin-right: 270px;
 }
 
-.popular-products > h2 {
 
-    font-size: 1.7vw;
-}
 
 .popular-products > ul {
 
@@ -322,15 +324,6 @@ a:active {
 }
 
 
-.product-card > a > h3 {
-
-    font-size: 1.7vw;
-}
-
-.product-card > a > p {
-
-    font-size: 1.4vw;
-}
 
 
 /* !!!!!!!!!!!!!!! ΤΕΛΟΣ PRODUCT-CATEGORIES !!!!!!!!!!!!!!!!!!! */
@@ -629,7 +622,7 @@ a:active {
     margin-left: 130px;
     margin-right: 130px;
     margin: 0 auto;
-    font-size: 1.4vw;
+    
     
 }
 
@@ -1049,13 +1042,73 @@ select {
 /* !!!!!!!!!!!!! TΕΛΟΣ FOOTER !!!!!!!!!!!! */
 
 
-
 /* !!!!!!!!!!!! RESPONSIVE  DESIGN / MEDIA QUERIES !!!!!!!!!!!!!! */
 
 
 
+
+@media only screen and (max-width: 1024px) {
+
+
+    .analytika-xarakthristika {
+
+        font-size: 16px;
+    }
+}
+
+
+@media only screen and (max-width: 900px){
+
+    .subcategory {
+       
+        border: 2px solid #6ab1d4;           
+        box-shadow: 0px 2px 16px #6ab1d4; /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+        max-width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+       
+    }
+
+    .subcategory > ul {
+
+        display: flex;                          /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */ 
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 15px;
+        padding-right: 50px;
+         
+       
+    }
+
+    .popular-products {
+        border: 2px solid #6ab1d4;           
+        box-shadow: 0px 2px 16px #6ab1d4; /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+        max-width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    
+    .popular-products > ul {
+        display: flex;                          /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */ 
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 15px;
+        padding-right: 50px;
+
+    }
+
+
+
+} 
+
+
+
  /* Medium devices (landscape tablets, 768px and up) */
- @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     
     .grid-container {
 
@@ -1068,11 +1121,10 @@ select {
     }
 
     .navigation a {
-        color: black;
+        
         font-size: 16px;                       /* αλλαγη στο χρωμα του font και βγαλαμε το underline απο τα link ωστε να φαινεται πιο ωραιο ,  τα καναμε bold */
-        text-decoration: none;
+       
         padding: 12px 10px;
-        font-weight: bold;
         
         
     }
@@ -1083,13 +1135,107 @@ select {
         font-size: 16px;
     }
 
-    .main-content > p{
+    .product-descr {
+       
+        margin-left: 230px;
+       
+    }
+
+    .subcategory {
+       
+        border: 2px solid #6ab1d4;           
+        box-shadow: 0px 2px 16px #6ab1d4; /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+        max-width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 60px;
+        margin-right: 60px;
+       
+    }
+
+    .subcategory > ul {
+
+        display: flex;                          /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */ 
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 15px;
+        padding-right: 50px;
+         
+       
+    }
+    
+    .popular-products {
+        border: 2px solid #6ab1d4;           
+        box-shadow: 0px 2px 16px #6ab1d4; /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+        max-width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+    .popular-products > ul {
+        display: flex;                          /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */ 
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding-top: 15px;
+        padding-right: 50px;
 
     }
 
-  } 
+
+
+
+    .analytika-xarakthristika {
+        display: block;
+        border: 4px solid #6ab1d4;
+        box-shadow: 0px 2px 16px #6ab1d4;
+        max-width: 90%;
+        height: auto;
+        margin-left: 130px;
+        margin-right: 130px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 10px;
+    }
+
+    .row-title {
+        text-align: center;
+        text-decoration: underline;
+        font-size: px;
+        border-bottom: 4px solid #6ab1d4;
+        
+    }
+    
+    .row {
+        border-bottom: 2px solid #6ab1d4;
+        padding-top: 20px;
+    }
+    
+    .label {
+        text-align: center;
+        font-weight: bold;
+        padding-left: 10px;
+        font-size: 15px;
+    }
+    
+    .value {
+        font-family: roboto-regular;
+        text-align: center;
+        padding-left: 22px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        font-size: 15px;
+       
+    }
+
+
+} 
+
   /* Extra small devices (phones, 600px and down) */
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
 
     .grid-container {
 
@@ -1102,21 +1248,263 @@ select {
     }
 
     .navigation a {
-        color: black;
+        
         font-size: 14px;                       /* αλλαγη στο χρωμα του font και βγαλαμε το underline απο τα link ωστε να φαινεται πιο ωραιο ,  τα καναμε bold */
-        text-decoration: none;
+        
         padding: 10px 8px;
-        font-weight: bold;
+       
         
         
     }
+
+    .welcome {
+
+        font-size: 18px;
+    }
+
+    .main-content> p {
+        font-family: roboto-regular;          /* bold font και αλλαξαμε το font size να ειναι λιγο μικροτερο */
+        text-align: center;
+        font-size: 14px;
+        font-weight: 500;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+
+    .section-promote {
+    
+        font-family: roboto-regular;
+        text-align: center;
+        border: 2px solid #6ab1d4;              /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+        box-shadow: 0px 2px 16px #6ab1d4;
+        max-width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 40px;
+        margin-right: 40px;
+        
+    }
+
+    .prod-photos {
+
+        padding: 10%;
+    }
+
+    .subcategory {
+       
+        border: 2px solid #6ab1d4;           
+        box-shadow: 0px 2px 16px #6ab1d4; /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+        max-width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 60px;
+        margin-right: 60px;
+       
+    }
+
+    .subcategory > ul {
+
+        display: flex;                          /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */ 
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 15px;
+        padding-right: 50px;
+         
+       
+    }
+    
+    .popular-products {
+        border: 2px solid #6ab1d4;           
+        box-shadow: 0px 2px 16px #6ab1d4; /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+        max-width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+    .popular-products > ul {
+        display: flex;                          /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */ 
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 15px;
+        padding-right: 50px;
+
+    }
+
+
+    .products .product-card {
+    
+        box-shadow: 0 15px 30px 1px grey;           /* σκια γυρω γυρω και margin ωστε να φαινεται ωραιο */
+        background: rgba(255, 255, 255, 0.90);
+        text-align: center;
+        border-radius: 5px;
+        overflow: hidden;
+        margin: 5em auto;
+        height: 400px;
+        
+        
+    }
+
+    .product-details {
+        position: relative;         /* το αριστερο μισο του καθε product-card, ονομα προϊοντος και φτιαξιμο οπτικα με margin / float */
+        text-align: left;
+        overflow: hidden;
+        padding: 25px;
+        height: 100%;
+        float: left;
+        width: 40%;
+    }
+    
+    .product-details h1 {
+    
+        display: inline-block;              /* αλλαγη χρωματος font κλπ ωστε να φαινεται μεσα στο product-card το h1 ωραιο */
+        position: relative;
+        font-size: 27px;
+        color: #344055;
+        margin: 0;
+    }
+    
+    
+    
+    .product-details > p {
+        font-family: roboto-regular;  /* αλλαγη γραμματοσειρας, μεγεθους και χρωματος για ελληνικα */
+        text-align: center;
+        font-size: 15px;
+        color: #7d7d7d;
+        
+    }
+
+    .button {
+        transform: translateY(0px);
+        transition: 0.3s linear;
+        background: #809fff;
+        border-radius: 5px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        color: #eee;
+        padding-top: 0px;
+        margin-left: 1px;
+    }
+
+    .button .price {
+        transform: translateX(-10%);
+        width: 100%;
+        
+    }
+    
+    
+
+    .info {
+        background: rgba(27, 26, 26, 0.9);
+        font-family: roboto-light;
+        transition: all 0.3s ease-out;
+        transform: translateX(-100%);
+        position: absolute;
+        line-height: 1.8;
+        text-align: left;
+        font-size: 90%;
+        cursor: no-drop;
+        color: #FFF;
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+
+
+    .iphone-code-price{
+
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        align-items: center;
+        justify-content: center;
+        float: none;
+    }
+    
+    .display-photo {
+        
+        border: 3px hidden #2ea8d9;
+        background-color: #6ab1d4;
+        border-radius: 25px;
+        float: none;
+    }
+
+   
+     
+
+    .product-descr {
+        font-family: roboto-regular;
+        text-align: left;
+        border: 3px solid #6ab1d4;
+        box-shadow: 0px 2px 16px #6ab1d4;
+        display: block;
+        margin-bottom: 30px;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+
+
+   
+    .analytika-xarakthristika {
+        display: block;
+        border: 4px solid #6ab1d4;
+        box-shadow: 0px 2px 16px #6ab1d4;
+        max-width: 90%;
+        height: auto;
+        margin-left: 130px;
+        margin-right: 130px;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 10px;
+    }
+
+    .row-title {
+        text-align: center;
+        text-decoration: underline;
+        font-size: 17px;
+        border-bottom: 4px solid #6ab1d4;
+        
+    }
+    
+    .row {
+        border-bottom: 2px solid #6ab1d4;
+        padding-top: 20px;
+    }
+    
+    .label {
+        text-align: center;
+        font-weight: bold;
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    
+    .value {
+        font-family: roboto-regular;
+        text-align: center;
+        padding-left: 22px;
+        padding-top: 25px;
+        padding-bottom: 20px;
+        font-size: 14px;
+       
+    }
+
 
     .prod-photos {
         /* ωστε οι φωτογραφιες των προιοντων να γινοναι με flex και direction row ωστε να ειναι απο αριστερα προς τα δεξια */
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-}
+    }
 
 }
 
