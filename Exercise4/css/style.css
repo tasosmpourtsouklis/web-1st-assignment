@@ -1052,6 +1052,8 @@ select {
 
 /* !!!!!!!!!!!! RESPONSIVE  DESIGN / MEDIA QUERIES !!!!!!!!!!!!!! */
 
+
+
  /* Medium devices (landscape tablets, 768px and up) */
  @media only screen and (max-width: 768px) {
     
@@ -1142,11 +1144,7 @@ select {
 
 }
 
-@media only screen and (max-width: 554px) {
 
-    
-
-}
 
 @media only screen and (max-width: 444px) {
 
