@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="el">
+
+<head>
+    <title>Technodata</title>
+    <link rel="icon" type="image/x-icon" href="/assets/logo.png">
+    <meta name="description" content=" ">
+    <meta name="keywords" content=" ">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="co-authored by Anastasios Mpourtsouklis, Dimitrios Paraskeuiotis">
+    <link rel="stylesheet" href="/Exercise5/css/style.css">
+    <script src="/Exercise5/javascript/rules.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header-item">
+            <header class="header-light-color">
+                <a href="/Exercise5/index.html">
+                    <img srcset="/assets/Technodata-logos_black_SR.png 600w,
+                        /assets/Technodata-logos_black_MR.png 768w,
+                        /assets/Technodata-logos_black_LR.png 1000w" sizes="(max-width: 600px) 80vw,
+                            (max-width: 768px) 100vw,
+                            1000px" src="/assets/Technodata-logos_black_LR.png" alt="Technodata λογότυτπο">
+                </a>
+
+                <nav class="navigation">
+                    <a href="/Exercise5/index.html">ΑΡΧΙΚΗ</a>
+                    <a href="/Exercise5/product-categories.html">ΚΑΤΗΓΟΡΙΕΣ ΠΡΟΪΟΝΤΩΝ</a>
+                    <a href="/Exercise5/stores.html">ΚΑΤΑΣΤΗΜΑΤΑ</a>
+                    <a href="/Exercise5/contact.html">ΕΠΙΚΟΙΝΩΝΙΑ</a>
+                    <a href="/Exercise5/about_us.html">ΣΧΕΤΙΚΑ ΜΕ ΕΜΑΣ</a>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-item">
+            <main class="main-content">
+                <div class="forma">
+                    <form action="sign_up.html" method="GET" enctype="multipart/form-data" class="forma-yposthrikshs">
+                        <fieldset class="input">
+                            <legend class="inputTitle">Προσωπικά Στοιχεία</legend>
+                            <label for="firstName">Όνομα:</label>
+                            <input id="firstName" name="firstName" type="text" autocomplete="given-name"
+                                placeholder="Ιωάννης" required>
+
+                            <label for="lastName">Επώνυμο:</label>
+                            <input id="lastName" name="lastName" type="text" autocomplete="family-name"
+                                placeholder="Ιωάννου" required>
+
+                            <label for="email">E-Mail:</label>
+                            <input id="email" name="email" type="email" autocomplete="off"
+                                placeholder="someone@gmail.com" required>
+
+                            <label for="tel">Τηλέφωνο Επικοινωνίας:</label>
+                            <input id="tel" name="tel" type="text" autocomplete="tel-national" placeholder="6912345678"
+                                required>
+
+                            <label for="bDay">Ημερομηνία Γέννησης:</label>
+                            <input id="bDay" name="bDay" type="date" autocomplete="bday" required>
+                        </fieldset>
+
+                        <fieldset class="input">
+                            <legend class="inputTitle">Διεύθυνση Κατοικίας</legend>
+                            <label for="region">Περιφέρεια:</label>
+                            <input id="region" name="region" type="text" autocomplete="address-level1"
+                                placeholder="Αθήνα" list="regions" required>
+                            <datalist id="regions">
+                                <option value="Στερεά Ελλάδα">
+                                <option value="Μακεδονία">
+                                <option value="Πελοπόννησος">
+                                <option value="Κρήτη">
+                                <option value="Ήπειρος">
+                                <option value="Θεσσαλία">
+                                <option value="Θράκη">
+                                <option value="Νήσοι Αιγαίου Πελάγους">
+                                <option value="Νήσοι Ιονίου Πελάγους">
+                            </datalist>
+
+                            <label for="county">Νομός:</label>
+                            <input id="county" name="county" type="text" autocomplete="address-level2"
+                                placeholder="Αθήνα" list="counties" required>
+                            <datalist id="counties">
+                                <option value="Αττική">
+                                <option value="Εύβοια">
+                                <option value="Ευρυτανία">
+                                <option value="Φθιώτιδα">
+                                <option value="Αιτωλοακαρνανία">
+                                <option value="Βοιωτία">
+                                <option value="Φωκίδα">
+                            </datalist>
+
+                            <label for="postalCode">Τ.Κ.:</label>
+                            <input id="postalCode" name="postalCode" type="text" autocomplete="postal-code"
+                                placeholder="104 34" required>
+
+                            <label for="address">Διεύθυνση:</label>
+                            <input id="address" name="address" type="text" autocomplete="address-line1"
+                                placeholder="28ης Οκτωβρίου 76" required>
+                        </fieldset>
+
+
+                        <fieldset class="input">
+                            <legend class="inputTitle">Στοιχεία Πληρωμής</legend>
+                            <input type="radio" id="creditCard" name="payment" value="creditCard">
+                            <label for="creditCard">Πιστωτική κάρτα</label>
+
+                            <input type="radio" id="payPal" name="payment" value="payPal">
+                            <label for="payPal">PayPal</label>
+
+                            <input type="radio" id="onDelivery" name="payment" value="onDelivery" checked>
+                            <label for="onDelivery">Αντικαταβολή (+2€)</label>
+
+                            <label for="ccNumber">Αριθμός Κάρτας:</label>
+                            <input id="ccNumber" name="ccNumber" type="text" autocomplete="cc-number"
+                                placeholder="0000 1111 2222 3333">
+
+                            <label for="ccExpDate">Ημερομηνία Λήξης:</label>
+                            <input id="ccExpDate" name="ccExpDate" type="date" autocomplete="cc-exp">
+
+
+                            <div class="forma-input">
+                                <label for="ccCode">Κωδικός:</label>
+                                <input id="ccCode" name="ccCode" type="password" autocomplete="cc-csc"
+                                    placeholder="123">
+
+
+                                <label for="ccName">Ονοματεπώνυμο Κατόχου:</label>
+                                <input id="ccName" name="ccName" type="text" autocomplete="cc-name"
+                                    placeholder="ION IOANNOY">
+
+                        </fieldset>
+
+                        <fieldset class="input">
+                            <legend class="inputTitle">Στοιχεία Ταυτοποίησης Χρήστη</legend>
+                            <label for="username">Username:</label>
+                            <input id="username" name="username" type="text" autocomplete="username"
+                                placeholder="ionioan" required>
+
+                            <label for="password">Password:</label>
+                            <input id="password" name="password" type="password" autocomplete="new-password" required>
+
+                            <label for="password1">Password:</label>
+                            <input id="password1" name="password1" type="password" autocomplete="off" required>
+                        </fieldset>
+
+                        <fieldset class="input">
+                            <legend class="inputTitle">Επιλογές Επικοινωνίας</legend>
+                            <input type="radio" id="mail" name="contact" value="mail" checked>
+                            <label for="mail">E-Mail</label>
+
+                            <input type="radio" id="sms" name="contact" value="sms">
+                            <label for="sms">SMS</label>
+
+                            <input type="radio" id="iMess" name="contact" value="iMess">
+                            <label for="iMess">iMessage</label>
+                        </fieldset>
+
+                        <fieldset class="input">
+                            <legend class="inputTitle">Ερωτηματολόγιο</legend>
+                            <label for="askFrequency">Ποιός είναι ο πιο συχνός τρόπος πληρωμής που
+                                χρησιμοποιείται;</label>
+                            <select name="askFrequency" id="askFrequency">
+                                <option value="everyDay">Καθημερινά</option>
+                                <option value="everyWeek">Εβδομαδιαία</option>
+                                <option value="everyMonth">Μηνιαία</option>
+                            </select>
+
+                            <label for="askCategory">Από ποιά κατηγορία προϊόντων αγοράζετε πιο συχνά;</label>
+                            <select name="askCategory" id="askCategory">
+                                <option value="tecnhology">Τεχνολογία</option>
+                                <option value="home">Σπίτι</option>
+                                <option value="auto">Αυτοκίνητο - Μηχανή</option>
+                            </select>
+
+                            <label for="askPayment">Ποιός είναι ο πιο συχνός τρόπος πληρωμής που
+                                χρησιμοποιείται;</label>
+                            <select name="askPayment" id="askPayment">
+                                <option value="creditCard">Πιστωτική κάρτα</option>
+                                <option value="payPal">PayPal</option>
+                                <option value="onDelivery">Αντικαταβολή</option>
+                            </select>
+                        </fieldset>
+
+                        <fieldset id="checks">
+                            <input type="checkbox" id="approveTerms" name="terms" value="approve" required />
+                            <label for="approveTerms">Αποδοχή των <a href="">Όρων και Προϋποθέσεων</a>.</label>
+
+                            <input type="checkbox" id="subscribeNews" name="newsletter" value="subscribe" checked/>
+                            <label for="subscribeNews">Εγγραφή στην εφημερίδα.</label>
+                        </fieldset>
+
+                        <input type="submit" value="Εγγραφή" />
+                    </form>
+                </div>
+            </main>
+        </div>
+
+        <div class="footer-item">
+            <footer class="footer-content">
+                <h4>Βρείτε μας στα ακόλουθα social media</h4> <!-- ΙΣΩΣ ΒΑΛΟΥΜΕ ΚΛΑΣΣ ΣΤΟ Η4 ΜΟΝΟ ΤΟΥ Η ΣΤΑ ΥΠΟΛΟΙΠΑ-->
+
+                <a href="/Exercise5/index.html">
+                    <img src="/assets/facebook_logo.png" width="50" height="50" alt="Facebook λογότυπο">
+                </a>
+
+                <a href="/Exercise5/index.html">
+                    <img src="/assets/twitter_logo.png" width="50" height="50" alt="Twitter λογότυπο">
+                </a>
+
+                <a href="/Exercise5/index.html">
+                    <img src="/assets/instagram_new.png" width="50" height="50" alt="Instagram λογότυπο">
+                </a>
+
+                <a href="/Exercise5/index.html">
+                    <img src="/assets/youtube_logo.png" width="50" height="50" alt="Youtube λογότυπο">
+                </a>
+                <h4>©2022 Techodata Computers</h4>
+
+                <a href="/Exercise5/index.html">
+                    <img src="/assets/Technodata-logos_cropped_footer.png" width="170" height="50"
+                        alt="Tecnhodata λογότυπο">
+                </a>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
