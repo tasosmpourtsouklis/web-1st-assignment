@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="co-authored by Anastasios Mpourtsouklis, Dimitrios Paraskeuiotis">
     <link rel="stylesheet" href="/Exercise5/css/style.css">
-    <script src="/Exercise5/javascript/validation.js" type="text/javascript"></script>
+    <script src="/Exercise5/javascript/validation.js"></script>
 </head>
 
 <body>
@@ -37,7 +37,7 @@
         </div>
 
         <main class="main-content">
-            <form id="form" action="sign_up.html" method="GET" enctype="multipart/form-data">
+            <form id="form" onsubmit="validate()">
                 <fieldset>
                     <legend>Προσωπικά Στοιχεία</legend>
 
@@ -45,14 +45,13 @@
                     <div class="formControl">
                         <input id="firstName" name="firstName" type="text" autocomplete="given-name"
                             placeholder="Όνομα">
-                        <small>Error Message</small>
                     </div>
                     <div class="formControl">
                         <input id="lastName" name="lastName" type="text" autocomplete="family-name"
                             placeholder="Επώνυμο">
-                        <small>Error Message</small>
                     </div>
 
+                    <!-- 
                     <label for="email">E-Mail:</label>
                     <div class="formControl">
                         <input id="email" name="email" type="email" autocomplete="off" placeholder="someone@gmail.com">
@@ -69,7 +68,7 @@
                     <div class="formControl">
                         <input id="bDay" name="bDay" type="date" autocomplete="bday">
                         <small>Error Message</small>
-                    </div>
+                    </div> -->
                 </fieldset>
 
                 <!-- <fieldset>
@@ -199,7 +198,7 @@
                     <label for="subscribeNews">Εγγραφή στην εφημερίδα.</label>
                 </fieldset> -->
 
-                <input type="submit" value="Εγγραφή" />
+                <button type="submit">Εγγραφή</button>
             </form>
         </main>
 
