@@ -60,8 +60,8 @@
     font-family: roboto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     background-color: #84ceeb;
+    justify-content: center;
     /* display flex ωστε να ειναι το καθε κουμπι ενα τετραγωνακι, justify και align center ωστε να ειναι κεντρο ολα τα κουμπια του μενου , line height για να ειναι λιγο πιο ψηλα και βαλαμε και @font-face roboto ως font */
     /*float: none;*/
 }
@@ -73,6 +73,10 @@
     text-decoration: none;
     padding: 14px 12px;
     font-weight: bold;
+}
+
+#login {
+    /* todo */
 }
 
 .navigation a:visited {
@@ -781,6 +785,17 @@ select {
     box-sizing: border-box;
 }
 
+input[type=password],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 .forma-input input[type=submit] {
     width: 100%;
     background-color: #2ea8d9;
@@ -868,23 +883,60 @@ select {
 
 /* !!!!!!!!!!!!!!!!!!!! SIGN - UP !!!!!!!!!!!!!!!!!! */
 #form {
-    width: 300px;
-    padding: 20px;
-    background-color: whitesmoke;
-    border-radius: 4px;
-    font-size: 12px;
+    font-family: roboto-regular;
+    padding: 40px;
+    width: 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#form fieldset {
+    border: hidden;
+}
+
+#form legend {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 #form button {
-    padding: 10px;
-    margin-top: 10px;
+    background-color: #119cd4;
     width: 100%;
+    background-color: #2ea8d9;
     color: white;
-    background-color: blue;
+    padding: 14px 20px;
+    margin: 8px 0;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
 }
 
+#nameFields {
+    display: flex;
+    /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */
+    flex-direction: row;
+    position: relative;
+}
+
+#nameFields>formControl {
+    width: 100%;
+}
+
+#payMethod {
+    text-align: center;
+}
+
+#contactMethod {
+    text-align: center;
+}
+
+#checks {
+    text-align: center;
+}
 
 /* !!!!!!!! FOOTER !!!!!!!!!! */
 .footer-content {
