@@ -30,6 +30,7 @@
 .header-item {
     grid-column: 1/4;
     grid-row: 1/2;
+   
 }
 
 .main-item {
@@ -37,13 +38,15 @@
     /* δηλαδη το που ξεκιναει και τελειωνει το καθε απο τα 3 μερη */
     grid-column: 1/4;
     grid-row: 2/3;
-    margin-top: 3%;
+    
+   
+    
 }
 
 .footer-item {
     grid-column: 1/4;
     grid-row: 3/4;
-    margin-top: 3%;
+    
 }
 
 /* !!!!!!!!!!!!!! ΤΕΛΟΣ GRID LAYOUT !!!!!!!!!!!!!!!!! */
@@ -61,12 +64,13 @@
 .navigation {
     font-family: roboto;
     background-color: #84ceeb;
-    /* display: flex; */
-    /* flex-direction: row; */
+    /*display: flex;
+    flex-direction: row;
     /* display flex ωστε να ειναι το καθε κουμπι ενα τετραγωνακι, justify και align center ωστε να ειναι κεντρο ολα τα κουμπια του μενου , line height για να ειναι λιγο πιο ψηλα και βαλαμε και @font-face roboto ως font */
-    overflow: hidden;
+    
     position: absolute;
-    width: 100%;
+    right: 0;
+    left: 0;
 }
 
 .navigation a {
@@ -85,8 +89,9 @@
     text-decoration: none;
 }
 
-.navigation #navigationRight a {
-    float: right;
+.deksia > a{
+   float: right;
+    
 }
 
 .navigation a:visited {
@@ -121,6 +126,8 @@ body {
     overflow-y: scroll;
     overflow-x: hidden;
     text-align: center;
+    align-self: center;
+   
 }
 
 .welcome {
@@ -1438,6 +1445,7 @@ select {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        
     }
 }
 
