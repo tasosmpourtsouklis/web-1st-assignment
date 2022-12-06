@@ -131,7 +131,7 @@
                     <fieldset>
                         <legend>Στοιχεία Πληρωμής</legend>
                         <label for="payMethod">Τρόπος Πληρωμής:</label>
-                        <select name="payMethod">
+                        <select id="payMethod" name="payMethod">
                             <option value="onDelivery">Αντικαταβολή (+2€)</option>
                             <option value="creditCard">Πιστωτική κάρτα</option>
                             <option value="payPal">PayPal</option>
@@ -167,7 +167,7 @@
                             </select>
 
                             <label for="ccCode">Κωδικός:</label>
-                            <input id="ccCode" name="ccCode" type="password" autocomplete="cc-csc" placeholder="123"
+                            <input id="ccCode" name="ccCode" type="password" autocomplete="off" placeholder="123"
                                 pattern="[0-9]{3}">
 
                             <label for="ccName">Ονοματεπώνυμο Κατόχου:</label>
@@ -198,7 +198,7 @@
                         <legend>Επιλογές Επικοινωνίας</legend>
 
                         <label for="contactMethod">Τρόπος Πληρωμής:</label>
-                        <select name="contactMethod">
+                        <select id="contactMethod" name="contactMethod">
                             <option value="email">E-Mail</option>
                             <option value="SMS">SMS</option>
                             <option value="iMessage">iMessage</option>
