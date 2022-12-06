@@ -44,7 +44,7 @@
             <main class="main-content">
                 <h2>Δημιουργία Λογαριασμού</h2>
 
-                <form id="form" onsubmit="validate()" method="" enctype="">
+                <form id="form">
                     <fieldset>
                         <legend>Προσωπικά Στοιχεία</legend>
 
@@ -53,10 +53,12 @@
                             <div class="formControl">
                                 <input id="firstName" name="firstName" type="text" autocomplete="given-name"
                                     placeholder="Όνομα" required>
+                                    <p class="errorMsg" id="firstNameError"></p>
                             </div>
                             <div class="formControl">
                                 <input id="lastName" name="lastName" type="text" autocomplete="family-name"
                                     placeholder="Επώνυμο" required>
+                                <p class="errorMsg" id="lastNameError"></p>
                             </div>
                         </div>
 
@@ -65,17 +67,20 @@
                             <input id="email" name="email" type="email" autocomplete="email"
                                 placeholder="someone@gmail.com" required
                                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}">
+                                <p class="errorMsg" id="emailError"></p>
                         </div>
 
                         <label for="tel">Τηλέφωνο Επικοινωνίας:</label>
                         <div class="formControl">
                             <input id="tel" name="tel" type="text" autocomplete="tel-national" placeholder="6912345678"
                                 required pattern="[0-9]{10}">
+                                <p class="errorMsg" id="telError"></p>
                         </div>
 
                         <label for="bDay">Ημερομηνία Γέννησης:</label>
                         <div class="formControl">
                             <input id="bDay" name="bDay" type="date" autocomplete="bday" required>
+                            <p class="errorMsg" id="bDayError"></p>
                         </div>
                     </fieldset>
 
@@ -96,6 +101,7 @@
                             <option value="Νήσοι Αιγαίου Πελάγους">
                             <option value="Νήσοι Ιονίου Πελάγους">
                         </datalist>
+                        <p class="errorMsg" id="regionError"></p>
 
                         <label for="county">Νομός:</label>
                         <input id="county" name="county" type="text" autocomplete="address-level2" placeholder="Αττική"
@@ -109,14 +115,17 @@
                             <option value="Βοιωτία">
                             <option value="Φωκίδα">
                         </datalist>
+                        <p class="errorMsg" id="countyError"></p>
 
                         <label for="postalCode">Τ.Κ.:</label>
                         <input id="postalCode" name="postalCode" type="text" autocomplete="postal-code"
                             placeholder="104 34" required pattern="[0-9 ]{5,6}">
+                            <p class="errorMsg" id="postalCodeError"></p>
 
                         <label for="address">Διεύθυνση:</label>
                         <input id="address" name="address" type="text" autocomplete="address-line1"
                             placeholder="28ης Οκτωβρίου 76" required>
+                            <p class="errorMsg" id="addressError"></p>
                     </fieldset>
 
                     <fieldset>
@@ -177,13 +186,16 @@
                         <label for="username">Username:</label>
                         <input id="username" name="username" type="text" autocomplete="username" placeholder="ionioan"
                             required>
+                            <p class="errorMsg" id="usernameError"></p>
 
                         <label for="password">Password:</label>
                         <input id="password" name="password" type="password" autocomplete="new-password" required
                             pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,24}">
+                            <p class="errorMsg" id="passwordError"></p>
 
                         <label for="password1">Password:</label>
                         <input id="password1" name="password1" type="password" autocomplete="off" required>
+                        <p class="errorMsg" id="passwordsError"></p>
                     </fieldset>
 
                     <fieldset id="contactMethod">
@@ -229,12 +241,13 @@
                     <fieldset id="checks">
                         <input type="checkbox" id="approveTerms" name="terms" value="approve" required>
                         <label for="approveTerms">Αποδοχή των <a href="">Όρων και Προϋποθέσεων</a>.</label>
+                        <p class="errorMsg" id="approveTermsError"></p>
 
                         <input type="checkbox" id="subscribeNews" name="newsletter" value="subscribe" checked />
                         <label for="subscribeNews">Εγγραφή στην εφημερίδα.</label>
                     </fieldset>
 
-                    <button type="submit">Εγγραφή</button>
+                    <button type="submit" onclick="validate()">Εγγραφή</button>
                 </form>
             </main>
         </div>

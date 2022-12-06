@@ -43,6 +43,7 @@
 .footer-item {
     grid-column: 1/4;
     grid-row: 3/4;
+    margin-top: 3%;
 }
 
 /* !!!!!!!!!!!!!! ΤΕΛΟΣ GRID LAYOUT !!!!!!!!!!!!!!!!! */
@@ -73,7 +74,6 @@
     font-size: 18px;
     /* αλλαγη στο χρωμα του font και βγαλαμε το underline απο τα link ωστε να φαινεται πιο ωραιο ,  τα καναμε bold */
     /* text-align: center;
-
     padding: 14px 12px;
     font-weight: bold; */
     transition: all 0.3s ease-in-out;
@@ -87,7 +87,6 @@
 
 .navigation #navigationRight a {
     float: right;
-
 }
 
 .navigation a:visited {
@@ -937,6 +936,7 @@ select {
     width: 100%;
 }
 
+
 #payMethod {
     text-align: center;
 }
@@ -947,6 +947,13 @@ select {
 
 #checks {
     text-align: center;
+}
+
+.errorMsg {
+    font-family: roboto-regular;
+    font-size: 15px;
+    margin-top: 0px;
+    color: red;
 }
 
 /* !!!!!!!! FOOTER !!!!!!!!!! */
