@@ -37,6 +37,7 @@
     /* δηλαδη το που ξεκιναει και τελειωνει το καθε απο τα 3 μερη */
     grid-column: 1/4;
     grid-row: 2/3;
+    margin-top: 3%;
 }
 
 .footer-item {
@@ -58,25 +59,35 @@
 
 .navigation {
     font-family: roboto;
-    display: flex;
-    flex-direction: row;
     background-color: #84ceeb;
-    justify-content: center;
+    /* display: flex; */
+    /* flex-direction: row; */
     /* display flex ωστε να ειναι το καθε κουμπι ενα τετραγωνακι, justify και align center ωστε να ειναι κεντρο ολα τα κουμπια του μενου , line height για να ειναι λιγο πιο ψηλα και βαλαμε και @font-face roboto ως font */
-    /*float: none;*/
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
 }
 
 .navigation a {
     color: black;
     font-size: 18px;
     /* αλλαγη στο χρωμα του font και βγαλαμε το underline απο τα link ωστε να φαινεται πιο ωραιο ,  τα καναμε bold */
-    text-decoration: none;
+    /* text-align: center;
+
     padding: 14px 12px;
-    font-weight: bold;
+    font-weight: bold; */
+    transition: all 0.3s ease-in-out;
+    /* Ομαλή αλλαγή του hover effect */
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
 }
 
-#login {
-    /* todo */
+.navigation #navigationRight a {
+    float: right;
+
 }
 
 .navigation a:visited {
