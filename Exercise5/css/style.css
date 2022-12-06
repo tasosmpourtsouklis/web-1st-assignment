@@ -942,15 +942,6 @@ select {
     width: 100%;
 }
 
-
-#payMethod {
-    text-align: center;
-}
-
-#contactMethod {
-    text-align: center;
-}
-
 #checks {
     text-align: center;
 }
@@ -960,6 +951,10 @@ select {
     font-size: 15px;
     margin-top: 0px;
     color: red;
+}
+
+#ccInfosHidden {
+    display:none;
 }
 
 /* !!!!!!!! FOOTER !!!!!!!!!! */
