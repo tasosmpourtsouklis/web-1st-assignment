@@ -93,4 +93,5 @@ function validate() {
 
     // // Approves
     // approveTerms
+    return true;
 }

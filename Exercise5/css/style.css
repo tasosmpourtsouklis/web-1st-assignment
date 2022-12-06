@@ -933,7 +933,7 @@ select {
     position: relative;
 }
 
-#nameFields>formControl {
+.formControl {
     width: 100%;
 }
 

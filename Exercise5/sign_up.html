@@ -52,28 +52,30 @@
                         <div id="nameFields">
                             <div class="formControl">
                                 <input id="firstName" name="firstName" type="text" autocomplete="given-name"
-                                    placeholder="Όνομα">
+                                    placeholder="Όνομα" required>
                             </div>
                             <div class="formControl">
                                 <input id="lastName" name="lastName" type="text" autocomplete="family-name"
-                                    placeholder="Επώνυμο">
+                                    placeholder="Επώνυμο" required>
                             </div>
                         </div>
 
                         <label for="email">E-Mail:</label>
                         <div class="formControl">
-                            <input id="email" name="email" type="email" autocomplete="off"
-                                placeholder="someone@gmail.com">
+                            <input id="email" name="email" type="email" autocomplete="email"
+                                placeholder="someone@gmail.com" required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}">
                         </div>
 
                         <label for="tel">Τηλέφωνο Επικοινωνίας:</label>
                         <div class="formControl">
-                            <input id="tel" name="tel" type="text" autocomplete="tel-national" placeholder="6912345678">
+                            <input id="tel" name="tel" type="text" autocomplete="tel-national" placeholder="6912345678"
+                                required pattern="[0-9]{10}">
                         </div>
 
                         <label for="bDay">Ημερομηνία Γέννησης:</label>
                         <div class="formControl">
-                            <input id="bDay" name="bDay" type="date" autocomplete="bday">
+                            <input id="bDay" name="bDay" type="date" autocomplete="bday" required>
                         </div>
                     </fieldset>
 
@@ -82,7 +84,7 @@
 
                         <label for="region">Περιφέρεια:</label>
                         <input id="region" name="region" type="text" autocomplete="address-level1"
-                            placeholder="Στερεά Ελλάδα" list="regions">
+                            placeholder="Στερεά Ελλάδα" list="regions" required>
                         <datalist id="regions">
                             <option value="Στερεά Ελλάδα">
                             <option value="Μακεδονία">
@@ -97,7 +99,7 @@
 
                         <label for="county">Νομός:</label>
                         <input id="county" name="county" type="text" autocomplete="address-level2" placeholder="Αττική"
-                            list="counties">
+                            list="counties" required>
                         <datalist id="counties">
                             <option value="Αττική">
                             <option value="Εύβοια">
@@ -110,11 +112,11 @@
 
                         <label for="postalCode">Τ.Κ.:</label>
                         <input id="postalCode" name="postalCode" type="text" autocomplete="postal-code"
-                            placeholder="104 34">
+                            placeholder="104 34" required pattern="[0-9 ]{5,6}">
 
                         <label for="address">Διεύθυνση:</label>
                         <input id="address" name="address" type="text" autocomplete="address-line1"
-                            placeholder="28ης Οκτωβρίου 76">
+                            placeholder="28ης Οκτωβρίου 76" required>
                     </fieldset>
 
                     <fieldset>
@@ -135,13 +137,35 @@
 
                         <label for="ccNumber">Αριθμός Κάρτας:</label>
                         <input id="ccNumber" name="ccNumber" type="text" autocomplete="cc-number"
-                            placeholder="0000 1111 2222 3333">
+                            placeholder="0000 1111 2222 3333" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}">
 
-                        <label for="ccExpDate">Ημερομηνία Λήξης:</label>
-                        <input id="ccExpDate" name="ccExpDate" type="date" autocomplete="cc-exp">
+                        <label for="ccExpMonth">Ημερομηνία Λήξης:</label>
+                        <select id="ccExpMonth" name="ccExpMonth">
+                            <option value="01">Ιανουάριος</option>
+                            <option value="02">Φεβρουάριος</option>
+                            <option value="03">Μάρτιος</option>
+                            <option value="04">Απρίλιος</option>
+                            <option value="05">Μάιος</option>
+                            <option value="06">Ιούνιος</option>
+                            <option value="07">Ιούλιος</option>
+                            <option value="08">Αύγουστος</option>
+                            <option value="09">Σεπτέμβριος</option>
+                            <option value="10">Οκτώβριος</option>
+                            <option value="11">Νοέμβριος</option>
+                            <option value="12">Δεκέμβριος</option>
+                        </select>
+                        <select name="ccExpYear">
+                            <option value="22">2022</option>
+                            <option value="23">2023</option>
+                            <option value="24">2024</option>
+                            <option value="25">2025</option>
+                            <option value="26">2026</option>
+                            <option value="27">2027</option>
+                        </select>
 
                         <label for="ccCode">Κωδικός:</label>
-                        <input id="ccCode" name="ccCode" type="password" autocomplete="cc-csc" placeholder="123">
+                        <input id="ccCode" name="ccCode" type="password" autocomplete="cc-csc" placeholder="123"
+                            pattern="[0-9]{3}">
 
                         <label for="ccName">Ονοματεπώνυμο Κατόχου:</label>
                         <input id="ccName" name="ccName" type="text" autocomplete="cc-name" placeholder="ION IOANNOY">
@@ -151,13 +175,15 @@
                         <legend>Στοιχεία Ταυτοποίησης Χρήστη</legend>
 
                         <label for="username">Username:</label>
-                        <input id="username" name="username" type="text" autocomplete="username" placeholder="ionioan">
+                        <input id="username" name="username" type="text" autocomplete="username" placeholder="ionioan"
+                            required>
 
                         <label for="password">Password:</label>
-                        <input id="password" name="password" type="password" autocomplete="new-password">
+                        <input id="password" name="password" type="password" autocomplete="new-password" required
+                            pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,24}">
 
                         <label for="password1">Password:</label>
-                        <input id="password1" name="password1" type="password" autocomplete="off">
+                        <input id="password1" name="password1" type="password" autocomplete="off" required>
                     </fieldset>
 
                     <fieldset id="contactMethod">
@@ -201,7 +227,7 @@
                     </fieldset>
 
                     <fieldset id="checks">
-                        <input type="checkbox" id="approveTerms" name="terms" value="approve" />
+                        <input type="checkbox" id="approveTerms" name="terms" value="approve" required>
                         <label for="approveTerms">Αποδοχή των <a href="">Όρων και Προϋποθέσεων</a>.</label>
 
                         <input type="checkbox" id="subscribeNews" name="newsletter" value="subscribe" checked />
