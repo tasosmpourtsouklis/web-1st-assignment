@@ -53,7 +53,7 @@
                             <div class="formControl">
                                 <input id="firstName" name="firstName" type="text" autocomplete="given-name"
                                     placeholder="Όνομα" required>
-                                    <p class="errorMsg" id="firstNameError"></p>
+                                <p class="errorMsg" id="firstNameError"></p>
                             </div>
                             <div class="formControl">
                                 <input id="lastName" name="lastName" type="text" autocomplete="family-name"
@@ -67,14 +67,14 @@
                             <input id="email" name="email" type="email" autocomplete="email"
                                 placeholder="someone@gmail.com" required
                                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}">
-                                <p class="errorMsg" id="emailError"></p>
+                            <p class="errorMsg" id="emailError"></p>
                         </div>
 
                         <label for="tel">Τηλέφωνο Επικοινωνίας:</label>
                         <div class="formControl">
                             <input id="tel" name="tel" type="text" autocomplete="tel-national" placeholder="6912345678"
                                 required pattern="[0-9]{10}">
-                                <p class="errorMsg" id="telError"></p>
+                            <p class="errorMsg" id="telError"></p>
                         </div>
 
                         <label for="bDay">Ημερομηνία Γέννησης:</label>
@@ -120,64 +120,60 @@
                         <label for="postalCode">Τ.Κ.:</label>
                         <input id="postalCode" name="postalCode" type="text" autocomplete="postal-code"
                             placeholder="104 34" required pattern="[0-9 ]{5,6}">
-                            <p class="errorMsg" id="postalCodeError"></p>
+                        <p class="errorMsg" id="postalCodeError"></p>
 
                         <label for="address">Διεύθυνση:</label>
                         <input id="address" name="address" type="text" autocomplete="address-line1"
                             placeholder="28ης Οκτωβρίου 76" required>
-                            <p class="errorMsg" id="addressError"></p>
+                        <p class="errorMsg" id="addressError"></p>
                     </fieldset>
 
                     <fieldset>
                         <legend>Στοιχεία Πληρωμής</legend>
-
-                        <!-- TODO hidden card infos if not needed -->
-
-                        <fieldset id="payMethod">
-                            <input type="radio" id="creditCard" name="payment" value="creditCard">
-                            <label for="creditCard">Πιστωτική κάρτα</label>
-
-                            <input type="radio" id="payPal" name="payment" value="payPal">
-                            <label for="payPal">PayPal</label>
-
-                            <input type="radio" id="onDelivery" name="payment" value="onDelivery" checked>
-                            <label for="onDelivery">Αντικαταβολή (+2€)</label>
-                        </fieldset>
-
-                        <label for="ccNumber">Αριθμός Κάρτας:</label>
-                        <input id="ccNumber" name="ccNumber" type="text" autocomplete="cc-number"
-                            placeholder="0000 1111 2222 3333" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}">
-
-                        <label for="ccExpMonth">Ημερομηνία Λήξης:</label>
-                        <select id="ccExpMonth" name="ccExpMonth">
-                            <option value="01">Ιανουάριος</option>
-                            <option value="02">Φεβρουάριος</option>
-                            <option value="03">Μάρτιος</option>
-                            <option value="04">Απρίλιος</option>
-                            <option value="05">Μάιος</option>
-                            <option value="06">Ιούνιος</option>
-                            <option value="07">Ιούλιος</option>
-                            <option value="08">Αύγουστος</option>
-                            <option value="09">Σεπτέμβριος</option>
-                            <option value="10">Οκτώβριος</option>
-                            <option value="11">Νοέμβριος</option>
-                            <option value="12">Δεκέμβριος</option>
-                        </select>
-                        <select name="ccExpYear">
-                            <option value="22">2022</option>
-                            <option value="23">2023</option>
-                            <option value="24">2024</option>
-                            <option value="25">2025</option>
-                            <option value="26">2026</option>
-                            <option value="27">2027</option>
+                        <label for="payMethod">Τρόπος Πληρωμής:</label>
+                        <select name="payMethod">
+                            <option value="onDelivery">Αντικαταβολή (+2€)</option>
+                            <option value="creditCard">Πιστωτική κάρτα</option>
+                            <option value="payPal">PayPal</option>
                         </select>
 
-                        <label for="ccCode">Κωδικός:</label>
-                        <input id="ccCode" name="ccCode" type="password" autocomplete="cc-csc" placeholder="123"
-                            pattern="[0-9]{3}">
+                        <div id="ccInfosHidden">
+                            <label for="ccNumber">Αριθμός Κάρτας:</label>
+                            <input id="ccNumber" name="ccNumber" type="text" autocomplete="cc-number"
+                                placeholder="0000 1111 2222 3333" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}">
 
-                        <label for="ccName">Ονοματεπώνυμο Κατόχου:</label>
-                        <input id="ccName" name="ccName" type="text" autocomplete="cc-name" placeholder="ION IOANNOY">
+                            <label for="ccExpMonth">Ημερομηνία Λήξης:</label>
+                            <select id="ccExpMonth" name="ccExpMonth">
+                                <option value="01">Ιανουάριος</option>
+                                <option value="02">Φεβρουάριος</option>
+                                <option value="03">Μάρτιος</option>
+                                <option value="04">Απρίλιος</option>
+                                <option value="05">Μάιος</option>
+                                <option value="06">Ιούνιος</option>
+                                <option value="07">Ιούλιος</option>
+                                <option value="08">Αύγουστος</option>
+                                <option value="09">Σεπτέμβριος</option>
+                                <option value="10">Οκτώβριος</option>
+                                <option value="11">Νοέμβριος</option>
+                                <option value="12">Δεκέμβριος</option>
+                            </select>
+                            <select name="ccExpYear">
+                                <option value="22">2022</option>
+                                <option value="23">2023</option>
+                                <option value="24">2024</option>
+                                <option value="25">2025</option>
+                                <option value="26">2026</option>
+                                <option value="27">2027</option>
+                            </select>
+
+                            <label for="ccCode">Κωδικός:</label>
+                            <input id="ccCode" name="ccCode" type="password" autocomplete="cc-csc" placeholder="123"
+                                pattern="[0-9]{3}">
+
+                            <label for="ccName">Ονοματεπώνυμο Κατόχου:</label>
+                            <input id="ccName" name="ccName" type="text" autocomplete="cc-name"
+                                placeholder="ION IOANNOY">
+                        </div>
                     </fieldset>
 
                     <fieldset>
@@ -186,12 +182,12 @@
                         <label for="username">Username:</label>
                         <input id="username" name="username" type="text" autocomplete="username" placeholder="ionioan"
                             required>
-                            <p class="errorMsg" id="usernameError"></p>
+                        <p class="errorMsg" id="usernameError"></p>
 
                         <label for="password">Password:</label>
                         <input id="password" name="password" type="password" autocomplete="new-password" required
                             pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,24}">
-                            <p class="errorMsg" id="passwordError"></p>
+                        <p class="errorMsg" id="passwordError"></p>
 
                         <label for="password1">Password:</label>
                         <input id="password1" name="password1" type="password" autocomplete="off" required>
@@ -201,14 +197,12 @@
                     <fieldset id="contactMethod">
                         <legend>Επιλογές Επικοινωνίας</legend>
 
-                        <input type="radio" id="mail" name="contact" value="mail" checked>
-                        <label for="mail">E-Mail</label>
-
-                        <input type="radio" id="sms" name="contact" value="sms">
-                        <label for="sms">SMS</label>
-
-                        <input type="radio" id="iMess" name="contact" value="iMess">
-                        <label for="iMess">iMessage</label>
+                        <label for="contactMethod">Τρόπος Πληρωμής:</label>
+                        <select name="contactMethod">
+                            <option value="email">E-Mail</option>
+                            <option value="SMS">SMS</option>
+                            <option value="iMessage">iMessage</option>
+                        </select>
                     </fieldset>
 
                     <fieldset>
