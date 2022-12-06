@@ -207,11 +207,11 @@ body {
 
 /* !!!!!!!!!!!!!!!!!!!! PRODUCT-CATEGORIES !!!!!!!!!!!!!!!!!! */
 
-/*.main-content > h1 {
+.main-content > h1 {
 
-    font-size: 2.6vw;
+    font-size: 1.7em;
 
-}*/
+}
 
 
 .subcategory {
@@ -1201,7 +1201,7 @@ select {
     }
 
 
-
+   
 
     .analytika-xarakthristika {
         display: block;
@@ -1264,6 +1264,11 @@ select {
        
     }
 
+    .header-light-color {
+
+        margin-top: -10px;
+    }
+
     .navigation a {
         
         font-size: 14px;                       /* αλλαγη στο χρωμα του font και βγαλαμε το underline απο τα link ωστε να φαινεται πιο ωραιο ,  τα καναμε bold */
@@ -1276,7 +1281,7 @@ select {
 
     .welcome {
 
-        font-size: 18px;
+        font-size: 1.5em;
     }
 
     .main-content> p {
@@ -1350,6 +1355,18 @@ select {
 
     }
 
+    .subcategory> ul > li > a > img {
+
+        max-width: 65%;
+       
+     
+     }
+    .popular-products> ul > li > a > img {
+    
+        max-width: 65%;
+        
+     
+     }
 
     .products .product-card {
     
@@ -1525,29 +1542,7 @@ select {
 
 }
 
-@media only screen and (max-width: 575px) {
 
-    
-
-    .section-promote{
-
-       
-        min-width: 30%;
-    }
-
-    .product > a > img{
-
-        height: fit-content;
-        width: fit-content;
-    }
-    .image {
-
-        /* isws thelei kai max height ??? */
-        max-height: 100%;
-        max-width: 95%;
-     }
-
-}
 
 
 
@@ -1567,11 +1562,28 @@ select {
 
 }
 
-/* !!!!!!!! RESPONSIVE IMAGES !!!!!!!!!!! */
 
 
+ @media only screen and (max-width: 400px){
 
- 
+    .section-promote{
+
+       
+        min-width: 30%;
+    }
+
+    .product > a > img{
+
+        height: fit-content;
+        width: fit-content;
+    }
+    .image {
+
+        /* isws thelei kai max height ??? */
+        max-height: 100%;
+        max-width: 95%;
+     }
+ }
 
 
 
