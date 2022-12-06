@@ -1221,7 +1221,7 @@ select {
     .row-title {
         text-align: center;
         text-decoration: underline;
-        font-size: px;
+        font-size: 18px;
         border-bottom: 4px solid #6ab1d4;
         
     }
