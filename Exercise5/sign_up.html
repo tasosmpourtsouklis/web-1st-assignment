@@ -72,7 +72,7 @@
 
                         <label for="tel">Τηλέφωνο Επικοινωνίας:</label>
                         <div class="formControl">
-                            <input id="tel" name="tel" type="text" autocomplete="tel-national" placeholder="6912345678"
+                            <input id="tel" name="tel" type="tel" autocomplete="tel-national" placeholder="6912345678"
                                 required pattern="[0-9]{10}">
                             <p class="errorMsg" id="telError"></p>
                         </div>
@@ -118,8 +118,8 @@
                         <p class="errorMsg" id="countyError"></p>
 
                         <label for="postalCode">Τ.Κ.:</label>
-                        <input id="postalCode" name="postalCode" type="text" autocomplete="postal-code"
-                            placeholder="104 34" required pattern="[0-9 ]{5,6}">
+                        <input id="postalCode" name="postalCode" type="number" autocomplete="postal-code"
+                            placeholder="10434" required pattern="[0-9]{5}">
                         <p class="errorMsg" id="postalCodeError"></p>
 
                         <label for="address">Διεύθυνση:</label>
@@ -131,44 +131,47 @@
                     <fieldset>
                         <legend>Στοιχεία Πληρωμής</legend>
                         <label for="payMethod">Τρόπος Πληρωμής:</label>
-                        <select id="payMethod" name="payMethod">
+                        <select id="payMethod" name="payMethod" onclick="setPayMethod()">
                             <option value="onDelivery">Αντικαταβολή (+2€)</option>
                             <option value="creditCard">Πιστωτική κάρτα</option>
                             <option value="payPal">PayPal</option>
                         </select>
 
-                        <div id="ccInfosHidden">
+                        <div id="ccInfos">
                             <label for="ccNumber">Αριθμός Κάρτας:</label>
                             <input id="ccNumber" name="ccNumber" type="text" autocomplete="cc-number"
                                 placeholder="0000 1111 2222 3333" pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}">
+                            <p class="errorMsg" id="ccNumberError"></p>
 
                             <label for="ccExpMonth">Ημερομηνία Λήξης:</label>
                             <select id="ccExpMonth" name="ccExpMonth">
-                                <option value="01">Ιανουάριος</option>
-                                <option value="02">Φεβρουάριος</option>
-                                <option value="03">Μάρτιος</option>
-                                <option value="04">Απρίλιος</option>
-                                <option value="05">Μάιος</option>
-                                <option value="06">Ιούνιος</option>
-                                <option value="07">Ιούλιος</option>
-                                <option value="08">Αύγουστος</option>
-                                <option value="09">Σεπτέμβριος</option>
-                                <option value="10">Οκτώβριος</option>
-                                <option value="11">Νοέμβριος</option>
-                                <option value="12">Δεκέμβριος</option>
+                                <option value="0">Ιανουάριος</option>
+                                <option value="1">Φεβρουάριος</option>
+                                <option value="2">Μάρτιος</option>
+                                <option value="3">Απρίλιος</option>
+                                <option value="4">Μάιος</option>
+                                <option value="5">Ιούνιος</option>
+                                <option value="6">Ιούλιος</option>
+                                <option value="7">Αύγουστος</option>
+                                <option value="8">Σεπτέμβριος</option>
+                                <option value="9">Οκτώβριος</option>
+                                <option value="10">Νοέμβριος</option>
+                                <option value="11">Δεκέμβριος</option>
                             </select>
                             <select name="ccExpYear">
-                                <option value="22">2022</option>
-                                <option value="23">2023</option>
-                                <option value="24">2024</option>
-                                <option value="25">2025</option>
-                                <option value="26">2026</option>
-                                <option value="27">2027</option>
+                                <option value="2022">2022</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
                             </select>
+                            <p class="errorMsg" id="ccExpError"></p>
 
                             <label for="ccCode">Κωδικός:</label>
                             <input id="ccCode" name="ccCode" type="password" autocomplete="off" placeholder="123"
                                 pattern="[0-9]{3}">
+                            <p class="errorMsg" id="ccCodeError"></p>
 
                             <label for="ccName">Ονοματεπώνυμο Κατόχου:</label>
                             <input id="ccName" name="ccName" type="text" autocomplete="cc-name"
@@ -197,7 +200,7 @@
                     <fieldset>
                         <legend>Επιλογές Επικοινωνίας</legend>
 
-                        <label for="contactMethod">Τρόπος Πληρωμής:</label>
+                        <label for="contactMethod">Τρόπος Επικοινωνίας:</label>
                         <select id="contactMethod" name="contactMethod">
                             <option value="email">E-Mail</option>
                             <option value="SMS">SMS</option>
@@ -237,7 +240,7 @@
                         <label for="approveTerms">Αποδοχή των <a href="">Όρων και Προϋποθέσεων</a>.</label>
                         <p class="errorMsg" id="approveTermsError"></p>
 
-                        <input type="checkbox" id="subscribeNews" name="newsletter" value="subscribe" checked >
+                        <input type="checkbox" id="subscribeNews" name="newsletter" value="subscribe" checked>
                         <label for="subscribeNews">Εγγραφή στην εφημερίδα.</label>
                     </fieldset>
 

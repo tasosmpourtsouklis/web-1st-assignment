@@ -30,7 +30,7 @@
 .header-item {
     grid-column: 1/4;
     grid-row: 1/2;
-   
+
 }
 
 .main-item {
@@ -38,15 +38,15 @@
     /* δηλαδη το που ξεκιναει και τελειωνει το καθε απο τα 3 μερη */
     grid-column: 1/4;
     grid-row: 2/3;
-    
-   
-    
+
+
+
 }
 
 .footer-item {
     grid-column: 1/4;
     grid-row: 3/4;
-    
+
 }
 
 /* !!!!!!!!!!!!!! ΤΕΛΟΣ GRID LAYOUT !!!!!!!!!!!!!!!!! */
@@ -67,7 +67,7 @@
     /*display: flex;
     flex-direction: row;
     /* display flex ωστε να ειναι το καθε κουμπι ενα τετραγωνακι, justify και align center ωστε να ειναι κεντρο ολα τα κουμπια του μενου , line height για να ειναι λιγο πιο ψηλα και βαλαμε και @font-face roboto ως font */
-    
+
     position: absolute;
     right: 0;
     left: 0;
@@ -89,9 +89,9 @@
     text-decoration: none;
 }
 
-.deksia > a{
-   float: right;
-    
+.deksia>a {
+    float: right;
+
 }
 
 .navigation a:visited {
@@ -127,7 +127,7 @@ body {
     overflow-x: hidden;
     text-align: center;
     align-self: center;
-   
+
 }
 
 .welcome {
@@ -961,8 +961,9 @@ select {
     color: red;
 }
 
-#ccInfosHidden {
+#ccInfos {
     display: none;
+    /* Αρχικά, το fieldset με τις πληροφορίες της πιστωτικής κάρτας δεν εμφανίζεται. */
 }
 
 /* !!!!!!!! FOOTER !!!!!!!!!! */
@@ -1447,7 +1448,7 @@ select {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        
+
     }
 }
 
