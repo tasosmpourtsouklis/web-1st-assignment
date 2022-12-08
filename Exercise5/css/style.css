@@ -64,34 +64,30 @@
 .navigation {
     font-family: roboto;
     background-color: #84ceeb;
-    /*display: flex;
-    flex-direction: row;
+    /* display: flex; */
+    /* flex-direction: row; */
     /* display flex ωστε να ειναι το καθε κουμπι ενα τετραγωνακι, justify και align center ωστε να ειναι κεντρο ολα τα κουμπια του μενου , line height για να ειναι λιγο πιο ψηλα και βαλαμε και @font-face roboto ως font */
-
-    position: absolute;
-    right: 0;
-    left: 0;
+    overflow: hidden;
 }
 
 .navigation a {
     color: black;
     font-size: 18px;
     /* αλλαγη στο χρωμα του font και βγαλαμε το underline απο τα link ωστε να φαινεται πιο ωραιο ,  τα καναμε bold */
-    /* text-align: center;
-    padding: 14px 12px;
-    font-weight: bold; */
+    font-weight: bold;
     transition: all 0.3s ease-in-out;
     /* Ομαλή αλλαγή του hover effect */
     float: left;
     display: block;
     text-align: center;
-    padding: 12px;
+    padding: 14px 16px;
     text-decoration: none;
+    margin-left: 10px;
 }
 
-.deksia>a {
+#navigationRight {
     float: right;
-
+    margin-right: 20px;
 }
 
 .navigation a:visited {
@@ -122,12 +118,11 @@ body {
     /* χρωμα για background του main περιεχομενου , font για το περιεχομενο επισης και overflow ωστε να μην υπαρχει η οριζοντια μπαρα scroll */
     font-family: roboto;
     font-size: 18px;
-    /*font-size: 1.17vw;*/
-    overflow-y: scroll;
+    /* overflow-y: scroll;
     overflow-x: hidden;
     text-align: center;
-    align-self: center;
-
+    align-self: center; */
+    margin: 0;
 }
 
 .welcome {
@@ -186,10 +181,8 @@ body {
 
 /* !!!!!!!!!!!!!!!!!!!! PRODUCT-CATEGORIES !!!!!!!!!!!!!!!!!! */
 
-.main-content>h1 {
-
-    font-size: 1.7em;
-
+.main-content {
+    text-align: center;
 }
 
 .subcategory {
@@ -1085,7 +1078,6 @@ select {
     }
 
     body {
-        /*font-size: 1.17vw;*/
         font-size: 16px;
     }
 
