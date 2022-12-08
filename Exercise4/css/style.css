@@ -787,17 +787,6 @@ iframe{
     height: 500px;
 }
 
-.katasthma {
-    border: 3px solid #6ab1d4;
-    box-shadow: 0px 2px 16px #6ab1d4;
-    
-    max-width: 150rem;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    margin-left: 350px;
-    margin-right: 350px;
-    overflow: auto;
-}
 
 .katasthmata>h3 {
     text-decoration: underline;
@@ -805,22 +794,7 @@ iframe{
    
 }
 
-.katasthma>p {
-    font-weight: bold;
-    font-size: 1.1rem;
-    padding-top: 70px;
-    
-    
-}
 
-.katasthma>p>img {
-    float: right;
-    margin-top: -150px;
-    max-width: 100%;
-   
-    
-
-}
 
 
 /* !!!!!!!!!!!!!!!!!!! ΤΕΛΟΣ STORES !!!!!!!!!!!!!!!!! */
