@@ -14,8 +14,6 @@
     src: url(/fonts/Roboto-Light.ttf);
 }
 
-/* !!!!!!!!!!!!! ΤΕΛΟΣ FONTS !!!!!!!!!!!!! */
-
 /* !!!!!!!!!!!! GRID LAYOUT !!!!!!!!!!!!!!! */
 .grid-container {
     display: grid;
@@ -25,309 +23,339 @@
     grid-template-rows: 0.2fr 2fr 0.2fr;
     width: 100vw;
     height: 100vh;
+    /*  */
 }
 
 .header-item {
     grid-column: 1/4;
     grid-row: 1/2;
-
+    /*  */
 }
 
 .main-item {
-    /* εδω εχουμε φτιαξει με grid layout τα 3 σημεια καθε σελιδας ...header , main και footer */
-    /* δηλαδη το που ξεκιναει και τελειωνει το καθε απο τα 3 μερη */
     grid-column: 1/4;
     grid-row: 2/3;
-
-
-
 }
 
 .footer-item {
     grid-column: 1/4;
     grid-row: 3/4;
-
 }
 
-/* !!!!!!!!!!!!!! ΤΕΛΟΣ GRID LAYOUT !!!!!!!!!!!!!!!!! */
+/* Χωρίζουμε οριζόντια κάθε σελίδα σε 3 ενότητες, header, main και footer */
 
 /* !!!!!!!!!!!! HEADER !!!!!!!!!!!!! */
 .header-light-color {
     background-color: #5680e9;
+    /* Βάζουμε χρωμα στο background */
     text-align: center;
+    /* Μεταφέρουμε την φωτογραφία στο κέντρο */
     margin-top: -30px;
-    /* εχουμε βαλει χρωμα για background και μερικα margin ωστε να πηγαινει η φωτο στο κεντρο */
     margin-left: -10px;
     margin-right: -10px;
+    /* Αφαιρούμε κενό από πάνω, αριστερά και δεξιά της φωτογραφίας, για να αποφύγουμε το κενό */
 }
 
 .navigation {
     font-family: roboto;
+    /* Αλλάζουμε την γραμματοσειρά */
     background-color: #84ceeb;
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* display flex ωστε να ειναι το καθε κουμπι ενα τετραγωνακι, justify και align center ωστε να ειναι κεντρο ολα τα κουμπια του μενου , line height για να ειναι λιγο πιο ψηλα και βαλαμε και @font-face roboto ως font */
+    /* Βάζουμε χρώμα στο background */
     overflow: hidden;
 }
 
 .navigation a {
     color: black;
     font-size: 18px;
-    /* αλλαγη στο χρωμα του font και βγαλαμε το underline απο τα link ωστε να φαινεται πιο ωραιο ,  τα καναμε bold */
     font-weight: bold;
+    /* Αλλάζουμε το χρώμα, το μέγεθος και το boldness της γραμματοσειράς */
     transition: all 0.3s ease-in-out;
-    /* Ομαλή αλλαγή του hover effect */
+    /* Ρυθμίζουμε το hover effect σε ομαλή αλλαγή */
     float: left;
+    /* Μεταφέρουμε τα στοιχεία στα αριστερά */
     display: block;
-    text-align: center;
     padding: 14px 16px;
-    text-decoration: none;
-    margin-left: 10px;
+    /* Αυξάνουμε το κενό περιμετρικά κάθε στοιχείου */
 }
 
 #navigationRight {
     float: right;
+    /* Μεταφέρουμε τα στοιχεία στα δεξιά */
     margin-right: 20px;
-}
-
-.navigation a:visited {
-    text-decoration: none;
-    /* να μην αλλαζει το χρωμα αν τα εχουμε ηδη πατησει / επισκευθει */
+    /* Προσθέτουμε κενό δεξιά στα στοιχεία, για να αποφύγουμε την περικοπή */
 }
 
 .navigation a:hover {
     background-color: #2ea8d9;
-    /* χρωμα του καθε "κουμπιου" απο το μενου οταν κανεις hover με το ποντικι */
-}
-
-.navigation a:active {
-    /* χρωμα που παιρνει το font οταν πατας το συγκεκριμενο link */
-    color: grey;
+    /* Αλλάζουμε το χρώμα του background κάθε στοιχείου όταν γίνεται hover με το ποντίκι */
 }
 
 .navigation .active {
-    /* χρωμα που παινρει το καθε κουμπι οταν ειναι ενεργο , δηλαδη εισαι στην συγκεκριμενη σελιδα */
     background-color: #2ea8d9;
+    /* Αλλάζουμε το χρώμα του background κάθε στοιχείου όταν o χρήστης είναι στην συγκεκριμένη σελίδα */
 }
 
-/* !!!!!!!!!!! ΤΕΛΟΣ HEADER !!!!!!!!!!!! */
-
-/* !!!!!!!!!!!!!!!! INDEX !!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!! ΓΕΝΙΚΑ !!!!!!!!!!!!!!! */
 body {
     background-color: #badff1;
-    /* χρωμα για background του main περιεχομενου , font για το περιεχομενο επισης και overflow ωστε να μην υπαρχει η οριζοντια μπαρα scroll */
+    /* Βάζουμε χρώμα στο background */
     font-family: roboto;
     font-size: 18px;
-    /* overflow-y: scroll;
-    overflow-x: hidden;
-    text-align: center;
-    align-self: center; */
-    margin: 0;
+    /* Αλλάζουμε την γραμματοσειρά και το μέγεθος της */
 }
 
-.welcome {
+a {
+    text-decoration: none;
+    /* Αφαιρούμε την υπογράμμιση από τα links */
+    color: black;
+    /* Αλλάζουμε το χρώμα της γραμματοσειράς */
+}
+
+a:visited {
+    text-decoration: none;
+    /* Αφαιρούμε την υπογράμμιση από τα links */
+}
+
+a:active {
+    color: grey;
+    /* Αλλάζουμε το χρώμα της γραμματοσειράς */
+}
+
+.main-content {
     text-align: center;
-    /* κειμενο κεντραρισμενο */
+    /* Μεταφέρουμε την ενότητα στο κέντρο */
 }
 
 .main-content>p {
     font-family: roboto-regular;
-    /* bold font και αλλαξαμε το font size να ειναι λιγο μικροτερο */
+    /* Αλλάζουμε την γραμματοσειρά */
     text-align: center;
-    font-weight: 500;
+    /* Μεταφέρουμε το κείμενο στο κέντρο */
     margin-left: 200px;
     margin-right: 200px;
+    /* Περιορίζουμε τον χώρο του κειμένου */
+}
+
+
+/* !!!!!!!! FOOTER !!!!!!!!!! */
+.footer-content {
+    font-family: roboto-light;
+    /* Αλλάζουμε την γραμματοσειρά */
+    background-color: #5680e9;
+    /* Βάζουμε χρώμα στο background */
+    text-align: center;
+    /* Μεταφέρουμε το κείμενο στο κέντρο */
+    margin-left: -10px;
+    margin-right: -10px;
+    /* Περιορίζουμε τον χώρο του κειμένου */
+    box-shadow: 0px -5px 16px #6ab1d4;
+    border-bottom: 15px solid black;
+    /* Βάζουμε σκίαση γύρω από την ενότητα */
+}
+
+.footer-content>h4:first-child {
+    font-family: roboto;
+    font-size: 20px;
+    /* Αλλάζουμε την γραμματοσειρά και το μέγεθος της */
+    padding-top: 5px;
+    /*  */
+}
+
+.footer-content>a>img {
+    filter: grayscale(100%);
+    border-radius: 25px;
+}
+
+.footer-content>a>img:hover {
+    filter: grayscale(0%);
+}
+
+/* !!!!!!!!!!!!!!!! INDEX !!!!!!!!!!!!!!! */
+.welcome {
+    text-align: center;
+    /* Μεταφέρουμε το κείμενο στο κέντρο */
 }
 
 .section-promote {
     font-family: roboto-regular;
+    /* Αλλάζουμε την γραμματοσειρά */
     text-align: center;
+    /* Μεταφέρουμε την ενότητα στο κέντρο */
     border: 2px solid #6ab1d4;
-    /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
     box-shadow: 0px 2px 16px #6ab1d4;
+    /* Βάζουμε border γύρω από την ενότητα και σκίαση γύρω του */
     max-width: 100%;
     margin-top: 20px;
     margin-bottom: 30px;
     margin-left: 150px;
     margin-right: 150px;
+    /* Περιορίζουμε τον χώρο της ενότητας */
 }
 
 .product>a>img {
     border: 2px solid #2ea8d9;
-    /* border και background για τις εικονες , radius για να γινουν πιο rounded τα edges */
-    background-color: #6ab1d4;
     border-radius: 25px;
+    /* Βάζουμε border γύρω από κάθε εικόνα και κάνουμε rounded τις γωνίες του */
+    background-color: #6ab1d4;
+    /* Βάζουμε χρώμα πίσω από κάθε εικόνα */
 }
 
 .product>a {
-    text-decoration: none;
+    /* text-decoration: none; */
     /* για να μην φαινονται τα λινκ underline */
 }
 
 .prod-photos {
-    /* ωστε οι φωτογραφιες των προιοντων να γινοναι με flex και direction row ωστε να ειναι απο αριστερα προς τα δεξια */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    /*  */
 }
 
 .image {
-    /* isws thelei kai max height ??? */
     max-width: 95%;
+    /* Περιορίζουμε το μέγιστο πλάτος κάθε εικόνας */
 }
-
-/* !!!!!!!!!!!!!!!!!!!!! ΤΕΛΟΣ INDEX !!!!!!!!!!!!!!!!!!! */
 
 /* !!!!!!!!!!!!!!!!!!!! PRODUCT-CATEGORIES !!!!!!!!!!!!!!!!!! */
-
-.main-content {
-    text-align: center;
-}
-
 .subcategory {
     border: 2px solid #6ab1d4;
     box-shadow: 0px 2px 16px #6ab1d4;
-    /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+    /* Βάζουμε border γύρω από την ενότητα και σκίαση γύρω του */
     max-width: 100%;
     margin-top: 20px;
     margin-bottom: 30px;
     margin-left: 270px;
     margin-right: 270px;
+    /* Περιορίζουμε τον χώρο της ενότητας */
 }
 
 .subcategory>ul {
     display: flex;
-    /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */
     flex-wrap: wrap;
     justify-content: space-evenly;
+    /* Περιορίζουμε τα αντικείμενα ώστε να πηγαίνουν από κάτω, μόλις "τελειώσει" ο χώρος */
     padding-top: 15px;
     padding-right: 50px;
+    /* Αυξάνουμε το κενό περιμετρικά κάθε στοιχείου */
 }
 
 .subcategory>ul>li {
-    /* αυτο ειναι ωστε να χωριζεται σε 3 αντικειμενα το καθε row και μετα λογω του wrap να πηγαινουν κατω αριστερα */
     flex: 0 0 33.333333%;
+    /* Χωρίζουμε την ενότητα σε 3 αντικείμενα ανά γραμμή */
 }
 
 .subcategory>ul>li>a>img {
     max-width: 100%;
     width: fit-content;
     height: fit-content;
+    /*  */
 }
 
 .category-card {
     list-style-type: none;
-    /* βγαλαμε τα bullet απο τα li της ul */
+    /* Αφαιρούμε τα bullet της ul */
     width: fit-content;
     height: fit-content;
-}
-
-a {
-    text-decoration: none;
-    /* κανενα underline για λινκ και χρωμα μαυρο */
-    color: black;
-}
-
-a:visited {
-    text-decoration: none;
-    /* οτι εχουμε πει παραπανω */
-}
-
-a:active {
-    color: grey;
-    /* ομοιως */
+    /*  */
 }
 
 .popular-products {
     font-family: roboto-regular;
+    /* Αλλάζουμε την γραμματοσειρά */
     border: 2px solid #6ab1d4;
-    /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
     box-shadow: 0px 2px 16px #6ab1d4;
+    /* Βάζουμε border γύρω από την ενότητα και σκίαση γύρω του */
     margin-top: 20px;
     max-width: 100%;
     margin-bottom: 30px;
     margin-left: 270px;
     margin-right: 270px;
+    /* Περιορίζουμε τον χώρο της ενότητας */
 }
 
 .popular-products>ul {
     display: flex;
-    /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */
     flex-wrap: wrap;
     justify-content: space-evenly;
+    /* Περιορίζουμε τα αντικείμενα ώστε να πηγαίνουν από κάτω, μόλις "τελειώσει" ο χώρος */
     padding-top: 15px;
     padding-right: 50px;
+    /* Περιορίζουμε τον χώρο της ενότητας */
 }
 
 .popular-products>ul>li {
-    /* αυτο ειναι ωστε να χωριζεται σε 3 αντικειμενα το καθε row και μετα λογω του wrap να πηγαινουν κατω αριστερα */
     flex: 0 0 33.333333%;
+    /* Χωρίζουμε την ενότητα σε 3 αντικείμενα ανά γραμμή */
 }
 
 .popular-products>ul>li>a>img {
     max-width: 100%;
     width: fit-content;
     height: fit-content;
+    /*  */
 }
 
 .product-card {
     list-style-type: none;
-    /* βγαλαμε τα bullet απο τα li της ul */
+    /* Αφαιρούμε τα bullet της ul */
     width: fit-content;
     height: fit-content;
+    /*  */
 }
 
-/* !!!!!!!!!!!!!!! ΤΕΛΟΣ PRODUCT-CATEGORIES !!!!!!!!!!!!!!!!!!! */
-
-/* !!!!!!!!!!!!!!!!!! PRODUCTS-PCS !!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!! PRODUCT-PHONES !!!!!!!!!!!!!!!!! */
+/* !!!!!!!!!!!!!!!!!! PRODUCTS-PCS & PRODUCT-PHONES !!!!!!!!!!!!!!!!! */
 .products {
     font-family: roboto;
-    /* ενιαιο font */
+    /* Αλλάζουμε την γραμματοσειρά */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    /*  */
 }
 
 .products .product-card {
-    box-shadow: 0 15px 30px 1px grey;
-    /* σκια γυρω γυρω και margin ωστε να φαινεται ωραιο */
-    background: rgba(255, 255, 255, 0.90);
     text-align: center;
+    /* Μεταφέρουμε το αντικείμενο στο κέντρο */
+    box-shadow: 0 15px 30px 1px grey;
+    background: rgba(255, 255, 255, 0.90);
     border-radius: 5px;
+    /* Βάζουμε σκίαση γύρω από το αντικείμενο */
     overflow: hidden;
     margin: 5em auto;
     height: 350px;
     width: 700px;
+    /* Καθορίζουμε το μέγεθος κάθε αντικειμένου */
 }
 
 .product-details {
     position: relative;
-    /* το αριστερο μισο του καθε product-card, ονομα προϊοντος και φτιαξιμο οπτικα με margin / float */
     text-align: left;
+    /* Μεταφέρουμε το αντικείμενο στα αριστερά */
     overflow: hidden;
     padding: 30px;
     height: 100%;
     float: left;
     width: 40%;
+    /*  */
 }
 
 .product-details h1 {
     display: inline-block;
-    /* αλλαγη χρωματος font κλπ ωστε να φαινεται μεσα στο product-card το h1 ωραιο */
     position: relative;
     font-size: 30px;
     color: #344055;
-    margin: 0;
+    /* Αλλάζουμε το μέγεθος και το χρώμα της γραμματοσειράς */
 }
 
 .product-details>p {
     font-family: roboto-regular;
-    /* αλλαγη γραμματοσειρας, μεγεθους και χρωματος για ελληνικα */
-    text-align: center;
     font-size: 18px;
     color: #7d7d7d;
+    /* Αλλάζουμε την γραμματοσειρά, το μέγεθος και το χρώμα της */
+    text-align: center;
+    /* Μεταφέρουμε το κείμενο στο κέντρο */
 }
 
 .control {
@@ -359,6 +387,7 @@ a:active {
 
 .button span {
     font-family: roboto-regular;
+    /* Αλλάζουμε την γραμματοσειρά */
     transition: transform 0.3s;
     display: inline-block;
     padding: 10px 20px;
@@ -417,6 +446,7 @@ a:active {
 .info {
     background: rgba(27, 26, 26, 0.9);
     font-family: roboto-light;
+    /* Αλλάζουμε την γραμματοσειρά */
     transition: all 0.3s ease-out;
     transform: translateX(-100%);
     position: absolute;
@@ -454,9 +484,6 @@ a:active {
 .product-image:hover img {
     transform: scale(1.2, 1.2);
 }
-
-/* !!!!!!!!!!!!! ΤΕΛΟΣ PRODUCT-PCS !!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!! ΤΕΛΟΣ PRODUCT-PHONES !!!!!!!!!!!!!! */
 
 /* !!!!!!!!!!!!!!! PRODUCT-IPHONE14 !!!!!!!!!!!!!!!! */
 #category>a {
@@ -500,6 +527,7 @@ a:active {
 
 .product-descr {
     font-family: roboto-regular;
+    /* Αλλάζουμε την γραμματοσειρά */
     text-align: left;
     border: 3px solid #6ab1d4;
     box-shadow: 0px 2px 16px #6ab1d4;
@@ -570,6 +598,7 @@ a:active {
 
 .value {
     font-family: roboto-regular;
+    /* Αλλάζουμε την γραμματοσειρά */
     text-align: right;
     padding-right: 10px;
     margin-top: -20px;
@@ -669,6 +698,7 @@ label {
 
 .vathmologia-asteria {
     font-family: roboto-regular;
+    /* Αλλάζουμε την γραμματοσειρά */
 }
 
 input[type=submit] {
@@ -830,6 +860,7 @@ select {
 
 .forma-yposthrikshs {
     font-family: roboto-regular;
+    /* Αλλάζουμε την γραμματοσειρά */
     padding: 40px;
     width: 50%;
     text-align: left;
@@ -868,12 +899,14 @@ select {
 
 .perilhpsh>p {
     font-family: roboto-regular;
+    /* Αλλάζουμε την γραμματοσειρά */
     padding-left: 20px;
     padding-right: 20px;
 }
 
 #synexeia-perilhpshs {
     font-family: roboto;
+    /* Αλλάζουμε την γραμματοσειρά */
     text-align: left;
     border: 4px solid #6ab1d4;
     box-shadow: 0px 2px 16px #6ab1d4;
@@ -901,6 +934,7 @@ select {
 /* !!!!!!!!!!!!!!!!!!!! SIGN - UP !!!!!!!!!!!!!!!!!! */
 #form {
     font-family: roboto-regular;
+    /* Αλλάζουμε την γραμματοσειρά */
     padding: 40px;
     width: 50%;
     text-align: left;
@@ -950,6 +984,7 @@ select {
 .errorMsg {
     font-family: roboto-regular;
     font-size: 15px;
+    /* Αλλάζουμε την γραμματοσειρά, το χρώμα και το μέγεθος της */
     margin-top: 0px;
     color: red;
 }
@@ -959,45 +994,9 @@ select {
     /* Αρχικά, το fieldset με τις πληροφορίες της πιστωτικής κάρτας δεν εμφανίζεται. */
 }
 
-/* !!!!!!!! FOOTER !!!!!!!!!! */
-.footer-content {
-    font-family: roboto-light;
-    background-color: #5680e9;
-    text-align: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    box-shadow: 0px -5px 16px #6ab1d4;
-    border-bottom: 15px solid black;
-}
-
-.footer-content>h4:first-child {
-    font-size: 20px;
-    padding-top: 5px;
-    font-family: roboto;
-}
-
-.footer-content>a {
-    text-decoration: none;
-}
-
-.footer-content>a>img {
-    filter: grayscale(100%);
-    border-radius: 25px;
-}
-
-.footer-content>a>img:hover {
-    filter: grayscale(0%);
-}
-
-/* !!!!!!!!!!!!! TΕΛΟΣ FOOTER !!!!!!!!!!!! */
-
 /* !!!!!!!!!!!! RESPONSIVE  DESIGN / MEDIA QUERIES !!!!!!!!!!!!!!*/
-
 @media only screen and (max-width: 1100px) {
-
-
     .analytika-xarakthristika {
-
         font-size: 16px;
     }
 }
@@ -1012,10 +1011,7 @@ select {
 
 
 @media only screen and (max-width: 1000px) {
-
-
     .analytika-xarakthristika {
-
         font-size: 1.5vw;
     }
 }
@@ -1160,6 +1156,7 @@ select {
 
     .value {
         font-family: roboto-regular;
+        /* Αλλάζουμε την γραμματοσειρά */
         text-align: center;
         padding-left: 22px;
         padding-top: 25px;
@@ -1179,7 +1176,6 @@ select {
 
 
     .header-light-color {
-
         margin-top: -10px;
     }
 
@@ -1195,7 +1191,7 @@ select {
 
     .main-content>p {
         font-family: roboto-regular;
-        /* bold font και αλλαξαμε το font size να ειναι λιγο μικροτερο */
+        /* Αλλάζουμε την γραμματοσειρά */
         text-align: center;
         font-size: 14px;
         font-weight: 500;
@@ -1205,6 +1201,7 @@ select {
 
     .section-promote {
         font-family: roboto-regular;
+        /* Αλλάζουμε την γραμματοσειρά */
         text-align: center;
         border: 2px solid #6ab1d4;
         /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
@@ -1260,22 +1257,13 @@ select {
         padding-right: 50px;
     }
 
-
     .subcategory>ul>li>a>img {
-
         max-width: 65%;
-
-
     }
 
     .popular-products>ul>li>a>img {
-
         max-width: 65%;
-
-
     }
-
-
 
     .products .product-card {
         box-shadow: 0 15px 30px 1px grey;
@@ -1310,11 +1298,10 @@ select {
 
     .product-details>p {
         font-family: roboto-regular;
-        /* αλλαγη γραμματοσειρας, μεγεθους και χρωματος για ελληνικα */
+        /* Αλλάζουμε την γραμματοσειρά */
         text-align: center;
         font-size: 15px;
         color: #7d7d7d;
-
     }
 
     .button {
@@ -1340,6 +1327,7 @@ select {
     .info {
         background: rgba(27, 26, 26, 0.9);
         font-family: roboto-light;
+        /* Αλλάζουμε την γραμματοσειρά */
         transition: all 0.3s ease-out;
         transform: translateX(-100%);
         position: absolute;
@@ -1372,6 +1360,7 @@ select {
 
     .product-descr {
         font-family: roboto-regular;
+        /* Αλλάζουμε την γραμματοσειρά */
         text-align: left;
         border: 3px solid #6ab1d4;
         box-shadow: 0px 2px 16px #6ab1d4;
@@ -1418,6 +1407,7 @@ select {
 
     .value {
         font-family: roboto-regular;
+        /* Αλλάζουμε την γραμματοσειρά */
         text-align: center;
         padding-left: 22px;
         padding-top: 25px;
@@ -1433,38 +1423,26 @@ select {
     }
 }
 
-
-
 @media only screen and (max-width: 444px) {
     .navigation {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
     }
 }
 
 @media only screen and (max-width: 400px) {
-
     .section-promote {
-
-
         min-width: 30%;
     }
 
     .product>a>img {
-
         height: fit-content;
         width: fit-content;
     }
 
     .image {
-
-        /* isws thelei kai max height ??? */
         max-height: 100%;
         max-width: 95%;
     }
 }
-
-
-/* !!!!!!!! RESPONSIVE IMAGES !!!!!!!!!!! */
