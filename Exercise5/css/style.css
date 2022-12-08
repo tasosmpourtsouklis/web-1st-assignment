@@ -164,10 +164,12 @@ a:active {
 .footer-content>a>img {
     filter: grayscale(100%);
     border-radius: 25px;
+    /*  */
 }
 
 .footer-content>a>img:hover {
     filter: grayscale(0%);
+    /*  */
 }
 
 /* !!!!!!!!!!!!!!!! INDEX !!!!!!!!!!!!!!! */
@@ -198,11 +200,6 @@ a:active {
     /* Βάζουμε border γύρω από κάθε εικόνα και κάνουμε rounded τις γωνίες του */
     background-color: #6ab1d4;
     /* Βάζουμε χρώμα πίσω από κάθε εικόνα */
-}
-
-.product>a {
-    /* text-decoration: none; */
-    /* για να μην φαινονται τα λινκ underline */
 }
 
 .prod-photos {
@@ -332,7 +329,7 @@ a:active {
 .product-details {
     position: relative;
     text-align: left;
-    /* Μεταφέρουμε το αντικείμενο στα αριστερά */
+    /* Μεταφέρουμε την ενότητα στα αριστερά */
     overflow: hidden;
     padding: 30px;
     height: 100%;
@@ -360,9 +357,9 @@ a:active {
 
 .control {
     position: absolute;
-    /* control και button ειναι για το κουμπι καλαθι αγορας με την τιμη πανω */
     bottom: 20%;
     left: 22.8%;
+    /*  */
 }
 
 .button {
@@ -378,11 +375,13 @@ a:active {
     color: #eee;
     padding-top: 0px;
     margin-left: 35px;
+    /*  */
 }
 
 .button:hover {
     transform: translateY(-6px);
     background: #1a66ff;
+    /*  */
 }
 
 .button span {
@@ -393,13 +392,16 @@ a:active {
     padding: 10px 20px;
     font-size: 1.2em;
     margin: 0;
+    /*  */
 }
 
 .button .price,
 .shopping-cart {
     background: #333;
+    /*  */
     border: 0;
     margin: 0;
+    /*  */
 }
 
 .button .price {
@@ -452,6 +454,7 @@ a:active {
     position: absolute;
     line-height: 1.8;
     text-align: left;
+    /* Μεταφέρουμε το αντικείμενο στα αριστερά */
     font-size: 105%;
     cursor: no-drop;
     color: #FFF;
@@ -486,14 +489,10 @@ a:active {
 }
 
 /* !!!!!!!!!!!!!!! PRODUCT-IPHONE14 !!!!!!!!!!!!!!!! */
-#category>a {
-    color: black;
-    text-decoration: none;
-}
-
 #iphone-name,
 #category {
     text-align: left;
+    /* Μεταφέρουμε την ενότητα στα αριστερά */
 }
 
 #iphone-name {
@@ -529,12 +528,16 @@ a:active {
     font-family: roboto-regular;
     /* Αλλάζουμε την γραμματοσειρά */
     text-align: left;
+    /* Μεταφέρουμε το κείμενο στα αριστερά */
     border: 3px solid #6ab1d4;
     box-shadow: 0px 2px 16px #6ab1d4;
+    /* Βάζουμε border γύρω από την ενότητα και σκίαση γύρω του */
     margin-bottom: 30px;
     margin-left: 370px;
     margin-right: 30px;
     padding-left: 10px;
+    /* Περιορίζουμε τον χώρο της ενότητας */
+
 }
 
 .outer-box {
@@ -543,14 +546,17 @@ a:active {
 
 .manifacturer {
     text-decoration: underline;
+    /* Υπογραμμίζουμε το κείμενο */
 }
 
 .perigrafh>h3 {
     text-decoration: underline;
+    /* Υπογραμμίζουμε το κείμενο */
 }
 
 .xarakthristika>h3 {
     text-decoration: underline;
+    /* Υπογραμμίζουμε το κείμενο */
 }
 
 .comparison {
@@ -575,12 +581,14 @@ a:active {
     margin-left: 130px;
     margin-right: 130px;
     margin: 0 auto;
+    /* Περιορίζουμε τον χώρο του κειμένου */
 }
-
 
 .row-title {
     text-align: center;
+    /* Μεταφέρουμε το κείμενο στο κέντρο */
     text-decoration: underline;
+    /* Υπογραμμίζουμε το κείμενο */
     font-size: 22px;
     border-bottom: 4px solid #6ab1d4;
 }
@@ -592,6 +600,7 @@ a:active {
 
 .label {
     text-align: left;
+    /* Μεταφέρουμε το κείμενο στα αριστερά */
     font-weight: bold;
     padding-left: 10px;
 }
@@ -603,11 +612,6 @@ a:active {
     padding-right: 10px;
     margin-top: -20px;
     padding-bottom: 20px;
-}
-
-.value>a {
-    color: black;
-    text-decoration: none;
 }
 
 .value>a:hover {
@@ -628,6 +632,7 @@ a:active {
 
 .forma>h3 {
     text-align: center;
+    /* Μεταφέρουμε το κείμενο στο κέντρο */
 }
 
 input,
@@ -864,6 +869,7 @@ select {
     padding: 40px;
     width: 50%;
     text-align: left;
+    /* Μεταφέρουμε το κείμενο στα αριστερά */
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -883,6 +889,7 @@ select {
 
 .forma {
     text-align: center;
+    /* Μεταφέρουμε το κείμενο στο κέντρο */
 }
 
 /* !!!!!!!!!!!!!!!!!!! ΤΕΛΟΣ CONTACT !!!!!!!!!!!!!!!!!!! */
@@ -895,6 +902,7 @@ select {
     margin-left: 45px;
     margin-right: 45px;
     text-align: left;
+    /* Μεταφέρουμε το κείμενο στα αριστερά */
 }
 
 .perilhpsh>p {
@@ -908,6 +916,7 @@ select {
     font-family: roboto;
     /* Αλλάζουμε την γραμματοσειρά */
     text-align: left;
+    /* Μεταφέρουμε το κείμενο στα αριστερά */
     border: 4px solid #6ab1d4;
     box-shadow: 0px 2px 16px #6ab1d4;
     margin-top: 20px;
@@ -938,6 +947,7 @@ select {
     padding: 40px;
     width: 50%;
     text-align: left;
+    /* Μεταφέρουμε το κείμενο στα αριστερά */
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -950,6 +960,7 @@ select {
 
 #form legend {
     text-align: center;
+    /* Μεταφέρουμε το κείμενο στο κέντρο */
     font-size: 22px;
     font-weight: bold;
 }
@@ -979,6 +990,7 @@ select {
 
 #checks {
     text-align: center;
+    /* Μεταφέρουμε το κείμενο στο κέντρο */
 }
 
 .errorMsg {
@@ -1137,6 +1149,7 @@ select {
 
     .row-title {
         text-align: center;
+        /* Μεταφέρουμε το κείμενο στο κέντρο */
         text-decoration: underline;
         font-size: 18px;
         border-bottom: 4px solid #6ab1d4;
@@ -1149,6 +1162,7 @@ select {
 
     .label {
         text-align: center;
+        /* Μεταφέρουμε το κείμενο στο κέντρο */
         font-weight: bold;
         padding-left: 10px;
         font-size: 15px;
@@ -1158,6 +1172,7 @@ select {
         font-family: roboto-regular;
         /* Αλλάζουμε την γραμματοσειρά */
         text-align: center;
+        /* Μεταφέρουμε το κείμενο στο κέντρο */
         padding-left: 22px;
         padding-top: 25px;
         padding-bottom: 20px;
@@ -1193,6 +1208,7 @@ select {
         font-family: roboto-regular;
         /* Αλλάζουμε την γραμματοσειρά */
         text-align: center;
+        /* Μεταφέρουμε το κείμενο στο κέντρο */
         font-size: 14px;
         font-weight: 500;
         margin-left: 10px;
@@ -1203,6 +1219,7 @@ select {
         font-family: roboto-regular;
         /* Αλλάζουμε την γραμματοσειρά */
         text-align: center;
+        /* Μεταφέρουμε την ενότητα στο κέντρο */
         border: 2px solid #6ab1d4;
         /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
         box-shadow: 0px 2px 16px #6ab1d4;
@@ -1270,6 +1287,7 @@ select {
         /* σκια γυρω γυρω και margin ωστε να φαινεται ωραιο */
         background: rgba(255, 255, 255, 0.90);
         text-align: center;
+        /* Μεταφέρουμε το κείμενο στο κέντρο */
         border-radius: 5px;
         overflow: hidden;
         margin: 5em auto;
@@ -1280,6 +1298,7 @@ select {
         position: relative;
         /* το αριστερο μισο του καθε product-card, ονομα προϊοντος και φτιαξιμο οπτικα με margin / float */
         text-align: left;
+        /* Μεταφέρουμε την ενότητα στα αριστερά */
         overflow: hidden;
         padding: 25px;
         height: 100%;
@@ -1300,6 +1319,7 @@ select {
         font-family: roboto-regular;
         /* Αλλάζουμε την γραμματοσειρά */
         text-align: center;
+        /* Μεταφέρουμε το κείμενο στο κέντρο */
         font-size: 15px;
         color: #7d7d7d;
     }
@@ -1333,6 +1353,7 @@ select {
         position: absolute;
         line-height: 1.8;
         text-align: left;
+        /* Μεταφέρουμε το κείμενο στα αριστερά */
         font-size: 90%;
         cursor: no-drop;
         color: #FFF;
@@ -1362,6 +1383,7 @@ select {
         font-family: roboto-regular;
         /* Αλλάζουμε την γραμματοσειρά */
         text-align: left;
+        /* Μεταφέρουμε το κείμενο στα αριστερά */
         border: 3px solid #6ab1d4;
         box-shadow: 0px 2px 16px #6ab1d4;
         display: block;
@@ -1388,6 +1410,7 @@ select {
 
     .row-title {
         text-align: center;
+        /* Μεταφέρουμε το κείμενο στο κέντρο */
         text-decoration: underline;
         font-size: 17px;
         border-bottom: 4px solid #6ab1d4;
@@ -1400,6 +1423,7 @@ select {
 
     .label {
         text-align: center;
+        /* Μεταφέρουμε το κείμενο στο κέντρο */
         font-weight: bold;
         padding-left: 10px;
         font-size: 14px;
@@ -1409,6 +1433,7 @@ select {
         font-family: roboto-regular;
         /* Αλλάζουμε την γραμματοσειρά */
         text-align: center;
+        /* Μεταφέρουμε το κείμενο στο κέντρο */
         padding-left: 22px;
         padding-top: 25px;
         padding-bottom: 20px;
