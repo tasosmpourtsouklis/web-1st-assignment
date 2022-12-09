@@ -182,10 +182,6 @@ function setPayMethod() {
         document.getElementById("ccInfos").style.display = "none";
 
         // Dont validate credit card 
-
-        if (payMethod.value == "payPal") {
-
-        }
     }
 }
 

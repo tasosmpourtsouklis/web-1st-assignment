@@ -1041,11 +1041,12 @@ select {
 
 
 @media only screen and (max-width: 1058px) {
-    
 
-    .navigation  a{
 
-        font-size: 16px;                /* μικροτερο font για να χωραει το menu bar */
+    .navigation a {
+
+        font-size: 16px;
+        /* μικροτερο font για να χωραει το menu bar */
     }
 
 }
@@ -1071,32 +1072,25 @@ select {
     }
 }
 
-
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-@media only screen and (max-width: 900px) {
-=======
->>>>>>> Stashed changes
 @media only screen and (max-width: 965px) {
-    
+
 
     .navigation {
 
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;                     /* αλλαγη του format του nav menu */
-        
+        justify-content: center;
+        /* αλλαγη του format του nav menu */
+
     }
 
-    
+
 
 }
 
 
 
-@media only screen and (max-width: 900px){
->>>>>>> ef33d663882835e4c436c0deea826aee9b365261
+@media only screen and (max-width: 900px) {
 
     .subcategory {
 
