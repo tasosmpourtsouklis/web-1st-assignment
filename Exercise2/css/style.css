@@ -97,7 +97,7 @@ body {
 
 #slim {
 
-    padding-left: 40px;
+    padding-left: 40px;         /* μια απο τις εικονες ειναι πιο μικρη αποτι πρεπει και ετσι κανουμε το τετραγωνο της ισο με των αλλων εικωνων */
     padding-right: 40px;
 }
 
@@ -399,7 +399,7 @@ a:active {
 }
 
 .outer-box {
-    margin-top: -15px;
+    margin-top: -15px;      /* ωστε να κατεβει και να αρχιζει στο ιδιο υψος το κουτι χαρακτηριστικων με το κουτι της εικονας του κινητου */
 }
 
 .manifacturer {
@@ -524,7 +524,7 @@ label {
         outline-offset: 0;
     }
 
-    100% {
+    100% {                          /* ολο αυτο ειναι animation για τα radio buttons οταν τα πατας */
         outline-offset: -0.2rem;
     }
 }
@@ -753,7 +753,7 @@ select {
 #jimmy {
 
     height: 250px;
-    margin-top: -40px;
+    margin-top: -40px;         
 }
 
 #tasos {
@@ -793,7 +793,7 @@ select {
 
 .footer-content>a>img {
     filter: grayscale(100%);
-    border-radius: 25px;
+    border-radius: 25px;                /* ασπρομαυρες φωτο μεχρι να κανουμε hover και να φυγει το greyscale εφε */
 }
 
 .footer-content>a>img:hover {

@@ -14,7 +14,7 @@
     
 }
 
-
+                                            /* διαφορα font που θα χρησιμοποιηθουν σε ολες τις σελιδες */
 @font-face{
 
     font-family: 'roboto-light';
@@ -35,7 +35,7 @@
     grid-auto-rows: auto;
     grid-auto-columns: auto;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 2fr 0.2fr;
+    grid-template-rows: 0.2fr 2fr 0.2fr;    /*αρχικα εχουμε 3 column για υπολογιστη και μετα με media queries θα γινουν 2 για ταμπλετ και 1 για κινητα */
     width: 100vw;
     height: 100vh;
     
@@ -250,7 +250,7 @@ body {
 
     max-width: 100%;
     width: fit-content;
-    height: fit-content;
+    height: fit-content;                /* ωστε να μην γινονται squeezed οι φωτογραφιες και να μικραινει ολο το τετραγωνο ομοιομορφα */
  
  }
 
@@ -312,7 +312,7 @@ a:active {
 
     max-width: 100%;
     width: fit-content;
-    height: fit-content;
+    height: fit-content;                /* το ιδιο με subcategory πιο πανω */
  
  }
 
@@ -1025,7 +1025,7 @@ select {
 
     .analytika-xarakthristika {
 
-        font-size: 16px;
+        font-size: 16px;            /* μικραινει λιγο το font ωστε να μην κανουν overlap οι λεξεις */
     }
 }
 
@@ -1043,7 +1043,7 @@ select {
 
     .analytika-xarakthristika {
 
-        font-size: 1.5vw;
+        font-size: 1.5vw;           /* απο τα 1000px και μετα θα πηγαινει το font αναλογα με το μεγεθος του viewport width */
     }
 }
 
@@ -1053,7 +1053,7 @@ select {
     .subcategory {
        
         border: 2px solid #6ab1d4;           
-        box-shadow: 0px 2px 16px #6ab1d4; /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+        box-shadow: 0px 2px 16px #6ab1d4; 
         max-width: 100%;
         margin-top: 20px;
         margin-bottom: 30px;
@@ -1075,7 +1075,7 @@ select {
 
     .popular-products {
         border: 2px solid #6ab1d4;           
-        box-shadow: 0px 2px 16px #6ab1d4; /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+        box-shadow: 0px 2px 16px #6ab1d4; 
         max-width: 100%;
         margin-top: 20px;
         margin-bottom: 30px;
@@ -1098,14 +1098,14 @@ select {
 
 
 
- /* Medium devices (landscape tablets, 768px and up) */
+ /* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
     
     .grid-container {
 
         grid-auto-rows: auto;
         grid-auto-columns: auto;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;             /* εδω πλεον εχουμε 2 columns για ταμπλετ */
         grid-template-rows: 0.2fr 2fr 0.2fr;
     
        
@@ -1113,7 +1113,7 @@ select {
 
     .navigation a {
         
-        font-size: 16px;                       /* αλλαγη στο χρωμα του font και βγαλαμε το underline απο τα link ωστε να φαινεται πιο ωραιο ,  τα καναμε bold */
+        font-size: 16px;                      
        
         padding: 12px 10px;
         
@@ -1126,11 +1126,7 @@ select {
         font-size: 16px;
     }
 
-    .product-descr {
-       
-        margin-left: 230px;
-       
-    }
+   
 
     .subcategory {
        
@@ -1175,12 +1171,16 @@ select {
     }
 
 
-   
+    .product-descr {
+       
+        margin-left: 230px;         /* παει πιο αριστερα ωστε να ειναι διπλα στην εικονα του κινητου που μικραινει */
+       
+    }
 
     .analytika-xarakthristika {
         display: block;
         border: 4px solid #6ab1d4;
-        box-shadow: 0px 2px 16px #6ab1d4;
+        box-shadow: 0px 2px 16px #6ab1d4;           /* αλλαγη τελειως του format της λιστας με τα αναλυτικα χαρακτηριστικα */
         max-width: 90%;
         height: auto;
         margin-left: 130px;
@@ -1232,7 +1232,7 @@ select {
 
         grid-auto-rows: auto;
         grid-auto-columns: auto;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr;                 /* πλεον εχουμε ενα και μονο column */
         grid-template-rows: 0.2fr 2fr 0.2fr;
     
        
@@ -1240,7 +1240,7 @@ select {
 
     .header-light-color {
 
-        margin-top: -10px;
+        margin-top: -10px;          /* ωστε να φαινεται στο κεντρο και καλυτερα το μικροτερο λογοτυπο */
     }
 
     .navigation a {
@@ -1333,7 +1333,7 @@ select {
 
         max-width: 65%;
        
-     
+                                            /* αυτοματως να ειναι μαξ 65% ωστε να μην ειναι τεραστιες οι φωτο αλλα να κανουν scale ωραιο */
      }
     .popular-products> ul > li > a > img {
     
@@ -1344,7 +1344,7 @@ select {
 
     .products .product-card {
     
-        box-shadow: 0 15px 30px 1px grey;           /* σκια γυρω γυρω και margin ωστε να φαινεται ωραιο */
+        box-shadow: 0 15px 30px 1px grey;          
         background: rgba(255, 255, 255, 0.90);
         text-align: center;
         border-radius: 5px;
@@ -1435,7 +1435,7 @@ select {
         float: none;
     }
     
-    .display-photo {
+    .display-photo {                            /* η φωτο το κινητου και ο κωδικος/τιμη του πανω απο τα χαρακτηριστικα και οχι float πλεον */
         
         border: 3px hidden #2ea8d9;
         background-color: #6ab1d4;
@@ -1447,7 +1447,7 @@ select {
      
 
     .product-descr {
-        font-family: roboto-regular;
+        font-family: roboto-regular;            /* block ωστε να ειναι κατω απο φωτο κινητου κλπ στην διαταξη κινητου */
         text-align: left;
         border: 3px solid #6ab1d4;
         box-shadow: 0px 2px 16px #6ab1d4;
@@ -1520,7 +1520,7 @@ select {
 
 
 
-@media only screen and (max-width: 444px) {
+@media only screen and (max-width: 444px) {             /*παει το μενου απο κατω */
 
     .navigation {
         
@@ -1539,7 +1539,7 @@ select {
 
 
  @media only screen and (max-width: 400px){
-
+                                                    /* απο το 400 και κατω οι εικονες του index γινοντουσαν τεραστιες και εβγαιναν απο το border οποτε με αυτους τους κανονες τις περιορισαμε */
     .section-promote{
 
        
@@ -1549,7 +1549,7 @@ select {
     .product > a > img{
 
         height: fit-content;
-        width: fit-content;
+        width: fit-content;             
     }
     .image {
 
