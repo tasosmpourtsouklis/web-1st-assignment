@@ -1,17 +1,21 @@
 /* !!!!!!!!!!! FONTS !!!!!!!!!!!!! */
 @font-face {
     font-family: 'roboto';
-    src: url(/fonts/Roboto-Bold.ttf);
+    src: url(../../fonts/Roboto-Bold.ttf), 
+    local(Roboto-Bold);
+
 }
 
 @font-face {
     font-family: 'roboto-regular';
-    src: url(/fonts/Roboto-Regular.ttf);
+    src: url(../../fonts/Roboto-Regular.ttf), 
+    local(Roboto-Regular)
 }
 
 @font-face {
     font-family: 'roboto-light';
-    src: url(/fonts/Roboto-Light.ttf);
+    src: url(../../fonts/Roboto-Light.ttf),
+    local(Roboto-Light)
 }
 
 /* !!!!!!!!!!!! GRID LAYOUT !!!!!!!!!!!!!!! */
