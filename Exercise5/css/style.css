@@ -23,13 +23,29 @@
     grid-template-rows: 0.2fr 2fr 0.2fr;
     width: 100vw;
     height: 100vh;
+<<<<<<< Updated upstream
     
+=======
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> ef33d663882835e4c436c0deea826aee9b365261
+>>>>>>> Stashed changes
 }
 
 .header-item {
     grid-column: 1/4;
     grid-row: 1/2;
+<<<<<<< Updated upstream
     
+=======
+<<<<<<< HEAD
+
+=======
+    
+>>>>>>> ef33d663882835e4c436c0deea826aee9b365261
+>>>>>>> Stashed changes
 }
 
 .main-item {
@@ -158,18 +174,18 @@ a:active {
     font-size: 20px;
     /* Αλλάζουμε την γραμματοσειρά και το μέγεθος της */
     padding-top: 5px;
-    /*  */
+
 }
 
 .footer-content>a>img {
     filter: grayscale(100%);
     border-radius: 25px;
-    /*  */
+
 }
 
 .footer-content>a>img:hover {
     filter: grayscale(0%);
-    /*  */
+
 }
 
 /* !!!!!!!!!!!!!!!! INDEX !!!!!!!!!!!!!!! */
@@ -207,7 +223,7 @@ a:active {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    /*  */
+
 }
 
 .image {
@@ -247,7 +263,7 @@ a:active {
     max-width: 100%;
     width: fit-content;
     height: fit-content;
-    /*  */
+
 }
 
 .category-card {
@@ -255,7 +271,7 @@ a:active {
     /* Αφαιρούμε τα bullet της ul */
     width: fit-content;
     height: fit-content;
-    /*  */
+
 }
 
 .popular-products {
@@ -291,7 +307,7 @@ a:active {
     max-width: 100%;
     width: fit-content;
     height: fit-content;
-    /*  */
+
 }
 
 .product-card {
@@ -299,7 +315,7 @@ a:active {
     /* Αφαιρούμε τα bullet της ul */
     width: fit-content;
     height: fit-content;
-    /*  */
+
 }
 
 /* !!!!!!!!!!!!!!!!!! PRODUCTS-PCS & PRODUCT-PHONES !!!!!!!!!!!!!!!!! */
@@ -309,7 +325,6 @@ a:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /*  */
 }
 
 .products .product-card {
@@ -335,7 +350,7 @@ a:active {
     height: 100%;
     float: left;
     width: 40%;
-    /*  */
+    /* Καθορίζουμε το μέγεθος του κειμένου */
 }
 
 .product-details h1 {
@@ -359,80 +374,65 @@ a:active {
     position: absolute;
     bottom: 20%;
     left: 22.8%;
-    /*  */
+    /* Αλλάζουμε το μέγεθος της εικόνας, προκειμένου να zoomάρεται */
 }
 
 .button {
-    transform: translateY(0px);
-    transition: 0.3s linear;
+    color: #eee;
+    /* Αλλάζουμε το χρώμα της γραμματοσειράς */
     background: #809fff;
+    /* Βάζουμε χρώμα στο κουμπί */
     border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
     outline: none;
     border: none;
-    color: #eee;
+    /* Διαμορφώνουμε το σχήμα του κουμπιού */
     padding-top: 0px;
     margin-left: 35px;
-    /*  */
+    transform: translateY(0px);
+    /* Μετατοπίζουμε το κουμπί προς τα πάνω όταν δεν γίνεται hover */
+    transition: 0.3s linear;
+    /* Ρυθμίζουμε το unhover effect σε ομαλή αλλαγή */
+    position: relative;
+    overflow: hidden;
 }
 
 .button:hover {
     transform: translateY(-6px);
+    /* Μετατοπίζουμε το κουμπί προς τα πάνω όταν γίνεται hover */
     background: #1a66ff;
-    /*  */
+    /* Αλλάζουμε το χρώμα του κουμπιού όταν γίνεται hover */
 }
 
 .button span {
     font-family: roboto-regular;
     /* Αλλάζουμε την γραμματοσειρά */
     transition: transform 0.3s;
+    /* Ρυθμίζουμε το unhover effect σε ομαλή αλλαγή */
     display: inline-block;
     padding: 10px 20px;
     font-size: 1.2em;
     margin: 0;
-    /*  */
 }
 
-.button .price,
-.shopping-cart {
+.button .price {
     background: #333;
-    /*  */
     border: 0;
     margin: 0;
-    /*  */
 }
 
 .button .price {
     transform: translateX(-10%);
+    /* Μετατοπίζουμε την τιμή όταν δεν γίνεται hover */
     padding-right: 15px;
 }
 
-.button .shopping-cart {
-    transform: translateX(-100%);
-    position: absolute;
-    background: #333;
-    z-index: 1;
-    left: 0;
-    top: 0;
-}
-
 .button .buy {
-    z-index: 3;
     font-weight: bolder;
-}
-
-.button:hover .price {
-    transform: translateX(-110%);
-}
-
-.button:hover .shopping-cart {
-    transform: translateX(0%);
 }
 
 .product-image {
     transition: all 0.3s ease-out;
+    /* Ρυθμίζουμε το unhover effect σε ομαλή αλλαγή */
     position: relative;
     overflow: hidden;
     height: 100%;
@@ -456,7 +456,6 @@ a:active {
     text-align: left;
     /* Μεταφέρουμε το αντικείμενο στα αριστερά */
     font-size: 105%;
-    cursor: no-drop;
     color: #FFF;
     height: 100%;
     width: 100%;
@@ -470,22 +469,23 @@ a:active {
 
 .product-image:hover .info {
     transform: translateX(0);
+    /* Ρυθμίζουμε το κείμενο να μετατοπίζεται αριστερά όταν γίνεται hover η εικόνα */
 }
 
 .info ul li {
     transition: 0.3s ease;
+    /* Ρυθμίζουμε το hover effect του κειμένου σε ομαλή αλλαγή */
 }
 
 .info ul li:hover {
     transform: translateX(50px) scale(1.3);
+    /* Ρυθμίζουμε το κείμενο να μεγεθύνεται όταν γίνεται hover */
 }
 
 .product-image:hover img {
     transition: all 0.3s ease-out;
-}
-
-.product-image:hover img {
     transform: scale(1.2, 1.2);
+    /* Ρυθμίζουμε το hover effect σε ομαλή αλλαγή */
 }
 
 /* !!!!!!!!!!!!!!! PRODUCT-IPHONE14 !!!!!!!!!!!!!!!! */
@@ -721,8 +721,6 @@ input[type=submit]:hover {
     background-color: #119cd4;
 }
 
-/* !!!!!!!!!!!!!!! ΤΕΛΟΣ PRODUCT-IPHONE14 !!!!!!!!!!!!!!! */
-
 /* !!!!!!!!!!!!!!!!!! STORES !!!!!!!!!!!!!!!!!!!! */
 .katasthmata {
     display: flex;
@@ -764,8 +762,6 @@ iframe {
     margin-top: -150px;
     max-width: 100%;
 }
-
-/* !!!!!!!!!!!!!!!!!!! ΤΕΛΟΣ STORES !!!!!!!!!!!!!!!!! */
 
 /* !!!!!!!!!!!!!!!!!!!! CONTACT !!!!!!!!!!!!!!!!!!!! */
 #forma-titlos {
@@ -892,8 +888,6 @@ select {
     /* Μεταφέρουμε το κείμενο στο κέντρο */
 }
 
-/* !!!!!!!!!!!!!!!!!!! ΤΕΛΟΣ CONTACT !!!!!!!!!!!!!!!!!!! */
-
 /* !!!!!!!!!!!!!!!!!  ABOUT US !!!!!!!!!!!!!!!!!!!! */
 .perilhpsh {
     border: 4px solid #6ab1d4;
@@ -937,8 +931,6 @@ select {
 #tasos {
     height: 250px;
 }
-
-/* !!!!!!!!!!!!!!!!!! ΤΕΛΟΣ ABOUT US !!!!!!!!!!!!!!!! */
 
 /* !!!!!!!!!!!!!!!!!!!! SIGN - UP !!!!!!!!!!!!!!!!!! */
 #form {

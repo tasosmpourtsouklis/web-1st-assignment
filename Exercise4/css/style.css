@@ -3,23 +3,23 @@
 @font-face {
     font-family: 'roboto';
     src: url(/fonts/Roboto-Bold.ttf);
-   
-   
+
+
 }
 
-@font-face{
+@font-face {
 
     font-family: 'roboto-regular';
     src: url(/fonts/Roboto-Regular.ttf);
-    
+
 }
 
-                                            /* διαφορα font που θα χρησιμοποιηθουν σε ολες τις σελιδες */
-@font-face{
+/* διαφορα font που θα χρησιμοποιηθουν σε ολες τις σελιδες */
+@font-face {
 
     font-family: 'roboto-light';
     src: url(/fonts/Roboto-Light.ttf);
-    
+
 }
 
 
@@ -35,10 +35,11 @@
     grid-auto-rows: auto;
     grid-auto-columns: auto;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 2fr 0.2fr;    /*αρχικα εχουμε 3 column για υπολογιστη και μετα με media queries θα γινουν 2 για ταμπλετ και 1 για κινητα */
+    grid-template-rows: 0.2fr 2fr 0.2fr;
+    /*αρχικα εχουμε 3 column για υπολογιστη και μετα με media queries θα γινουν 2 για ταμπλετ και 1 για κινητα */
     width: 100vw;
     height: 100vh;
-    
+
 }
 
 .header-item {
@@ -47,9 +48,10 @@
     grid-row: 1/2;
 }
 
-.main-item {                                /* εδω εχουμε φτιαξει με grid layout τα 3 σημεια καθε σελιδας ...header , main και footer */
-                                            /* δηλαδη το που ξεκιναει και τελειωνει το καθε απο τα 3 μερη */
-    grid-column: 1/4;   
+.main-item {
+    /* εδω εχουμε φτιαξει με grid layout τα 3 σημεια καθε σελιδας ...header , main και footer */
+    /* δηλαδη το που ξεκιναει και τελειωνει το καθε απο τα 3 μερη */
+    grid-column: 1/4;
     grid-row: 2/3;
 }
 
@@ -73,11 +75,12 @@
 .header-light-color {
     background-color: #5680e9;
     text-align: center;
-    margin-top: -30px;                 /* εχουμε βαλει χρωμα για background και μερικα margin ωστε να πηγαινει η φωτο στο κεντρο */
+    margin-top: -30px;
+    /* εχουμε βαλει χρωμα για background και μερικα margin ωστε να πηγαινει η φωτο στο κεντρο */
     margin-left: -10px;
     margin-right: -10px;
-    
-    
+
+
 }
 
 
@@ -88,40 +91,46 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    background-color: #84ceeb;          /* display flex ωστε να ειναι το καθε κουμπι ενα τετραγωνακι, justify και align center ωστε να ειναι κεντρο ολα τα κουμπια του μενου , line height για να ειναι λιγο πιο ψηλα και βαλαμε και @font-face roboto ως font */
+    background-color: #84ceeb;
+    /* display flex ωστε να ειναι το καθε κουμπι ενα τετραγωνακι, justify και align center ωστε να ειναι κεντρο ολα τα κουμπια του μενου , line height για να ειναι λιγο πιο ψηλα και βαλαμε και @font-face roboto ως font */
     /*float: none;*/
-    
-    
+
+
 }
 
 
 
 .navigation a {
     color: black;
-    font-size: 18px;                       /* αλλαγη στο χρωμα του font και βγαλαμε το underline απο τα link ωστε να φαινεται πιο ωραιο ,  τα καναμε bold */
+    font-size: 18px;
+    /* αλλαγη στο χρωμα του font και βγαλαμε το underline απο τα link ωστε να φαινεται πιο ωραιο ,  τα καναμε bold */
     text-decoration: none;
     padding: 14px 12px;
     font-weight: bold;
-    
-    
+
+
 }
 
 .navigation a:visited {
-    text-decoration: none;              /* να μην αλλαζει το χρωμα αν τα εχουμε ηδη πατησει / επισκευθει */
+    text-decoration: none;
+    /* να μην αλλαζει το χρωμα αν τα εχουμε ηδη πατησει / επισκευθει */
 }
 
 .navigation a:hover {
-    background-color: #2ea8d9;       /* χρωμα του καθε "κουμπιου" απο το μενου οταν κανεις hover με το ποντικι */
+    background-color: #2ea8d9;
+    /* χρωμα του καθε "κουμπιου" απο το μενου οταν κανεις hover με το ποντικι */
 }
 
-.navigation a:active {                  /* χρωμα που παιρνει το font οταν πατας το συγκεκριμενο link */
+.navigation a:active {
+    /* χρωμα που παιρνει το font οταν πατας το συγκεκριμενο link */
     color: grey;
 }
 
 
-.navigation .active {                   /* χρωμα που παινρει το καθε κουμπι οταν ειναι ενεργο , δηλαδη εισαι στην συγκεκριμενη σελιδα */
+.navigation .active {
+    /* χρωμα που παινρει το καθε κουμπι οταν ειναι ενεργο , δηλαδη εισαι στην συγκεκριμενη σελιδα */
     background-color: #2ea8d9;
-    
+
 }
 
 /* !!!!!!!!!!! ΤΕΛΟΣ HEADER !!!!!!!!!!!! */
@@ -131,7 +140,8 @@
 /* !!!!!!!!!!!!!!!! INDEX !!!!!!!!!!!!!!! */
 
 body {
-    background-color: #badff1;                /* χρωμα για background του main περιεχομενου , font για το περιεχομενο επισης και overflow ωστε να μην υπαρχει η οριζοντια μπαρα scroll */
+    background-color: #badff1;
+    /* χρωμα για background του main περιεχομενου , font για το περιεχομενο επισης και overflow ωστε να μην υπαρχει η οριζοντια μπαρα scroll */
     font-family: roboto;
     font-size: 18px;
     /*font-size: 1.17vw;*/
@@ -142,11 +152,13 @@ body {
 
 
 .welcome {
-    text-align: center;      /* κειμενο κεντραρισμενο */
+    text-align: center;
+    /* κειμενο κεντραρισμενο */
 }
 
-.main-content> p {
-    font-family: roboto-regular;          /* bold font και αλλαξαμε το font size να ειναι λιγο μικροτερο */
+.main-content>p {
+    font-family: roboto-regular;
+    /* bold font και αλλαξαμε το font size να ειναι λιγο μικροτερο */
     text-align: center;
     font-weight: 500;
     margin-left: 200px;
@@ -154,37 +166,40 @@ body {
 }
 
 .section-promote {
-    
+
     font-family: roboto-regular;
     text-align: center;
-    border: 2px solid #6ab1d4;              /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+    border: 2px solid #6ab1d4;
+    /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
     box-shadow: 0px 2px 16px #6ab1d4;
     max-width: 100%;
     margin-top: 20px;
     margin-bottom: 30px;
     margin-left: 150px;
     margin-right: 150px;
-    
+
 }
 
-.product > a > img {
-    border: 2px solid #2ea8d9;              /* border και background για τις εικονες , radius για να γινουν πιο rounded τα edges */
+.product>a>img {
+    border: 2px solid #2ea8d9;
+    /* border και background για τις εικονες , radius για να γινουν πιο rounded τα edges */
     background-color: #6ab1d4;
     border-radius: 25px;
-    
-   
+
+
 }
 
 
 
-.product > a {
+.product>a {
 
-    text-decoration: none;          /* για να μην φαινονται τα λινκ underline */ 
+    text-decoration: none;
+    /* για να μην φαινονται τα λινκ underline */
 }
 
 
 .prod-photos {
-                                                /* ωστε οι φωτογραφιες των προιοντων να γινοναι με flex και direction row ωστε να ειναι απο αριστερα προς τα δεξια */
+    /* ωστε οι φωτογραφιες των προιοντων να γινοναι με flex και direction row ωστε να ειναι απο αριστερα προς τα δεξια */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -195,7 +210,7 @@ body {
 .image {
 
     /* isws thelei kai max height ??? */
-    
+
     max-width: 95%;
 }
 
@@ -207,7 +222,7 @@ body {
 
 /* !!!!!!!!!!!!!!!!!!!! PRODUCT-CATEGORIES !!!!!!!!!!!!!!!!!! */
 
-.main-content > h1 {
+.main-content>h1 {
 
     font-size: 1.7em;
 
@@ -215,73 +230,81 @@ body {
 
 
 .subcategory {
-    border: 2px solid #6ab1d4;           
-    box-shadow: 0px 2px 16px #6ab1d4; /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+    border: 2px solid #6ab1d4;
+    box-shadow: 0px 2px 16px #6ab1d4;
+    /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
     max-width: 100%;
     margin-top: 20px;
     margin-bottom: 30px;
     margin-left: 270px;
     margin-right: 270px;
-   
+
 }
 
 
 
-.subcategory > ul {
+.subcategory>ul {
 
-    display: flex;                          /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */ 
+    display: flex;
+    /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 15px;
     padding-right: 50px;
-    
-    
-   
+
+
+
 }
 
-.subcategory > ul > li {
-                                        /* αυτο ειναι ωστε να χωριζεται σε 3 αντικειμενα το καθε row και μετα λογω του wrap να πηγαινουν κατω αριστερα */
+.subcategory>ul>li {
+    /* αυτο ειναι ωστε να χωριζεται σε 3 αντικειμενα το καθε row και μετα λογω του wrap να πηγαινουν κατω αριστερα */
     flex: 0 0 33.333333%;
-    
+
 }
 
 
-.subcategory> ul > li > a > img {
+.subcategory>ul>li>a>img {
 
     max-width: 100%;
     width: fit-content;
-    height: fit-content;                /* ωστε να μην γινονται squeezed οι φωτογραφιες και να μικραινει ολο το τετραγωνο ομοιομορφα */
- 
- }
+    height: fit-content;
+    /* ωστε να μην γινονται squeezed οι φωτογραφιες και να μικραινει ολο το τετραγωνο ομοιομορφα */
+
+}
 
 
 
 .category-card {
-   list-style-type: none;             /* βγαλαμε τα bullet απο τα li της ul */
-   width: fit-content;
-   height: fit-content;
+    list-style-type: none;
+    /* βγαλαμε τα bullet απο τα li της ul */
+    width: fit-content;
+    height: fit-content;
 
 }
 
 
 
 a {
-    text-decoration: none;              /* κανενα underline για λινκ και χρωμα μαυρο */
+    text-decoration: none;
+    /* κανενα underline για λινκ και χρωμα μαυρο */
     color: black;
 }
 
 a:visited {
-    text-decoration: none;      /* οτι εχουμε πει παραπανω */
+    text-decoration: none;
+    /* οτι εχουμε πει παραπανω */
 }
 
 a:active {
-    color: grey;               /* ομοιως */
+    color: grey;
+    /* ομοιως */
 }
 
 
 .popular-products {
     font-family: roboto-regular;
-    border: 2px solid #6ab1d4;                  /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+    border: 2px solid #6ab1d4;
+    /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
     box-shadow: 0px 2px 16px #6ab1d4;
     margin-top: 20px;
     max-width: 100%;
@@ -292,9 +315,10 @@ a:active {
 
 
 
-.popular-products > ul {
+.popular-products>ul {
 
-    display: flex;                          /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */ 
+    display: flex;
+    /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 15px;
@@ -302,23 +326,25 @@ a:active {
 
 }
 
-.popular-products > ul > li {
-                                        /* αυτο ειναι ωστε να χωριζεται σε 3 αντικειμενα το καθε row και μετα λογω του wrap να πηγαινουν κατω αριστερα */
+.popular-products>ul>li {
+    /* αυτο ειναι ωστε να χωριζεται σε 3 αντικειμενα το καθε row και μετα λογω του wrap να πηγαινουν κατω αριστερα */
     flex: 0 0 33.333333%;
 }
 
 
-.popular-products> ul > li > a > img {
+.popular-products>ul>li>a>img {
 
     max-width: 100%;
     width: fit-content;
-    height: fit-content;                /* το ιδιο με subcategory πιο πανω */
- 
- }
+    height: fit-content;
+    /* το ιδιο με subcategory πιο πανω */
+
+}
 
 
 .product-card {
-    list-style-type: none;          /* βγαλαμε τα bullet απο τα li της ul */
+    list-style-type: none;
+    /* βγαλαμε τα bullet απο τα li της ul */
     width: fit-content;
     height: fit-content;
 }
@@ -330,103 +356,103 @@ a:active {
 
 
 
-/* !!!!!!!!!!!!!!!!!! PRODUCTS-PCS !!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!! PRODUCT-PHONES !!!!!!!!!!!!!!!!! */
-
+/* !!!!!!!!!!!!!!!!!! PRODUCTS-PCS & PRODUCT-PHONES !!!!!!!!!!!!!!!!! */
 .products {
-
-    font-family: roboto;    /* ενιαιο font */
+    font-family: roboto;
+    /* Αλλάζουμε την γραμματοσειρά */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
 }
 
-
-
 .products .product-card {
-    
-    box-shadow: 0 15px 30px 1px grey;           /* σκια γυρω γυρω και margin ωστε να φαινεται ωραιο */
-    background: rgba(255, 255, 255, 0.90);
     text-align: center;
+    /* Μεταφέρουμε το αντικείμενο στο κέντρο */
+    box-shadow: 0 15px 30px 1px grey;
+    background: rgba(255, 255, 255, 0.90);
     border-radius: 5px;
+    /* Βάζουμε σκίαση γύρω από το αντικείμενο */
     overflow: hidden;
     margin: 5em auto;
     height: 350px;
     width: 700px;
-    
-    
+    /* Καθορίζουμε το μέγεθος κάθε αντικειμένου */
 }
 
 .product-details {
-    position: relative;         /* το αριστερο μισο του καθε product-card, ονομα προϊοντος και φτιαξιμο οπτικα με margin / float */
+    position: relative;
     text-align: left;
+    /* Μεταφέρουμε την ενότητα στα αριστερά */
     overflow: hidden;
     padding: 30px;
     height: 100%;
     float: left;
     width: 40%;
+    /* Καθορίζουμε το μέγεθος του κειμένου */
 }
 
 .product-details h1 {
-
-    display: inline-block;              /* αλλαγη χρωματος font κλπ ωστε να φαινεται μεσα στο product-card το h1 ωραιο */
+    display: inline-block;
     position: relative;
     font-size: 30px;
     color: #344055;
-    margin: 0;
+    /* Αλλάζουμε το μέγεθος και το χρώμα της γραμματοσειράς */
 }
 
-
-
-.product-details > p {
-    font-family: roboto-regular;  /* αλλαγη γραμματοσειρας, μεγεθους και χρωματος για ελληνικα */
-    text-align: center;
+.product-details>p {
+    font-family: roboto-regular;
     font-size: 18px;
     color: #7d7d7d;
-    
+    /* Αλλάζουμε την γραμματοσειρά, το μέγεθος και το χρώμα της */
+    text-align: center;
+    /* Μεταφέρουμε το κείμενο στο κέντρο */
 }
 
-
-
 .control {
-    position: absolute;             /* control και button ειναι για το κουμπι καλαθι αγορας με την τιμη πανω */
+    position: absolute;
     bottom: 20%;
     left: 22.8%;
-    
+    /* Αλλάζουμε το μέγεθος της εικόνας, προκειμένου να zoomάρεται */
 }
 
 .button {
-    transform: translateY(0px);
-    transition: 0.3s linear;
+    color: #eee;
+    /* Αλλάζουμε το χρώμα της γραμματοσειράς */
     background: #809fff;
+    /* Βάζουμε χρώμα στο κουμπί */
     border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
     outline: none;
     border: none;
-    color: #eee;
+    /* Διαμορφώνουμε το σχήμα του κουμπιού */
     padding-top: 0px;
     margin-left: 35px;
+    transform: translateY(0px);
+    /* Μετατοπίζουμε το κουμπί προς τα πάνω όταν δεν γίνεται hover */
+    transition: 0.3s linear;
+    /* Ρυθμίζουμε το unhover effect σε ομαλή αλλαγή */
+    position: relative;
+    overflow: hidden;
 }
 
 .button:hover {
     transform: translateY(-6px);
+    /* Μετατοπίζουμε το κουμπί προς τα πάνω όταν γίνεται hover */
     background: #1a66ff;
+    /* Αλλάζουμε το χρώμα του κουμπιού όταν γίνεται hover */
 }
 
 .button span {
     font-family: roboto-regular;
+    /* Αλλάζουμε την γραμματοσειρά */
     transition: transform 0.3s;
+    /* Ρυθμίζουμε το unhover effect σε ομαλή αλλαγή */
     display: inline-block;
     padding: 10px 20px;
     font-size: 1.2em;
     margin: 0;
 }
 
-.button .price,
-.shopping-cart {
+.button .price {
     background: #333;
     border: 0;
     margin: 0;
@@ -434,39 +460,22 @@ a:active {
 
 .button .price {
     transform: translateX(-10%);
+    /* Μετατοπίζουμε την τιμή όταν δεν γίνεται hover */
     padding-right: 15px;
 }
 
-.button .shopping-cart {
-    transform: translateX(-100%);
-    position: absolute;
-    background: #333;
-    z-index: 1;
-    left: 0;
-    top: 0;
-}
-
 .button .buy {
-    z-index: 3;
     font-weight: bolder;
-}
-
-.button:hover .price {
-    transform: translateX(-110%);
-}
-
-.button:hover .shopping-cart {
-    transform: translateX(0%);
 }
 
 .product-image {
     transition: all 0.3s ease-out;
+    /* Ρυθμίζουμε το unhover effect σε ομαλή αλλαγή */
     position: relative;
     overflow: hidden;
     height: 100%;
     float: right;
     width: 45%;
-   
 }
 
 .product-image .image {
@@ -474,17 +483,17 @@ a:active {
     max-height: 100%;
 }
 
-
 .info {
     background: rgba(27, 26, 26, 0.9);
     font-family: roboto-light;
+    /* Αλλάζουμε την γραμματοσειρά */
     transition: all 0.3s ease-out;
     transform: translateX(-100%);
     position: absolute;
     line-height: 1.8;
     text-align: left;
+    /* Μεταφέρουμε το αντικείμενο στα αριστερά */
     font-size: 105%;
-    cursor: no-drop;
     color: #FFF;
     height: 100%;
     width: 100%;
@@ -498,38 +507,35 @@ a:active {
 
 .product-image:hover .info {
     transform: translateX(0);
+    /* Ρυθμίζουμε το κείμενο να μετατοπίζεται αριστερά όταν γίνεται hover η εικόνα */
 }
 
 .info ul li {
     transition: 0.3s ease;
+    /* Ρυθμίζουμε το hover effect του κειμένου σε ομαλή αλλαγή */
 }
 
 .info ul li:hover {
     transform: translateX(50px) scale(1.3);
+    /* Ρυθμίζουμε το κείμενο να μεγεθύνεται όταν γίνεται hover */
 }
 
 .product-image:hover img {
     transition: all 0.3s ease-out;
-}
-
-.product-image:hover img {
     transform: scale(1.2, 1.2);
+    /* Ρυθμίζουμε το hover effect σε ομαλή αλλαγή */
 }
-
-
-/* !!!!!!!!!!!!! ΤΕΛΟΣ PRODUCT-PCS !!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!! ΤΕΛΟΣ PRODUCT-PHONES !!!!!!!!!!!!!! */
-
 
 
 /* !!!!!!!!!!!!!!! PRODUCT-IPHONE14 !!!!!!!!!!!!!!!! */
 
-#category > a {                    
+#category>a {
     color: black;
     text-decoration: none;
 }
 
-#iphone-name, #category {
+#iphone-name,
+#category {
     text-align: left;
 }
 
@@ -543,7 +549,7 @@ a:active {
     border: 3px hidden #2ea8d9;
     background-color: #6ab1d4;
     border-radius: 25px;
-    
+
 }
 
 
@@ -554,7 +560,7 @@ a:active {
 }
 
 
-.iphone-code-price{
+.iphone-code-price {
 
     display: block;
     float: left;
@@ -575,14 +581,14 @@ a:active {
     text-align: left;
     border: 3px solid #6ab1d4;
     box-shadow: 0px 2px 16px #6ab1d4;
-    
+
     margin-bottom: 30px;
     margin-left: 370px;
     margin-right: 30px;
     padding-left: 10px;
 }
 
-.outer-box {    
+.outer-box {
     margin-top: -15px;
 }
 
@@ -622,8 +628,8 @@ a:active {
     margin-left: 130px;
     margin-right: 130px;
     margin: 0 auto;
-    
-    
+
+
 }
 
 .row-title {
@@ -650,7 +656,7 @@ a:active {
     padding-right: 10px;
     margin-top: -20px;
     padding-bottom: 20px;
-   
+
 }
 
 .value>a {
@@ -681,7 +687,8 @@ a:active {
 
 input,
 label {
-    cursor: pointer;            /* pointer that indicates to a link */
+    cursor: pointer;
+    /* pointer that indicates to a link */
 }
 
 input[type="radio"] {
@@ -708,7 +715,8 @@ label {
 .epilogh:checked {
     outline-color: #5680e9;
     background-color: #5680e9;
-    animation: outline-checked;                 /* το κουμπι να παιρνει γυρω γυρω και μεσα το χρωμα αυτο */
+    animation: outline-checked;
+    /* το κουμπι να παιρνει γυρω γυρω και μεσα το χρωμα αυτο */
     animation-duration: 0.1s;
     animation-iteration-count: 4;
     animation-direction: alternate;
@@ -719,7 +727,8 @@ label {
     0% {
         outline-offset: 0;
     }
-                                                /* το χρεαιζομαστε για τo animation sequence */
+
+    /* το χρεαιζομαστε για τo animation sequence */
     100% {
         outline-offset: -0.2rem;
     }
@@ -740,7 +749,7 @@ label {
     border-radius: 4px;
     background-color: #f8f8f8;
     resize: none;
-   
+
 }
 
 .vathmologia-asteria {
@@ -778,10 +787,10 @@ input[type=submit]:hover {
     align-items: center;
     width: 100%;
     height: 100vh;
-    
+
 }
 
-iframe{
+iframe {
 
     width: 70%;
     height: 500px;
@@ -790,8 +799,8 @@ iframe{
 
 .katasthmata>h3 {
     text-decoration: underline;
-   
-   
+
+
 }
 
 
@@ -929,13 +938,13 @@ select {
     border: 4px solid #6ab1d4;
     box-shadow: 0px 2px 16px #6ab1d4;
     margin-bottom: 30px;
-    margin-left: 45px;  
+    margin-left: 45px;
     margin-right: 45px;
     text-align: left;
-    
+
 }
 
-.perilhpsh > p {
+.perilhpsh>p {
     font-family: roboto-regular;
     padding-left: 20px;
     padding-right: 20px;
@@ -954,7 +963,7 @@ select {
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-   
+
 
 }
 
@@ -980,14 +989,14 @@ select {
 
 
 .footer-content {
-   
+
     font-family: roboto-light;
-    background-color: #5680e9;      
+    background-color: #5680e9;
     text-align: center;
 
     /* ΒΓΑΖΩ ΤΟ MARGIN TOP ΩΣΤΕ ΝΑ ΓΙΝΕΙ ΩΡΑΙΟ ΓΙΑ 4ο ΠΑΡΑΔΟΤΕΟ ΜΕ FR */
     /*margin-top: 50px;*/
-    
+
     margin-left: -10px;
     margin-right: -10px;
     box-shadow: 0px -5px 16px #6ab1d4;
@@ -1000,8 +1009,8 @@ select {
     font-family: roboto;
 }
 
-.footer-content > a {
-    
+.footer-content>a {
+
     text-decoration: none;
 }
 
@@ -1025,7 +1034,8 @@ select {
 
     .analytika-xarakthristika {
 
-        font-size: 16px;            /* μικραινει λιγο το font ωστε να μην κανουν overlap οι λεξεις */
+        font-size: 16px;
+        /* μικραινει λιγο το font ωστε να μην κανουν overlap οι λεξεις */
     }
 }
 
@@ -1056,11 +1066,18 @@ select {
 
     .analytika-xarakthristika {
 
-        font-size: 1.5vw;           /* απο τα 1000px και μετα θα πηγαινει το font αναλογα με το μεγεθος του viewport width */
+        font-size: 1.5vw;
+        /* απο τα 1000px και μετα θα πηγαινει το font αναλογα με το μεγεθος του viewport width */
     }
 }
 
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+@media only screen and (max-width: 900px) {
+=======
+>>>>>>> Stashed changes
 @media only screen and (max-width: 965px) {
     
 
@@ -1079,42 +1096,45 @@ select {
 
 
 @media only screen and (max-width: 900px){
+>>>>>>> ef33d663882835e4c436c0deea826aee9b365261
 
     .subcategory {
-       
-        border: 2px solid #6ab1d4;           
-        box-shadow: 0px 2px 16px #6ab1d4; 
+
+        border: 2px solid #6ab1d4;
+        box-shadow: 0px 2px 16px #6ab1d4;
         max-width: 100%;
         margin-top: 20px;
         margin-bottom: 30px;
         margin-left: 30px;
         margin-right: 30px;
-       
+
     }
 
-    .subcategory > ul {
+    .subcategory>ul {
 
-        display: flex;                          /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */ 
+        display: flex;
+        /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */
         flex-direction: row;
         justify-content: space-evenly;
         padding-top: 15px;
         padding-right: 50px;
-         
-       
+
+
     }
 
     .popular-products {
-        border: 2px solid #6ab1d4;           
-        box-shadow: 0px 2px 16px #6ab1d4; 
+        border: 2px solid #6ab1d4;
+        box-shadow: 0px 2px 16px #6ab1d4;
         max-width: 100%;
         margin-top: 20px;
         margin-bottom: 30px;
         margin-left: 30px;
         margin-right: 30px;
     }
-    
-    .popular-products > ul {
-        display: flex;                          /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */ 
+
+    .popular-products>ul {
+        display: flex;
+        /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */
         flex-direction: row;
         justify-content: space-evenly;
         padding-top: 15px;
@@ -1124,75 +1144,80 @@ select {
 
 
 
-} 
+}
 
 
 
- /* Medium devices (landscape tablets, 768px and down) */
+/* Medium devices (landscape tablets, 768px and down) */
 @media only screen and (max-width: 768px) {
-    
+
     .grid-container {
 
         grid-auto-rows: auto;
         grid-auto-columns: auto;
-        grid-template-columns: 1fr 1fr;             /* εδω πλεον εχουμε 2 columns για ταμπλετ */
+        grid-template-columns: 1fr 1fr;
+        /* εδω πλεον εχουμε 2 columns για ταμπλετ */
         grid-template-rows: 0.2fr 2fr 0.2fr;
-    
-       
+
+
     }
 
     .navigation a {
-        
-        font-size: 16px;                      
-       
+
+        font-size: 16px;
+
         padding: 12px 10px;
-        
-        
+
+
     }
 
-    body{
-    
+    body {
+
         /*font-size: 1.17vw;*/
         font-size: 16px;
     }
 
-   
+
 
     .subcategory {
-       
-        border: 2px solid #6ab1d4;           
-        box-shadow: 0px 2px 16px #6ab1d4; /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+
+        border: 2px solid #6ab1d4;
+        box-shadow: 0px 2px 16px #6ab1d4;
+        /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
         max-width: 100%;
         margin-top: 20px;
         margin-bottom: 30px;
         margin-left: 60px;
         margin-right: 60px;
-       
+
     }
 
-    .subcategory > ul {
+    .subcategory>ul {
 
-        display: flex;                          /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */ 
+        display: flex;
+        /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */
         flex-direction: row;
         justify-content: space-evenly;
         padding-top: 15px;
         padding-right: 50px;
-         
-       
+
+
     }
-    
+
     .popular-products {
-        border: 2px solid #6ab1d4;           
-        box-shadow: 0px 2px 16px #6ab1d4; /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+        border: 2px solid #6ab1d4;
+        box-shadow: 0px 2px 16px #6ab1d4;
+        /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
         max-width: 100%;
         margin-top: 20px;
         margin-bottom: 30px;
         margin-left: 60px;
         margin-right: 60px;
     }
-    
-    .popular-products > ul {
-        display: flex;                          /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */ 
+
+    .popular-products>ul {
+        display: flex;
+        /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */
         flex-direction: row;
         justify-content: space-evenly;
         padding-top: 15px;
@@ -1202,15 +1227,17 @@ select {
 
 
     .product-descr {
-       
-        margin-left: 230px;         /* παει πιο αριστερα ωστε να ειναι διπλα στην εικονα του κινητου που μικραινει */
-       
+
+        margin-left: 230px;
+        /* παει πιο αριστερα ωστε να ειναι διπλα στην εικονα του κινητου που μικραινει */
+
     }
 
     .analytika-xarakthristika {
         display: block;
         border: 4px solid #6ab1d4;
-        box-shadow: 0px 2px 16px #6ab1d4;           /* αλλαγη τελειως του format της λιστας με τα αναλυτικα χαρακτηριστικα */
+        box-shadow: 0px 2px 16px #6ab1d4;
+        /* αλλαγη τελειως του format της λιστας με τα αναλυτικα χαρακτηριστικα */
         max-width: 90%;
         height: auto;
         margin-left: 130px;
@@ -1227,21 +1254,21 @@ select {
         text-decoration: underline;
         font-size: 18px;
         border-bottom: 4px solid #6ab1d4;
-        
+
     }
-    
+
     .row {
         border-bottom: 2px solid #6ab1d4;
         padding-top: 20px;
     }
-    
+
     .label {
         text-align: center;
         font-weight: bold;
         padding-left: 10px;
         font-size: 15px;
     }
-    
+
     .value {
         font-family: roboto-regular;
         text-align: center;
@@ -1249,38 +1276,41 @@ select {
         padding-top: 25px;
         padding-bottom: 20px;
         font-size: 15px;
-       
+
     }
 
 
-} 
+}
 
-  /* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
     .grid-container {
 
         grid-auto-rows: auto;
         grid-auto-columns: auto;
-        grid-template-columns: 1fr;                 /* πλεον εχουμε ενα και μονο column */
+        grid-template-columns: 1fr;
+        /* πλεον εχουμε ενα και μονο column */
         grid-template-rows: 0.2fr 2fr 0.2fr;
-    
-       
+
+
     }
 
     .header-light-color {
 
-        margin-top: -10px;          /* ωστε να φαινεται στο κεντρο και καλυτερα το μικροτερο λογοτυπο */
+        margin-top: -10px;
+        /* ωστε να φαινεται στο κεντρο και καλυτερα το μικροτερο λογοτυπο */
     }
 
     .navigation a {
-        
-        font-size: 14px;                       /* αλλαγη στο χρωμα του font και βγαλαμε το underline απο τα link ωστε να φαινεται πιο ωραιο ,  τα καναμε bold */
-        
+
+        font-size: 14px;
+        /* αλλαγη στο χρωμα του font και βγαλαμε το underline απο τα link ωστε να φαινεται πιο ωραιο ,  τα καναμε bold */
+
         padding: 10px 8px;
-       
-        
-        
+
+
+
     }
 
     .welcome {
@@ -1288,8 +1318,9 @@ select {
         font-size: 1.5em;
     }
 
-    .main-content> p {
-        font-family: roboto-regular;          /* bold font και αλλαξαμε το font size να ειναι λιγο μικροτερο */
+    .main-content>p {
+        font-family: roboto-regular;
+        /* bold font και αλλαξαμε το font size να ειναι λιγο μικροτερο */
         text-align: center;
         font-size: 14px;
         font-weight: 500;
@@ -1299,17 +1330,18 @@ select {
 
 
     .section-promote {
-    
+
         font-family: roboto-regular;
         text-align: center;
-        border: 2px solid #6ab1d4;              /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+        border: 2px solid #6ab1d4;
+        /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
         box-shadow: 0px 2px 16px #6ab1d4;
         max-width: 100%;
         margin-top: 20px;
         margin-bottom: 30px;
         margin-left: 40px;
         margin-right: 40px;
-        
+
     }
 
     .prod-photos {
@@ -1318,40 +1350,44 @@ select {
     }
 
     .subcategory {
-       
-        border: 2px solid #6ab1d4;           
-        box-shadow: 0px 2px 16px #6ab1d4; /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+
+        border: 2px solid #6ab1d4;
+        box-shadow: 0px 2px 16px #6ab1d4;
+        /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
         max-width: 100%;
         margin-top: 20px;
         margin-bottom: 30px;
         margin-left: 60px;
         margin-right: 60px;
-       
+
     }
 
-    .subcategory > ul {
+    .subcategory>ul {
 
-        display: flex;                          /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */ 
+        display: flex;
+        /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */
         flex-direction: column;
         justify-content: space-evenly;
         padding-top: 15px;
         padding-right: 50px;
-         
-       
+
+
     }
-    
+
     .popular-products {
-        border: 2px solid #6ab1d4;           
-        box-shadow: 0px 2px 16px #6ab1d4; /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+        border: 2px solid #6ab1d4;
+        box-shadow: 0px 2px 16px #6ab1d4;
+        /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
         max-width: 100%;
         margin-top: 20px;
         margin-bottom: 30px;
         margin-left: 60px;
         margin-right: 60px;
     }
-    
-    .popular-products > ul {
-        display: flex;                          /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */ 
+
+    .popular-products>ul {
+        display: flex;
+        /* flex για τα αντικειμενα στο categories , wrap ωστε να πηγαινουν απο κατω μολις "τελειωνει" ο χωρος απο αριστερα προς τα δεξια */
         flex-direction: column;
         justify-content: space-evenly;
         padding-top: 15px;
@@ -1359,34 +1395,36 @@ select {
 
     }
 
-    .subcategory> ul > li > a > img {
+    .subcategory>ul>li>a>img {
 
         max-width: 65%;
-       
-                                            /* αυτοματως να ειναι μαξ 65% ωστε να μην ειναι τεραστιες οι φωτο αλλα να κανουν scale ωραιο */
-     }
-    .popular-products> ul > li > a > img {
-    
+
+        /* αυτοματως να ειναι μαξ 65% ωστε να μην ειναι τεραστιες οι φωτο αλλα να κανουν scale ωραιο */
+    }
+
+    .popular-products>ul>li>a>img {
+
         max-width: 65%;
-        
-     
-     }
+
+
+    }
 
     .products .product-card {
-    
-        box-shadow: 0 15px 30px 1px grey;          
+
+        box-shadow: 0 15px 30px 1px grey;
         background: rgba(255, 255, 255, 0.90);
         text-align: center;
         border-radius: 5px;
         overflow: hidden;
         margin: 5em auto;
         height: 400px;
-        
-        
+
+
     }
 
     .product-details {
-        position: relative;         /* το αριστερο μισο του καθε product-card, ονομα προϊοντος και φτιαξιμο οπτικα με margin / float */
+        position: relative;
+        /* το αριστερο μισο του καθε product-card, ονομα προϊοντος και φτιαξιμο οπτικα με margin / float */
         text-align: left;
         overflow: hidden;
         padding: 25px;
@@ -1394,24 +1432,26 @@ select {
         float: left;
         width: 40%;
     }
-    
+
     .product-details h1 {
-    
-        display: inline-block;              /* αλλαγη χρωματος font κλπ ωστε να φαινεται μεσα στο product-card το h1 ωραιο */
+
+        display: inline-block;
+        /* αλλαγη χρωματος font κλπ ωστε να φαινεται μεσα στο product-card το h1 ωραιο */
         position: relative;
         font-size: 27px;
         color: #344055;
         margin: 0;
     }
-    
-    
-    
-    .product-details > p {
-        font-family: roboto-regular;  /* αλλαγη γραμματοσειρας, μεγεθους και χρωματος για ελληνικα */
+
+
+
+    .product-details>p {
+        font-family: roboto-regular;
+        /* αλλαγη γραμματοσειρας, μεγεθους και χρωματος για ελληνικα */
         text-align: center;
         font-size: 15px;
         color: #7d7d7d;
-        
+
     }
 
     .button {
@@ -1432,10 +1472,10 @@ select {
     .button .price {
         transform: translateX(-10%);
         width: 100%;
-        
+
     }
-    
-    
+
+
 
     .info {
         background: rgba(27, 26, 26, 0.9);
@@ -1455,7 +1495,7 @@ select {
     }
 
 
-    .iphone-code-price{
+    .iphone-code-price {
 
         display: flex;
         flex-direction: column;
@@ -1464,20 +1504,22 @@ select {
         justify-content: center;
         float: none;
     }
-    
-    .display-photo {                            /* η φωτο το κινητου και ο κωδικος/τιμη του πανω απο τα χαρακτηριστικα και οχι float πλεον */
-        
+
+    .display-photo {
+        /* η φωτο το κινητου και ο κωδικος/τιμη του πανω απο τα χαρακτηριστικα και οχι float πλεον */
+
         border: 3px hidden #2ea8d9;
         background-color: #6ab1d4;
         border-radius: 25px;
         float: none;
     }
 
-   
-     
+
+
 
     .product-descr {
-        font-family: roboto-regular;            /* block ωστε να ειναι κατω απο φωτο κινητου κλπ στην διαταξη κινητου */
+        font-family: roboto-regular;
+        /* block ωστε να ειναι κατω απο φωτο κινητου κλπ στην διαταξη κινητου */
         text-align: left;
         border: 3px solid #6ab1d4;
         box-shadow: 0px 2px 16px #6ab1d4;
@@ -1490,7 +1532,7 @@ select {
     }
 
 
-   
+
     .analytika-xarakthristika {
         display: block;
         border: 4px solid #6ab1d4;
@@ -1511,21 +1553,21 @@ select {
         text-decoration: underline;
         font-size: 17px;
         border-bottom: 4px solid #6ab1d4;
-        
+
     }
-    
+
     .row {
         border-bottom: 2px solid #6ab1d4;
         padding-top: 20px;
     }
-    
+
     .label {
         text-align: center;
         font-weight: bold;
         padding-left: 10px;
         font-size: 14px;
     }
-    
+
     .value {
         font-family: roboto-regular;
         text-align: center;
@@ -1533,7 +1575,7 @@ select {
         padding-top: 25px;
         padding-bottom: 20px;
         font-size: 14px;
-       
+
     }
 
 
@@ -1550,16 +1592,17 @@ select {
 
 
 
-@media only screen and (max-width: 444px) {             /*παει το μενου απο κατω */
+@media only screen and (max-width: 444px) {
+    /*παει το μενου απο κατω */
 
     .navigation {
-        
+
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-       
-        
-        
+
+
+
     }
 
 
@@ -1568,27 +1611,25 @@ select {
 
 
 
- @media only screen and (max-width: 400px){
-                                                    /* απο το 400 και κατω οι εικονες του index γινοντουσαν τεραστιες και εβγαιναν απο το border οποτε με αυτους τους κανονες τις περιορισαμε */
-    .section-promote{
+@media only screen and (max-width: 400px) {
 
-       
+    /* απο το 400 και κατω οι εικονες του index γινοντουσαν τεραστιες και εβγαιναν απο το border οποτε με αυτους τους κανονες τις περιορισαμε */
+    .section-promote {
+
+
         min-width: 30%;
     }
 
-    .product > a > img{
+    .product>a>img {
 
         height: fit-content;
-        width: fit-content;             
+        width: fit-content;
     }
+
     .image {
 
         /* isws thelei kai max height ??? */
         max-height: 100%;
         max-width: 95%;
-     }
- }
-
-
-
- 
+    }
+}

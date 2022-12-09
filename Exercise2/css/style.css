@@ -1,9 +1,9 @@
-
 /* !!!!!!!!!!!! HEADER !!!!!!!!!!!!! */
 
 .header-light-color {
     background-color: #5680e9;
-    text-align: center;                 /* εχουμε βαλει χρωμα για background και μερικα margin ωστε να πηγαινει η φωτο στο κεντρο */
+    text-align: center;
+    /* εχουμε βαλει χρωμα για background και μερικα margin ωστε να πηγαινει η φωτο στο κεντρο */
     margin-top: -50px;
     margin-left: -10px;
     margin-right: -10px;
@@ -13,33 +13,39 @@
     font-family: Arial, Helvetica, sans-serif;
     display: block;
     padding: 8px;
-    background-color: #84ceeb;          /* display block και padding ωστε να ειναι το καθε κουμπι ενα τετραγωνακι , line height για να ειναι λιγο πιο ψηλα και βαλαμε και Helvetica ως font */
+    background-color: #84ceeb;
+    /* display block και padding ωστε να ειναι το καθε κουμπι ενα τετραγωνακι , line height για να ειναι λιγο πιο ψηλα και βαλαμε και Helvetica ως font */
     float: none;
     line-height: 33px;
 }
 
 .navigation a {
     color: black;
-    font-size: 18px;                       /* αλλαγη στο χρωμα του font και βγαλαμε το underline απο τα link ωστε να φαινεται πιο ωραιο ,  τα καναμε bold */
+    font-size: 18px;
+    /* αλλαγη στο χρωμα του font και βγαλαμε το underline απο τα link ωστε να φαινεται πιο ωραιο ,  τα καναμε bold */
     text-decoration: none;
     padding: 14px 12px;
     font-weight: bold;
 }
 
 .navigation a:visited {
-    text-decoration: none;              /* να μην αλλαζει το χρωμα αν τα εχουμε ηδη πατησει / επισκευθει */
+    text-decoration: none;
+    /* να μην αλλαζει το χρωμα αν τα εχουμε ηδη πατησει / επισκευθει */
 }
 
 .navigation a:hover {
-    background-color: #2ea8d9;       /* χρωμα του καθε "κουμπιου" απο το μενου οταν κανεις hover με το ποντικι */
+    background-color: #2ea8d9;
+    /* χρωμα του καθε "κουμπιου" απο το μενου οταν κανεις hover με το ποντικι */
 }
 
-.navigation a:active {                  /* χρωμα που παιρνει το font οταν πατας το συγκεκριμενο link */
+.navigation a:active {
+    /* χρωμα που παιρνει το font οταν πατας το συγκεκριμενο link */
     color: grey;
 }
 
 
-.navigation .active {                   /* χρωμα που παινρει το καθε κουμπι οταν ειναι ενεργο , δηλαδη εισαι στην συγκεκριμενη σελιδα */
+.navigation .active {
+    /* χρωμα που παινρει το καθε κουμπι οταν ειναι ενεργο , δηλαδη εισαι στην συγκεκριμενη σελιδα */
     background-color: #2ea8d9;
 }
 
@@ -50,7 +56,8 @@
 /* !!!!!!!!!!!!!!!! INDEX !!!!!!!!!!!!!!! */
 
 body {
-    background-color: #badff1;                /* χρωμα για background του main περιεχομενου , font για το περιεχομενο επισης και overflow ωστε να μην υπαρχει η οριζοντια μπαρα scroll */
+    background-color: #badff1;
+    /* χρωμα για background του main περιεχομενου , font για το περιεχομενο επισης και overflow ωστε να μην υπαρχει η οριζοντια μπαρα scroll */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
     overflow-y: scroll;
@@ -60,18 +67,21 @@ body {
 
 
 .welcome {
-    text-align: center;         /* κειμενο κεντραρισμενο */
+    text-align: center;
+    /* κειμενο κεντραρισμενο */
 }
 
-.main-content> p {
-    font-weight: bold;          /* bold font και αλλαξαμε το font size να ειναι λιγο μικροτερο */
+.main-content>p {
+    font-weight: bold;
+    /* bold font και αλλαξαμε το font size να ειναι λιγο μικροτερο */
     text-align: center;
     font-size: 16px;
 }
 
 .section-promote {
     text-align: center;
-    border: 2px solid #6ab1d4;              /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+    border: 2px solid #6ab1d4;
+    /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
     box-shadow: 0px 2px 16px #6ab1d4;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -79,25 +89,29 @@ body {
     margin-right: 150px;
 }
 
-.product > a > img {
-    border: 2px solid #2ea8d9;              /* border και background για τις εικονες , radius για να γινουν πιο rounded τα edges */
+.product>a>img {
+    border: 2px solid #2ea8d9;
+    /* border και background για τις εικονες , radius για να γινουν πιο rounded τα edges */
     background-color: #6ab1d4;
     border-radius: 25px;
 }
 
 .product {
-    display: inline;                /* inline για να ειναι στην σειρα τα προϊοντα */
+    display: inline;
+    /* inline για να ειναι στην σειρα τα προϊοντα */
 }
 
-.product > a {
+.product>a {
 
-    text-decoration: none;          /* για να μην φαινονται τα λινκ underline */ 
+    text-decoration: none;
+    /* για να μην φαινονται τα λινκ underline */
 }
 
 
 #slim {
 
-    padding-left: 40px;         /* μια απο τις εικονες ειναι πιο μικρη αποτι πρεπει και ετσι κανουμε το τετραγωνο της ισο με των αλλων εικωνων */
+    padding-left: 40px;
+    /* μια απο τις εικονες ειναι πιο μικρη αποτι πρεπει και ετσι κανουμε το τετραγωνο της ισο με των αλλων εικωνων */
     padding-right: 40px;
 }
 
@@ -108,44 +122,51 @@ body {
 /* !!!!!!!!!!!!!!!!!!!! PRODUCT-CATEGORIES !!!!!!!!!!!!!!!!!! */
 
 .subcategory {
-    border: 2px solid #6ab1d4;           
-    box-shadow: 0px 2px 16px #6ab1d4;    /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+    border: 2px solid #6ab1d4;
+    box-shadow: 0px 2px 16px #6ab1d4;
+    /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
     margin-top: 20px;
     margin-bottom: 30px;
     margin-left: 270px;
     margin-right: 270px;
-    
+
 }
 
 
 
 .category-card {
-    display: inline-block;              /* inline-block για να ειναι στην σειρα τα προϊοντα */
-   
+    display: inline-block;
+    /* inline-block για να ειναι στην σειρα τα προϊοντα */
+
 }
 
 
 .category-name {
-    word-break: break-all;              /* για να σπανε οι λεξεις και να πηγαινουν απο κατω αμα δεν χωρανε */
+    word-break: break-all;
+    /* για να σπανε οι λεξεις και να πηγαινουν απο κατω αμα δεν χωρανε */
 }
 
 
 a {
-    text-decoration: none;              /* κανενα underline για λινκ και χρωμα μαυρο */
+    text-decoration: none;
+    /* κανενα underline για λινκ και χρωμα μαυρο */
     color: black;
 }
 
 a:visited {
-    text-decoration: none;      /* οτι εχουμε πει παραπανω */
+    text-decoration: none;
+    /* οτι εχουμε πει παραπανω */
 }
 
 a:active {
-    color: grey;               /* ομοιως */
+    color: grey;
+    /* ομοιως */
 }
 
 
 .popular-products {
-    border: 2px solid #6ab1d4;                  /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
+    border: 2px solid #6ab1d4;
+    /* βαλαμε border γυρω απο το section αυτο , μαζι με σκια γυρω γυρω και παιξαμε με τα margin για να φαινεται ωραιο μικρο και κεντραρισμενο */
     box-shadow: 0px 2px 16px #6ab1d4;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -154,7 +175,8 @@ a:active {
 }
 
 .product-card {
-    display: inline-block;       /* inline για να ειναι στην σειρα τα προϊοντα */
+    display: inline-block;
+    /* inline για να ειναι στην σειρα τα προϊοντα */
 }
 
 
@@ -163,95 +185,103 @@ a:active {
 
 
 
-/* !!!!!!!!!!!!!!!!!! PRODUCTS-PCS !!!!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!!!!!!! PRODUCT-PHONES !!!!!!!!!!!!!!!!! */
-
+/* !!!!!!!!!!!!!!!!!! PRODUCTS-PCS & PRODUCT-PHONES !!!!!!!!!!!!!!!!! */
 .products {
-
-    font-family: Arial, Helvetica, sans-serif;    /* ενιαιο font */
+    font-family: roboto;
+    /* Αλλάζουμε την γραμματοσειρά */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .products .product-card {
-    display: block;
-    box-shadow: 0 15px 30px 1px grey;           /* σκια γυρω γυρω και margin ωστε να φαινεται ωραιο */
-    background: rgba(255, 255, 255, 0.90);
     text-align: center;
+    /* Μεταφέρουμε το αντικείμενο στο κέντρο */
+    box-shadow: 0 15px 30px 1px grey;
+    background: rgba(255, 255, 255, 0.90);
     border-radius: 5px;
+    /* Βάζουμε σκίαση γύρω από το αντικείμενο */
     overflow: hidden;
     margin: 5em auto;
     height: 350px;
     width: 700px;
+    /* Καθορίζουμε το μέγεθος κάθε αντικειμένου */
 }
 
 .product-details {
-    position: relative;         /* το αριστερο μισο του καθε product-card, ονομα προϊοντος και φτιαξιμο οπτικα με margin / float */
+    position: relative;
     text-align: left;
+    /* Μεταφέρουμε την ενότητα στα αριστερά */
     overflow: hidden;
     padding: 30px;
     height: 100%;
     float: left;
     width: 40%;
+    /* Καθορίζουμε το μέγεθος του κειμένου */
 }
 
 .product-details h1 {
-
-    display: inline-block;              /* αλλαγη χρωματος font κλπ ωστε να φαινεται μεσα στο product-card το h1 ωραιο */
+    display: inline-block;
     position: relative;
     font-size: 30px;
     color: #344055;
-    margin: 0;
+    /* Αλλάζουμε το μέγεθος και το χρώμα της γραμματοσειράς */
 }
 
-
-
-.product-details > p {
-    font-family: 'EB Garamond', serif;  /* αλλαγη γραμματοσειρας, μεγεθους και χρωματος για ελληνικα */
-    text-align: center;
+.product-details>p {
+    font-family: roboto-regular;
     font-size: 18px;
     color: #7d7d7d;
-    
+    /* Αλλάζουμε την γραμματοσειρά, το μέγεθος και το χρώμα της */
+    text-align: center;
+    /* Μεταφέρουμε το κείμενο στο κέντρο */
 }
 
-
-
 .control {
-    position: absolute;             /* control και button ειναι για το κουμπι καλαθι αγορας με την τιμη πανω */
+    position: absolute;
     bottom: 20%;
     left: 22.8%;
-    
+    /* Αλλάζουμε το μέγεθος της εικόνας, προκειμένου να zoomάρεται */
 }
 
 .button {
-    transform: translateY(0px);
-    transition: 0.3s linear;
+    color: #eee;
+    /* Αλλάζουμε το χρώμα της γραμματοσειράς */
     background: #809fff;
+    /* Βάζουμε χρώμα στο κουμπί */
     border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
     outline: none;
     border: none;
-    color: #eee;
+    /* Διαμορφώνουμε το σχήμα του κουμπιού */
     padding-top: 0px;
     margin-left: 35px;
+    transform: translateY(0px);
+    /* Μετατοπίζουμε το κουμπί προς τα πάνω όταν δεν γίνεται hover */
+    transition: 0.3s linear;
+    /* Ρυθμίζουμε το unhover effect σε ομαλή αλλαγή */
+    position: relative;
+    overflow: hidden;
 }
 
 .button:hover {
     transform: translateY(-6px);
+    /* Μετατοπίζουμε το κουμπί προς τα πάνω όταν γίνεται hover */
     background: #1a66ff;
+    /* Αλλάζουμε το χρώμα του κουμπιού όταν γίνεται hover */
 }
 
 .button span {
-    font-family: 'Farsan', cursive;
+    font-family: roboto-regular;
+    /* Αλλάζουμε την γραμματοσειρά */
     transition: transform 0.3s;
+    /* Ρυθμίζουμε το unhover effect σε ομαλή αλλαγή */
     display: inline-block;
     padding: 10px 20px;
     font-size: 1.2em;
     margin: 0;
 }
 
-.button .price,
-.shopping-cart {
+.button .price {
     background: #333;
     border: 0;
     margin: 0;
@@ -259,57 +289,40 @@ a:active {
 
 .button .price {
     transform: translateX(-10%);
+    /* Μετατοπίζουμε την τιμή όταν δεν γίνεται hover */
     padding-right: 15px;
 }
 
-.button .shopping-cart {
-    transform: translateX(-100%);
-    position: absolute;
-    background: #333;
-    z-index: 1;
-    left: 0;
-    top: 0;
-}
-
 .button .buy {
-    z-index: 3;
     font-weight: bolder;
-}
-
-.button:hover .price {
-    transform: translateX(-110%);
-}
-
-.button:hover .shopping-cart {
-    transform: translateX(0%);
 }
 
 .product-image {
     transition: all 0.3s ease-out;
+    /* Ρυθμίζουμε το unhover effect σε ομαλή αλλαγή */
     position: relative;
     overflow: hidden;
     height: 100%;
     float: right;
     width: 45%;
-   
 }
 
 .product-image .image {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
-
 
 .info {
     background: rgba(27, 26, 26, 0.9);
-    font-family: 'Bree Serif', serif;
+    font-family: roboto-light;
+    /* Αλλάζουμε την γραμματοσειρά */
     transition: all 0.3s ease-out;
     transform: translateX(-100%);
     position: absolute;
     line-height: 1.8;
     text-align: left;
+    /* Μεταφέρουμε το αντικείμενο στα αριστερά */
     font-size: 105%;
-    cursor: no-drop;
     color: #FFF;
     height: 100%;
     width: 100%;
@@ -323,38 +336,34 @@ a:active {
 
 .product-image:hover .info {
     transform: translateX(0);
+    /* Ρυθμίζουμε το κείμενο να μετατοπίζεται αριστερά όταν γίνεται hover η εικόνα */
 }
 
 .info ul li {
     transition: 0.3s ease;
+    /* Ρυθμίζουμε το hover effect του κειμένου σε ομαλή αλλαγή */
 }
 
 .info ul li:hover {
     transform: translateX(50px) scale(1.3);
+    /* Ρυθμίζουμε το κείμενο να μεγεθύνεται όταν γίνεται hover */
 }
 
 .product-image:hover img {
     transition: all 0.3s ease-out;
-}
-
-.product-image:hover img {
     transform: scale(1.2, 1.2);
+    /* Ρυθμίζουμε το hover effect σε ομαλή αλλαγή */
 }
-
-
-/* !!!!!!!!!!!!! ΤΕΛΟΣ PRODUCT-PCS !!!!!!!!!!!!!!!!! */
-/* !!!!!!!!!!!!! ΤΕΛΟΣ PRODUCT-PHONES !!!!!!!!!!!!!! */
-
-
 
 /* !!!!!!!!!!!!!!! PRODUCT-IPHONE14 !!!!!!!!!!!!!!!! */
 
-#category > a {                    
+#category>a {
     color: black;
     text-decoration: none;
 }
 
-#iphone-name, #category {
+#iphone-name,
+#category {
     text-align: left;
 }
 
@@ -372,7 +381,7 @@ a:active {
 }
 
 
-.iphone-code-price{
+.iphone-code-price {
 
     display: block;
     float: left;
@@ -399,7 +408,8 @@ a:active {
 }
 
 .outer-box {
-    margin-top: -15px;      /* ωστε να κατεβει και να αρχιζει στο ιδιο υψος το κουτι χαρακτηριστικων με το κουτι της εικονας του κινητου */
+    margin-top: -15px;
+    /* ωστε να κατεβει και να αρχιζει στο ιδιο υψος το κουτι χαρακτηριστικων με το κουτι της εικονας του κινητου */
 }
 
 .manifacturer {
@@ -485,7 +495,8 @@ a:active {
 
 input,
 label {
-    cursor: pointer;            /* pointer that indicates to a link */
+    cursor: pointer;
+    /* pointer that indicates to a link */
 }
 
 input[type="radio"] {
@@ -524,7 +535,8 @@ label {
         outline-offset: 0;
     }
 
-    100% {                          /* ολο αυτο ειναι animation για τα radio buttons οταν τα πατας */
+    100% {
+        /* ολο αυτο ειναι animation για τα radio buttons οταν τα πατας */
         outline-offset: -0.2rem;
     }
 }
@@ -575,10 +587,10 @@ input[type=submit]:hover {
     align-items: center;
     width: 100%;
     height: 100vh;
-    
+
 }
 
-iframe{
+iframe {
 
     width: 70%;
     height: 500px;
@@ -586,8 +598,8 @@ iframe{
 
 .katasthmata>h3 {
     text-decoration: underline;
-   
-   
+
+
 }
 
 
@@ -728,7 +740,7 @@ select {
     text-align: left;
 }
 
-.perilhpsh > p {
+.perilhpsh>p {
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -745,7 +757,7 @@ select {
     padding-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
-   
+
 
 }
 
@@ -753,7 +765,7 @@ select {
 #jimmy {
 
     height: 250px;
-    margin-top: -40px;         
+    margin-top: -40px;
 }
 
 #tasos {
@@ -771,7 +783,7 @@ select {
 
 
 .footer-content {
-    background-color: #5680e9;      
+    background-color: #5680e9;
     text-align: center;
     margin-top: 50px;
     margin-bottom: -10px;
@@ -786,14 +798,15 @@ select {
     padding-top: 5px;
 }
 
-.footer-content > a {
+.footer-content>a {
 
     text-decoration: none;
 }
 
 .footer-content>a>img {
     filter: grayscale(100%);
-    border-radius: 25px;                /* ασπρομαυρες φωτο μεχρι να κανουμε hover και να φυγει το greyscale εφε */
+    border-radius: 25px;
+    /* ασπρομαυρες φωτο μεχρι να κανουμε hover και να φυγει το greyscale εφε */
 }
 
 .footer-content>a>img:hover {
