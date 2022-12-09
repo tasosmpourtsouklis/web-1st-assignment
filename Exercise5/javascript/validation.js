@@ -146,9 +146,9 @@ function validatePostalCode() {
     if (postalCode.validity.valueMissing) {
         document.getElementById("postalCodeError").innerHTML = "Εισάγετε τον ταχυδρομικό σας κώδικα.";
         postalCode.focus();
-    // } else if (postalCode.validity.typeMismatch) {
-    //     document.getElementById("postalCodeError").innerHTML = "Ελέγξτε τον ταχυδρομικό σας κώδικα.";
-    //     postalCode.focus();
+    } else if (postalCode.validity.typeMismatch) {
+        document.getElementById("postalCodeError").innerHTML = "Ελέγξτε τον ταχυδρομικό σας κώδικα.";
+        postalCode.focus();
     } else {
         document.getElementById("postalCodeError").innerHTML = "";
     }
